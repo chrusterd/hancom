@@ -1,0 +1,18 @@
+<!DOCTYPE html>           <!-- "이건 HTML 문서야" 선언 -->
+<html lang="ko">          <!-- 문서 시작, 한국어 페이지 -->
+<head>                    <!-- 화면엔 안 보이는 준비 칸 -->
+  <meta charset="UTF-8">  <!-- 한글 안 깨지게 -->
+  <title>표 칸 합치기</title>  <!-- 브라우저 탭에 뜨는 이름 -->
+</head>
+<body>                    <!-- 화면에 보이는 진짜 내용 칸 -->
+  <table border="1" width="300">                          <!-- 표 전체 상자 (border=칸 선) -->
+    <thead>                                 <!-- 표 머리(제목 줄) -->
+      <tr><th colspan="3">성적표</th></tr>   <!-- colspan=2 → 가로 2칸 합침 -->
+    </thead>
+    <tbody>                                 <!-- 표 몸통(내용 줄) -->
+      <tr><td rowspan="2">세로 2줄 합치기</td><td>국어</td><td>90</td></tr> 
+      <tr><td>수학</td><td>60</td></tr>       <!-- 보통 내용 칸 -->
+    </tbody>
+  </table>
+</body>
+</html>
