@@ -1,0 +1,15 @@
+/* styles/main.css */
+.box {
+  width: 120px; height: 120px;   /* 박스 크기 (가로·세로 120px) */
+  display: flex;                 /* flex: 안의 글자를 가운데 두려고 */
+  margin: 100px;
+  align-items: center;           /* 세로 가운데 정렬 */
+  justify-content: center;       /* 가로 가운데 정렬 */
+  background: violet;           /* 배경색 */
+  color: white;                  /* 글자색 */
+  border-radius: 40px;           /* 모서리 둥글게 (값 클수록 더 둥금) */
+  transition: transform 0.9s ease;   /* transform이 바뀔 때 0.3초에 걸쳐 부드럽게 (ease=끝에 천천히) */
+}
+
+/* :hover = 마우스 올렸을 때만 적용 */
+.box:hover { transform: rotate(360deg) scale(1.5); }   /* rotate(10deg): 10도 기울임 · scale(1.2): 1.2배 확대 */

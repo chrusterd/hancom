@@ -3,7 +3,7 @@
 /* ① 기본 — 페이지 전체 */
 body { background-color: lightyellow; font-family: sans-serif; }
 
-/* ② 요소 선택자 — 모든 h1·p */
+/* ② 요소 선택자 — 모든 h1·p */ 
 h1 { color: navy; text-align: center; }
 p  { color: gray; }
 

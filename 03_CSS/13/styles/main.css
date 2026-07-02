@@ -1,0 +1,15 @@
+/* styles/main.css */
+.grid {
+  display: grid;                         /* 2차원 격자 켜기 */
+  grid-template-columns: repeat(3, 1fr); /* 3칸 똑같은 너비 (1fr 1fr 1fr 과 같음) */
+  gap: 12px;                             /* 칸 사이 간격 */
+}
+
+/* 카드 6개는 위 격자에 자동으로 채워짐 (3개씩 두 줄) */
+.card {
+  background: hotpink;   /* 배경 분홍 */
+  color: white;          /* 글자 흰색 */
+  text-align: center;    /* 가운데 정렬 */
+  padding: 22px 0;       /* 위아래 안쪽 여백 */
+  border-radius: 8px;    /* 모서리 둥글게 */
+}
