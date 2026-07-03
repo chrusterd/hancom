@@ -1,11 +1,336 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>★ HTML/CSS REVIEW ★ MINI PROJECT ★</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/quiple/galmuri/dist/galmuri.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true">
+    <span style="top:8%; left:6%; color:var(--cyan);" class="float-spin">★</span>
+    <span style="top:16%; left:88%; color:var(--yellow);" class="pulse">✦</span>
+    <span style="top:34%; left:3%; color:var(--cyan);" class="spin">◆</span>
+    <span style="top:58%; left:93%; color:var(--yellow);">▲</span>
+    <span style="top:72%; left:5%; color:var(--cyan);" class="pulse">●</span>
+    <span style="top:86%; left:87%; color:var(--yellow);" class="float-spin">✧</span>
+    <span style="top:4%; left:48%; color:var(--cyan);">▚</span>
+    <span style="top:94%; left:44%; color:var(--yellow);" class="spin">♥</span>
+    <span style="top:46%; left:96%; color:var(--cyan);" class="pulse">◈</span>
+    <span style="top:26%; left:20%; color:var(--yellow);">▲</span>
+    <span style="top:12%; left:-4%; color:var(--yellow); animation-delay:0s;" class="drift">★</span>
+    <span style="top:52%; left:-4%; color:var(--cyan); animation-delay:6s;" class="drift">✦</span>
+    <span style="top:80%; left:-4%; color:var(--yellow); animation-delay:12s;" class="drift">◆</span>
+    <span style="top:64%; left:78%; color:var(--cyan);" class="twinkle-star">✧</span>
+    <span style="top:20%; left:70%; color:var(--yellow); animation-delay:1.2s;" class="twinkle-star">✧</span>
+  </div>
+
+  <div class="window pixel-corners-8">
+    <div class="window-titlebar">
+      <span class="dot dot--a" aria-hidden="true"></span>
+      <span class="dot dot--b" aria-hidden="true"></span>
+      <span class="dot dot--c" aria-hidden="true"></span>
+      MINI_PROJECT.EXE
+      <span class="cursor" aria-hidden="true">▌</span>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>★ HTML/CSS REVIEW ★ CSS DESIGN AWARDS ★ HTML/CSS KEY CONCEPTS ★ SPECIAL QUIZZES ★</span>
+        <span>★ HTML/CSS REVIEW ★ CSS DESIGN AWARDS ★ HTML/CSS KEY CONCEPTS ★ SPECIAL QUIZZES ★</span>
+      </div>
+    </div>
+
+    <div class="window-body">
+      <article>
+        <div class="hero">
+          <div class="confetti-layer" aria-hidden="true">
+            <span style="left:6%; background:var(--cyan); animation-delay:0s;"></span>
+            <span style="left:16%; background:var(--yellow); animation-delay:.4s;"></span>
+            <span style="left:28%; background:var(--cyan); animation-delay:.8s;"></span>
+            <span style="left:40%; background:var(--yellow); animation-delay:1.2s;"></span>
+            <span style="left:52%; background:var(--cyan); animation-delay:.2s;"></span>
+            <span style="left:64%; background:var(--yellow); animation-delay:1.6s;"></span>
+            <span style="left:76%; background:var(--cyan); animation-delay:.6s;"></span>
+            <span style="left:88%; background:var(--yellow); animation-delay:1s;"></span>
+          </div>
+          <span class="eyebrow">★ MINI PROJECT ★</span>
+          <h1 class="hero-title">막 배운 HTML과 CSS를 활용한 MINI PROJECT</h1>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <div>
+          <h3 class="section-label">CSS design awards</h3>
+          <p class="lead-text">
+            <mark class="hl">픽셀 아트 감성</mark>과 화려한 <mark class="hl">마우스 인터랙션</mark>이 인상 깊었던
+            사이트다. 스크롤하거나 클릭할 때마다 예상치 못한 애니메이션이 튀어나와서 구경하는 내내 지루할 틈이
+            없었고, 반응형 대응도 훌륭해 모바일에서도 완벽하게 동작했다.
+          </p>
+        </div>
+
+        <h2 class="sr-only">CSS Design Awards에서 발견한 Craft Engineered 웹사이트 스크린샷과 리뷰 카드</h2>
+
+        <div class="card-wrap">
+          <div class="card pixel-corners-8">
+            <div class="card-img-frame">
+              <img
+                src="https://www.cssdesignawards.com/cdasites/2026/202607/20260702105711.jpg"
+                alt="Craft Engineered 웹사이트 스크린샷"
+                width="558"
+                height="284"
+              />
+            </div>
+
+            <div class="card-body">
+              <div class="card-action-bar">
+                <a class="award-badge pixel-corners-4" href="https://www.cssdesignawards.com/sites/craft-engineered/49721/" target="_blank" rel="noopener">
+                  <span class="award-star" aria-hidden="true">★</span>
+                  <span class="award-text">
+                    <span class="award-label">AWARDED BY</span>
+                    <span class="award-name">CSS Design Awards</span>
+                  </span>
+                </a>
+                <a class="visit-btn pixel-corners-4" href="https://craft.wild.as/" target="_blank" rel="noopener">
+                  <span class="visit-btn-arrow" aria-hidden="true">▶</span>
+                  사이트 방문하기
+                </a>
+              </div>
+
+              <p class="card-desc">
+                픽셀 디자인을 세련되게 풀어낸, 애니메이션 요소가 가득한 매우 동적인 웹사이트.
+                화면 구석구석에 재미 요소가 숨어 있다.
+              </p>
+
+              <div class="info-grid">
+                <div class="info-box pixel-corners-4">
+                  <p class="info-title">
+                    <span class="ti ti-hand-click icon-blue" aria-hidden="true"></span>마우스 인터랙션
+                  </p>
+                  <ul>
+                    <li>영상 호버 시 픽셀화 애니메이션</li>
+                    <li>히어로 영역 호버 시 동그란 볼 등장</li>
+                    <li>클릭하면 어디서든 대폭발 이펙트</li>
+                  </ul>
+                </div>
+
+                <div class="info-box pixel-corners-4">
+                  <p class="info-title">
+                    <span class="ti ti-confetti icon-orange" aria-hidden="true"></span>숨겨진 재미 요소
+                  </p>
+                  <ul>
+                    <li>페이지 하단에 테트리스 게임</li>
+                    <li>호버로 활성화되는 "Brilliant at" / "Hopeless at" 섹션</li>
+                  </ul>
+                </div>
+
+                <div class="info-box pixel-corners-4">
+                  <p class="info-title">
+                    <span class="ti ti-device-mobile icon-green" aria-hidden="true"></span>반응형 대응
+                  </p>
+                  <ul>
+                    <li>모바일에서도 완벽하게 동작</li>
+                    <li>마우스 효과 대신 스크롤을 따라다니는 볼이 다양한 애니메이션 연출</li>
+                  </ul>
+                </div>
+
+                <div class="info-box pixel-corners-4">
+                  <p class="info-title">
+                    <span class="ti ti-sparkles icon-purple" aria-hidden="true"></span>총평
+                  </p>
+                  <p>픽셀 아트 감성과 화려한 인터랙션이 어우러져, 탐색 자체가 놀이가 되는 사이트.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <div>
+          <h3 class="section-label">HTML/CSS 핵심 개념</h3>
+          <p class="lead-text">
+            이 페이지를 만들며 활용한 <mark class="hl">HTML</mark>과 <mark class="hl">CSS</mark>의 핵심 개념
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">시맨틱 태그</p>
+            <p class="concept-desc">&lt;header&gt;, &lt;nav&gt;, &lt;article&gt;처럼 의미를 담은 HTML 태그. 접근성과 검색엔진 최적화(SEO)에 도움을 준다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">박스 모델</p>
+            <p class="concept-desc">content · padding · border · margin으로 이루어진 요소의 크기 체계. box-sizing: border-box로 계산 기준을 통일할 수 있다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">선택자 &amp; 우선순위</p>
+            <p class="concept-desc">태그·class·id·속성 선택자로 요소를 지정하며, 명시도(specificity)가 높은 규칙이 우선 적용된다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">Flexbox</p>
+            <p class="concept-desc">display: flex로 요소를 한 방향(행 또는 열)으로 정렬·분배한다. 이 페이지의 태그, 버튼 배치에 쓰였다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">Grid</p>
+            <p class="concept-desc">display: grid와 grid-template-columns로 2차원 레이아웃을 만든다. 정보 카드 배치에 쓰였다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">포지셔닝</p>
+            <p class="concept-desc">static·relative·absolute·fixed·sticky로 요소의 배치 기준을 제어한다. 배경 장식과 컨페티 효과에 쓰였다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">트랜지션 &amp; 애니메이션</p>
+            <p class="concept-desc">transition은 상태 변화 사이를, @keyframes와 animation은 반복되는 움직임을 만든다. 이 페이지 곳곳의 모션이 여기서 나왔다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">반응형 디자인</p>
+            <p class="concept-desc">@media 쿼리와 %, vw, clamp() 같은 가변 단위로 화면 크기에 맞춰 레이아웃을 조정한다.</p>
+          </div>
+
+          <div class="concept-card pixel-corners-4">
+            <p class="concept-term">CSS 변수</p>
+            <p class="concept-desc">:root에 --cyan처럼 값을 정의하고 var()로 꺼내 쓴다. 이 페이지의 모든 색상이 변수 두 개로 관리되어, 한 줄만 바꾸면 전체 테마가 바뀐다.</p>
+          </div>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <div>
+          <h3 class="section-label">HTML/CSS 실력 테스트</h3>
+          <p class="lead-text">
+            HTML/CSS의 중요 개념을 확인하는 <mark class="hl">객관식 퀴즈</mark> 5문제
+          </p>
+        </div>
+
+        <div class="quiz-list">
+          <div class="quiz-card pixel-corners-4">
+            <span class="quiz-num">Q1</span>
+            <p class="quiz-question">이 페이지의 리뷰 글처럼, 독립적으로 완결된 하나의 글을 담기에 가장 알맞은 시맨틱 태그는?</p>
+            <div class="quiz-options">
+              <input type="radio" class="quiz-radio" name="q1" id="q1-a" />
+              <label class="quiz-option" for="q1-a">&lt;div&gt;</label>
+              <input type="radio" class="quiz-radio quiz-radio--correct" name="q1" id="q1-b" />
+              <label class="quiz-option" for="q1-b">&lt;article&gt;</label>
+              <input type="radio" class="quiz-radio" name="q1" id="q1-c" />
+              <label class="quiz-option" for="q1-c">&lt;span&gt;</label>
+            </div>
+            <div class="quiz-confetti" aria-hidden="true">
+              <span style="left:12%; background:var(--cyan);"></span>
+              <span style="left:28%; background:var(--yellow); animation-delay:.08s;"></span>
+              <span style="left:44%; background:var(--cyan); animation-delay:.16s;"></span>
+              <span style="left:60%; background:var(--yellow); animation-delay:.04s;"></span>
+              <span style="left:76%; background:var(--cyan); animation-delay:.12s;"></span>
+              <span style="left:90%; background:var(--yellow); animation-delay:.2s;"></span>
+            </div>
+            <p class="quiz-feedback"><code>&lt;article&gt;</code>은 블로그 글, 뉴스 기사, 리뷰처럼 그 자체로 완결된 콘텐츠에 쓰는 시맨틱 태그다. <code>&lt;div&gt;</code>와 <code>&lt;span&gt;</code>은 아무 의미가 없어서 접근성과 SEO에 도움을 주지 못한다. 이 페이지의 본문도 &lt;article&gt;로 감싸져 있다.</p>
+          </div>
+
+          <div class="quiz-card pixel-corners-4">
+            <span class="quiz-num">Q2</span>
+            <p class="quiz-question">박스 모델을 안쪽에서 바깥쪽 순서로 올바르게 나열한 것은?</p>
+            <div class="quiz-options">
+              <input type="radio" class="quiz-radio quiz-radio--correct" name="q2" id="q2-a" />
+              <label class="quiz-option" for="q2-a">content → padding → border → margin</label>
+              <input type="radio" class="quiz-radio" name="q2" id="q2-b" />
+              <label class="quiz-option" for="q2-b">content → border → padding → margin</label>
+              <input type="radio" class="quiz-radio" name="q2" id="q2-c" />
+              <label class="quiz-option" for="q2-c">content → margin → border → padding</label>
+            </div>
+            <div class="quiz-confetti" aria-hidden="true">
+              <span style="left:12%; background:var(--yellow);"></span>
+              <span style="left:28%; background:var(--cyan); animation-delay:.06s;"></span>
+              <span style="left:44%; background:var(--yellow); animation-delay:.14s;"></span>
+              <span style="left:60%; background:var(--cyan); animation-delay:.02s;"></span>
+              <span style="left:76%; background:var(--yellow); animation-delay:.18s;"></span>
+              <span style="left:90%; background:var(--cyan); animation-delay:.1s;"></span>
+            </div>
+            <p class="quiz-feedback">콘텐츠를 감싸는 안쪽 여백이 <code>padding</code>, 그 바깥의 테두리가 <code>border</code>, 요소 사이의 바깥 여백이 <code>margin</code>이다. 순서를 헷갈리면 여백이 엉뚱한 곳에 생긴다.</p>
+          </div>
+
+          <div class="quiz-card pixel-corners-4">
+            <span class="quiz-num">Q3</span>
+            <p class="quiz-question">자식 요소들을 한 방향(행 또는 열)으로 나란히 정렬하고 싶을 때, 부모 컨테이너에 주는 속성은?</p>
+            <div class="quiz-options">
+              <input type="radio" class="quiz-radio" name="q3" id="q3-a" />
+              <label class="quiz-option" for="q3-a">display: block</label>
+              <input type="radio" class="quiz-radio quiz-radio--correct" name="q3" id="q3-b" />
+              <label class="quiz-option" for="q3-b">display: flex</label>
+              <input type="radio" class="quiz-radio" name="q3" id="q3-c" />
+              <label class="quiz-option" for="q3-c">float: left</label>
+            </div>
+            <div class="quiz-confetti" aria-hidden="true">
+              <span style="left:12%; background:var(--cyan);"></span>
+              <span style="left:28%; background:var(--yellow); animation-delay:.1s;"></span>
+              <span style="left:44%; background:var(--cyan); animation-delay:.05s;"></span>
+              <span style="left:60%; background:var(--yellow); animation-delay:.16s;"></span>
+              <span style="left:76%; background:var(--cyan); animation-delay:.08s;"></span>
+              <span style="left:90%; background:var(--yellow); animation-delay:.14s;"></span>
+            </div>
+            <p class="quiz-feedback">부모에 <code>display: flex</code>를 주면 자식들이 Flexbox 아이템이 되어 한 방향으로 정렬·분배된다. 이 페이지의 어워드 배지와 방문하기 버튼이 나란히 놓인 것도 flex 덕분이다. float는 옛날 방식이라 요즘은 거의 쓰지 않는다.</p>
+          </div>
+
+          <div class="quiz-card pixel-corners-4">
+            <span class="quiz-num">Q4</span>
+            <p class="quiz-question">계속 반복되는 움직임을 만들기 위해 <code>@keyframes</code>와 짝을 이뤄 쓰는 CSS 속성은?</p>
+            <div class="quiz-options">
+              <input type="radio" class="quiz-radio" name="q4" id="q4-a" />
+              <label class="quiz-option" for="q4-a">transition</label>
+              <input type="radio" class="quiz-radio quiz-radio--correct" name="q4" id="q4-b" />
+              <label class="quiz-option" for="q4-b">animation</label>
+              <input type="radio" class="quiz-radio" name="q4" id="q4-c" />
+              <label class="quiz-option" for="q4-c">transform</label>
+            </div>
+            <div class="quiz-confetti" aria-hidden="true">
+              <span style="left:12%; background:var(--yellow);"></span>
+              <span style="left:28%; background:var(--cyan); animation-delay:.12s;"></span>
+              <span style="left:44%; background:var(--yellow); animation-delay:.04s;"></span>
+              <span style="left:60%; background:var(--cyan); animation-delay:.18s;"></span>
+              <span style="left:76%; background:var(--yellow); animation-delay:.06s;"></span>
+              <span style="left:90%; background:var(--cyan); animation-delay:.15s;"></span>
+            </div>
+            <p class="quiz-feedback"><code>@keyframes</code>로 움직임의 단계를 정의하고 <code>animation</code> 속성으로 요소에 적용한다. <code>transition</code>은 호버처럼 상태가 바뀌는 순간의 전환 효과, <code>transform</code>은 이동·회전·확대 같은 변형 자체를 담당한다. 이 페이지의 반짝이는 별과 흐르는 티커가 모두 animation이다.</p>
+          </div>
+
+          <div class="quiz-card pixel-corners-4">
+            <span class="quiz-num">Q5</span>
+            <p class="quiz-question"><code>:root</code>에 정의한 CSS 변수 <code>--cyan</code>을 꺼내 쓸 때의 올바른 문법은?</p>
+            <div class="quiz-options">
+              <input type="radio" class="quiz-radio" name="q5" id="q5-a" />
+              <label class="quiz-option" for="q5-a">color: --cyan;</label>
+              <input type="radio" class="quiz-radio quiz-radio--correct" name="q5" id="q5-b" />
+              <label class="quiz-option" for="q5-b">color: var(--cyan);</label>
+              <input type="radio" class="quiz-radio" name="q5" id="q5-c" />
+              <label class="quiz-option" for="q5-c">color: get(--cyan);</label>
+            </div>
+            <div class="quiz-confetti" aria-hidden="true">
+              <span style="left:12%; background:var(--cyan);"></span>
+              <span style="left:28%; background:var(--yellow); animation-delay:.07s;"></span>
+              <span style="left:44%; background:var(--cyan); animation-delay:.13s;"></span>
+              <span style="left:60%; background:var(--yellow); animation-delay:.03s;"></span>
+              <span style="left:76%; background:var(--cyan); animation-delay:.17s;"></span>
+              <span style="left:90%; background:var(--yellow); animation-delay:.11s;"></span>
+            </div>
+            <p class="quiz-feedback">CSS 변수는 <code>var()</code> 함수로 꺼내 쓴다. 변수 이름만 쓰거나 get() 같은 함수는 동작하지 않는다. 이 페이지의 시안·노랑 포인트 컬러도 전부 <code>var(--cyan)</code>, <code>var(--yellow)</code>로 쓰이고 있다.</p>
+          </div>
+        </div>
+
+        <div class="quiz-score">
+          <span class="quiz-score-label">SCORE</span>
+          <span class="quiz-score-value" aria-hidden="true"></span>
+          <span class="quiz-score-total">/ 5</span>
+        </div>
+      </article>
+    </div>
+  </div>
+
+</body>
 </html>

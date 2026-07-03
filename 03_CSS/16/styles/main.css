@@ -1,0 +1,20 @@
+/* styles/main.css */
+.card {
+  width: 150px; height: 150px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgb(45, 137, 199); color: white; font-weight: 700;
+
+  border-radius: 30%;                   /* ① 모서리 둥글게 */
+  opacity: 0.85;                            /* ② 살짝 비치게 (1=꽉참) */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);  /* ③ 그림자 → 0:좌우  6px:위아래  18px:번짐  rgba:색+투명도 */
+  transition: all 0.8s ease;                /* ④ 바뀔 때 0.3초 스르륵 */
+}
+
+/* 마우스 올리면 → 떠오르고 또렷해지고 그림자 커짐 */
+.card:hover {
+  opacity: 1;                                /* 또렷하게 */
+  transform: translateY(-8px);                 /* 위로 8px 떠오름 */
+  box-shadow: 0 16px 32px rgba(255,105,180,0.5);  /* 그림자 진하게 */
+  background: rgb(49, 194, 81);              /* 배경색도 함께 변경 */
+  border-radius: 50%;
+}
