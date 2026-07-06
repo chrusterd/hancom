@@ -21,7 +21,7 @@
 
 body {
   margin: 0;
-  padding: 48px 16px 80px;
+  padding: 56px 16px 96px;
   font-family: var(--font-body);
   color: var(--text);
   background-color: var(--bg);
@@ -220,7 +220,7 @@ body {
   to { transform: translateX(-50%); }
 }
 
-.window-body { padding: 32px 24px 40px; }
+.window-body { padding: 44px 28px 56px; }
 
 /* 최초 진입 시 순서대로 나타남 */
 article > * {
@@ -243,6 +243,10 @@ article > *:nth-child(9) { animation-delay: .6s; }
 article > *:nth-child(10) { animation-delay: .65s; }
 article > *:nth-child(11) { animation-delay: .7s; }
 article > *:nth-child(12) { animation-delay: .75s; }
+article > *:nth-child(13) { animation-delay: .8s; }
+article > *:nth-child(14) { animation-delay: .85s; }
+article > *:nth-child(15) { animation-delay: .9s; }
+article > *:nth-child(16) { animation-delay: .95s; }
 
 /* ---------- 히어로 ---------- */
 .hero { position: relative; text-align: center; padding: 4px 0 8px; }
@@ -305,11 +309,47 @@ article > *:nth-child(12) { animation-delay: .75s; }
   50% { transform: translateX(4px); }
 }
 
+/* ---------- 히어로 링크 버튼 (GitHub / Blog) ---------- */
+.hero-links {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 4px 0 0;
+}
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-family: var(--font-pixel-sm);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--border-dark);
+  border: 2px solid var(--border-dark);
+  box-shadow: 4px 4px 0 var(--border-dark);
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+.hero-btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--border-dark);
+}
+.hero-btn--github { background: var(--cyan); }
+.hero-btn--blog { background: var(--yellow); }
+.hero-btn-icon {
+  display: inline-block;
+  animation: iconBounce 1.6s ease-in-out infinite;
+}
+.hero-btn--blog .hero-btn-icon { animation-delay: .3s; }
+
 /* ---------- 흐르는 구분선 ---------- */
 .divider {
   position: relative;
   height: 4px;
-  margin: 24px 0 28px;
+  margin: 48px 0;
   background-image: repeating-linear-gradient(
     90deg,
     var(--yellow) 0 8px, transparent 8px 16px,
@@ -338,7 +378,7 @@ article > *:nth-child(12) { animation-delay: .75s; }
 
 .section-label {
   display: inline-block;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
   padding: 5px 10px;
   background: var(--yellow);
   color: var(--border-dark);
@@ -359,9 +399,10 @@ article > *:nth-child(12) { animation-delay: .75s; }
 }
 
 /* ---------- 소감 텍스트 ---------- */
+/* 섹션 라벨·카드와 시작선을 맞추기 위해 왼쪽 정렬 */
 .lead-text {
   max-width: 58ch;
-  margin: 0 auto;
+  margin: 0;
   color: var(--text);
   font-size: 16px;
   line-height: 1.9;
@@ -430,7 +471,7 @@ mark.hl:hover {
   to { transform: scale(1.04); }
 }
 
-.card-body { margin: 0; padding: 20px; }
+.card-body { margin: 0; padding: 24px; }
 
 @keyframes tagSway {
   0%, 100% { transform: rotate(-2deg); }
@@ -531,14 +572,14 @@ mark.hl:hover {
 
 .info-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 0;
   padding: 0;
 }
 .info-box {
   margin: 0;
-  padding: 14px 16px;
+  padding: 16px 18px;
   background: var(--panel);
   border: 2px solid var(--border-light);
   animation: boxBorderPulse 4s ease-in-out infinite;
@@ -585,16 +626,254 @@ mark.hl:hover {
 .info-box li { margin: 0; padding: 0; }
 .info-box p { margin: 0; padding: 0; color: var(--text-dim); font-size: 14px; line-height: 1.8; }
 
-/* ---------- HTML/CSS 개념 카드 ---------- */
+/* ---------- 픽셀 아트 인터루드 (섹션 사이 쉼표 역할) ---------- */
+.interlude {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 48px 0;
+}
+
+/* 1. 화면을 가로질러 걸어가는 스페이스 인베이더 (box-shadow 픽셀 아트) */
+.interlude-track {
+  position: relative;
+  width: 100%;
+  height: 76px;
+  overflow: hidden;
+}
+.px-invader {
+  position: absolute;
+  top: 6px;
+  left: -12%;
+  width: 8px;
+  height: 8px;
+  background: var(--cyan);
+  box-shadow:
+    48px 0 var(--cyan),
+    8px 8px var(--cyan), 40px 8px var(--cyan),
+    0 16px var(--cyan), 8px 16px var(--cyan), 16px 16px var(--cyan), 24px 16px var(--cyan), 32px 16px var(--cyan), 40px 16px var(--cyan), 48px 16px var(--cyan),
+    -8px 24px var(--cyan), 0 24px var(--cyan), 16px 24px var(--cyan), 24px 24px var(--cyan), 32px 24px var(--cyan), 48px 24px var(--cyan), 56px 24px var(--cyan),
+    -16px 32px var(--cyan), -8px 32px var(--cyan), 0 32px var(--cyan), 8px 32px var(--cyan), 16px 32px var(--cyan), 24px 32px var(--cyan), 32px 32px var(--cyan), 40px 32px var(--cyan), 48px 32px var(--cyan), 56px 32px var(--cyan), 64px 32px var(--cyan),
+    -16px 40px var(--cyan), 0 40px var(--cyan), 8px 40px var(--cyan), 16px 40px var(--cyan), 24px 40px var(--cyan), 32px 40px var(--cyan), 40px 40px var(--cyan), 48px 40px var(--cyan), 64px 40px var(--cyan),
+    -16px 48px var(--cyan), 0 48px var(--cyan), 48px 48px var(--cyan), 64px 48px var(--cyan),
+    8px 56px var(--cyan), 16px 56px var(--cyan), 32px 56px var(--cyan), 40px 56px var(--cyan);
+  animation: invaderWalk 12s linear infinite, invaderBob .7s steps(2) infinite;
+}
+@keyframes invaderWalk {
+  from { left: -12%; }
+  to { left: 104%; }
+}
+@keyframes invaderBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* 2. 다음 스테이지 로딩 바 */
+.interlude--loading { flex-direction: column; }
+.loading-label {
+  font-family: var(--font-pixel-sm);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  animation: blink 1.2s steps(1) infinite;
+}
+.loading-bar {
+  width: min(320px, 80%);
+  height: 20px;
+  padding: 3px;
+  background: var(--border-dark);
+  border: 2px solid var(--border-light);
+}
+.loading-bar span {
+  display: block;
+  height: 100%;
+  background: repeating-linear-gradient(90deg, var(--cyan) 0 10px, var(--yellow) 10px 20px);
+  transform-origin: left;
+  animation: loadFill 2.8s steps(12) infinite;
+}
+@keyframes loadFill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* 3. 히든 엔딩: 퀴즈 5문제를 모두 맞히면 CSS :has()만으로 보상이 열린다 */
+.ending { margin: 56px 0 0; }
+
+.ending-locked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+/* 마리오풍 ? 블록 */
+.q-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--yellow);
+  border: 3px solid var(--border-dark);
+  box-shadow: 4px 4px 0 var(--border-dark), inset -4px -4px 0 rgba(0, 0, 0, .25), inset 4px 4px 0 rgba(255, 255, 255, .35);
+  color: var(--border-dark);
+  font-family: var(--font-pixel);
+  font-size: 26px;
+  animation: qBob 1s steps(2) infinite;
+}
+@keyframes qBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.ending-hint {
+  margin: 0;
+  font-family: var(--font-pixel-sm);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+}
+
+.ending-clear {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 0 8px;
+  overflow: hidden;
+}
+.ending-confetti { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.ending-confetti span {
+  position: absolute;
+  top: -10%;
+  width: 7px;
+  height: 7px;
+  animation: confettiFall 3s linear infinite;
+}
+/* box-shadow 픽셀 아트 트로피 */
+.px-trophy {
+  position: relative;
+  width: 66px;
+  height: 60px;
+  animation: floaty 3s ease-in-out infinite;
+}
+.px-trophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--yellow);
+  box-shadow:
+    6px 0 var(--yellow), 12px 0 var(--yellow), 18px 0 var(--yellow), 24px 0 var(--yellow), 30px 0 var(--yellow), 36px 0 var(--yellow), 42px 0 var(--yellow), 48px 0 var(--yellow), 54px 0 var(--yellow), 60px 0 var(--yellow),
+    0 6px var(--yellow), 12px 6px var(--yellow), 18px 6px var(--yellow), 24px 6px var(--yellow), 30px 6px var(--yellow), 36px 6px var(--yellow), 42px 6px var(--yellow), 48px 6px var(--yellow), 60px 6px var(--yellow),
+    0 12px var(--yellow), 12px 12px var(--yellow), 18px 12px var(--yellow), 24px 12px var(--yellow), 30px 12px var(--yellow), 36px 12px var(--yellow), 42px 12px var(--yellow), 48px 12px var(--yellow), 60px 12px var(--yellow),
+    6px 18px var(--yellow), 18px 18px var(--yellow), 24px 18px var(--yellow), 30px 18px var(--yellow), 36px 18px var(--yellow), 42px 18px var(--yellow), 54px 18px var(--yellow),
+    12px 24px var(--yellow), 18px 24px var(--yellow), 24px 24px var(--yellow), 30px 24px var(--yellow), 36px 24px var(--yellow), 42px 24px var(--yellow), 48px 24px var(--yellow),
+    18px 30px var(--yellow), 24px 30px var(--yellow), 30px 30px var(--yellow), 36px 30px var(--yellow), 42px 30px var(--yellow),
+    24px 36px var(--yellow), 30px 36px var(--yellow), 36px 36px var(--yellow),
+    24px 42px var(--yellow), 30px 42px var(--yellow), 36px 42px var(--yellow),
+    12px 48px var(--yellow), 18px 48px var(--yellow), 24px 48px var(--yellow), 30px 48px var(--yellow), 36px 48px var(--yellow), 42px 48px var(--yellow), 48px 48px var(--yellow),
+    12px 54px var(--yellow), 18px 54px var(--yellow), 24px 54px var(--yellow), 30px 54px var(--yellow), 36px 54px var(--yellow), 42px 54px var(--yellow), 48px 54px var(--yellow);
+}
+.clear-title {
+  margin: 0;
+  font-family: var(--font-pixel);
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--cyan);
+  text-shadow: 2px 2px 0 var(--border-dark);
+  animation: shadowSwap 3s ease-in-out infinite;
+}
+.clear-sub {
+  margin: 0;
+  font-family: var(--font-pixel-sm);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-dim);
+}
+
+/* 5문제 정답 감지: 정답 라디오 5개가 모두 체크되면 엔딩 전환 */
+article:has(#q1-c:checked):has(#q2-a:checked):has(#q3-b:checked):has(#q4-b:checked):has(#q5-b:checked) .ending-locked { display: none; }
+article:has(#q1-c:checked):has(#q2-a:checked):has(#q3-b:checked):has(#q4-b:checked):has(#q5-b:checked) .ending-clear {
+  display: flex;
+  animation: clearPop .6s ease;
+}
+@keyframes clearPop {
+  from { opacity: 0; transform: scale(.6); }
+  60% { transform: scale(1.06); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ---------- Design Concept 카드 ---------- */
+.design-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 28px 0 0;
+  padding: 0;
+}
+.design-box {
+  margin: 0;
+  padding: 20px 22px;
+  background: var(--panel-alt);
+  border: 2px solid var(--border-light);
+  animation: boxBorderPulse 4s ease-in-out infinite;
+  transition: transform .2s ease;
+}
+.design-box:nth-child(2) { animation-delay: .3s; }
+.design-box:nth-child(3) { animation-delay: .6s; }
+.design-box:nth-child(4) { animation-delay: .9s; }
+.design-box:hover {
+  animation-play-state: paused;
+  transform: translateY(-3px);
+  border-color: var(--cyan);
+}
+.design-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  padding: 0;
+  font-family: var(--font-pixel-sm);
+  font-size: 12px;
+  color: var(--text);
+  letter-spacing: 0.5px;
+}
+.design-icon {
+  font-style: normal;
+  line-height: 1;
+  animation: iconBounce 1.6s ease-in-out infinite;
+}
+.design-box:nth-child(2) .design-icon { animation-delay: .2s; }
+.design-box:nth-child(3) .design-icon { animation-delay: .4s; }
+.design-box:nth-child(4) .design-icon { animation-delay: .6s; }
+.design-box:hover .design-icon { animation: wiggle .4s ease infinite; }
+.design-box > p:last-child { margin: 0; padding: 0; color: var(--text-dim); font-size: 14px; line-height: 1.8; }
+
+/* 팔레트 색상 견본 칩 */
+.palette-chip {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--border-dark);
+  animation: twinkle 2.4s ease-in-out infinite;
+}
+.palette-chip + .palette-chip { animation-delay: 1.2s; }
+
+/* ---------- HTML/CSS 개념 카드 (한 행에 하나씩) ---------- */
 .concept-grid {
   display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 0;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  margin: 28px 0 0;
   padding: 0;
 }
 .concept-card {
-  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 26px;
   background: var(--panel-alt);
   border: 2px solid var(--border-light);
   animation: boxBorderPulse 4s ease-in-out infinite;
@@ -614,20 +893,42 @@ mark.hl:hover {
   transform: translateY(-3px);
   border-color: var(--cyan);
 }
+/* 섹션 라벨(노란 스티커)과 구분되는 터미널 키캡 스타일 */
 .concept-term {
-  display: inline-block;
-  margin: 0 0 8px;
-  padding: 2px 8px;
+  flex: 0 0 196px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 2px 0 0;
+  padding: 8px 10px;
   font-family: var(--font-pixel-sm);
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: .5px;
-  color: var(--border-dark);
-  background: var(--yellow);
-  animation: tagSway 3s ease-in-out infinite;
+  text-align: center;
+  color: var(--cyan);
+  background: var(--border-dark);
+  border: 2px solid var(--cyan);
+  box-shadow: 3px 3px 0 rgba(76, 201, 240, .3);
+  transition: background .15s ease, color .15s ease, transform .15s ease, box-shadow .15s ease;
 }
-.concept-card:nth-child(even) .concept-term { animation-delay: 1.5s; }
-.concept-card:hover .concept-term { animation: wiggle .5s ease infinite; }
-.concept-desc { margin: 0; color: var(--text-dim); font-size: 13px; line-height: 1.75; }
+.concept-term::before {
+  content: "▸";
+  color: var(--yellow);
+}
+.concept-card:hover .concept-term {
+  background: var(--cyan);
+  color: var(--border-dark);
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 rgba(76, 201, 240, .3);
+}
+.concept-card:hover .concept-term::before { color: var(--border-dark); }
+.concept-desc { margin: 0; color: var(--text); font-size: 15px; line-height: 1.9; }
+
+@media (max-width: 560px) {
+  .concept-card { flex-direction: column; gap: 10px; }
+  .concept-term { flex: none; align-self: flex-start; }
+}
 
 /* tabler-icons 폰트 없이도 보이도록 픽셀 글리프로 대체 */
 .ti { display: inline-block; font-style: normal; line-height: 1; vertical-align: -2px; }
@@ -647,12 +948,12 @@ mark.hl:hover {
 /* ---------- 퀴즈 (JS 없이 radio + :checked + :has()로 동작) ---------- */
 article { counter-reset: quiz-score; }
 
-.quiz-list { display: flex; flex-direction: column; gap: 16px; margin: 0; padding: 0; }
+.quiz-list { display: flex; flex-direction: column; gap: 20px; margin: 28px 0 0; padding: 0; }
 
 .quiz-card {
   position: relative;
   overflow: hidden;
-  padding: 18px 20px;
+  padding: 24px 26px;
   background: var(--panel-alt);
   border: 2px solid var(--border-light);
   transition: border-color .25s ease;
@@ -674,7 +975,7 @@ article { counter-reset: quiz-score; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 16px 0 0;
+  margin: 28px 0 0;
   padding: 6px 12px;
   background: var(--panel-alt);
   border: 2px solid var(--border-light);
@@ -682,7 +983,8 @@ article { counter-reset: quiz-score; }
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--text-dim);
-  animation: boxBorderPulse 3s ease-in-out infinite;
+  /* article > *의 fadeUp을 덮어쓰지 않도록 함께 선언 */
+  animation: fadeUp .5s ease .75s forwards, boxBorderPulse 3s ease-in-out infinite;
 }
 .quiz-score-label { animation: blink 2s steps(1) infinite; }
 .quiz-score-value {
@@ -731,7 +1033,7 @@ article { counter-reset: quiz-score; }
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 8px;
+  gap: 10px;
   margin: 0;
 }
 
@@ -745,7 +1047,7 @@ article { counter-reset: quiz-score; }
 
 .quiz-option {
   display: block;
-  padding: 10px 12px;
+  padding: 12px 14px;
   background: var(--panel);
   border: 2px solid var(--border-light);
   color: var(--text);
@@ -832,8 +1134,9 @@ article { counter-reset: quiz-score; }
 }
 
 @media (max-width: 480px) {
-  .window-body { padding: 24px 16px 32px; }
-  body { padding: 32px 12px 60px; }
+  .window-body { padding: 32px 18px 40px; }
+  body { padding: 36px 12px 64px; }
+  .divider { margin: 36px 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
