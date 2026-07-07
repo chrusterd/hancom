@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- 기획서를 맨 위 주석으로 박아두기 (만들다 헷갈릴 때 나침반) -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>나의 할 일 목록</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="app">
+    <h1>✓ 나의 할 일 목록</h1>
+    <p id="count" class="count">할 일 0개</p>
+
+    <!-- form = 버튼 클릭 + Enter 둘 다 제출됨 -->
+    <form id="form" class="input-row">
+      <input id="inp" placeholder="할 일을 입력하고 Enter" autocomplete="off">
+      <button type="submit">추가</button>
+    </form>
+
+    <ul id="list" class="list"></ul>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
