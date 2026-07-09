@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "document:05_react/my-app/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "05_react/my-app/README.md",
+      "summary": "Stock Vite + React template README explaining the scaffold's HMR setup via @vitejs/plugin-react, the optional React Compiler, and pointers for expanding the ESLint configuration.",
+      "tags": ["documentation", "react", "vite", "template", "getting-started"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:05_react/my-app/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "05_react/my-app/index.html",
+      "summary": "Vite entry HTML page for the React app; provides the #root mount element and loads src/main.jsx as an ES module to bootstrap React rendering.",
+      "tags": ["entry-point", "markup", "react", "vite"],
+      "complexity": "simple",
+      "languageNotes": "In Vite projects, index.html is the true build entry point — the bundler follows the <script type=\"module\"> tag to discover the JavaScript graph."
+    },
+    {
+      "id": "config:05_react/my-app/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "05_react/my-app/package.json",
+      "summary": "NPM manifest for the my-app Vite + React 19 starter, defining dev/build/lint/preview scripts, React 19 runtime dependencies, and Vite 8 plus ESLint tooling as devDependencies.",
+      "tags": ["configuration", "build-system", "dependencies", "react", "vite"],
+      "complexity": "simple",
+      "languageNotes": "\"type\": \"module\" makes all .js files in the package ES modules by default, which is why the app's config files use ESM syntax."
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:05_react/my-app/index.html",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:05_react/my-app/package.json",
+      "target": "file:05_react/my-app/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:05_react/my-app/package.json",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:05_react/my-app/README.md",
+      "target": "file:05_react/my-app/index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:05_react/my-app/README.md",
+      "target": "file:05_react/my-app/src/App.jsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

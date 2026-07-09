@@ -1,0 +1,13 @@
+{
+  "projectRoot": "c:/Users/Har10/Desktop/hancom",
+  "batchFiles": [
+    {"path": "05_react/my-app/README.md", "language": "markdown", "sizeLines": 16, "fileCategory": "docs"},
+    {"path": "05_react/my-app/index.html", "language": "html", "sizeLines": 13, "fileCategory": "markup"},
+    {"path": "05_react/my-app/package.json", "language": "json", "sizeLines": 27, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    "05_react/my-app/README.md": [],
+    "05_react/my-app/index.html": [],
+    "05_react/my-app/package.json": []
+  }
+}

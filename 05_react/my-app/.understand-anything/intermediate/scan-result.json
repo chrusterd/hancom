@@ -1,0 +1,121 @@
+{
+  "name": "my-app",
+  "description": "React와 Vite로 구성된 최소 프론트엔드 애플리케이션 템플릿입니다. HMR, React 개발 플러그인, ESLint 설정을 포함해 빠르게 React 앱을 시작할 수 있는 기본 구조를 제공합니다.",
+  "languages": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown",
+    "unknown"
+  ],
+  "frameworks": [
+    "React",
+    "Vite",
+    "ESLint"
+  ],
+  "files": [
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/App.css",
+      "language": "css",
+      "sizeLines": 184,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/index.css",
+      "language": "css",
+      "sizeLines": 111,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 10,
+  "filteredByIgnore": 32,
+  "estimatedComplexity": "small",
+  "importMap": {
+    ".understand-anything/.understandignore": [],
+    "eslint.config.js": [],
+    "index.html": [],
+    "package.json": [],
+    "README.md": [],
+    "src/App.css": [],
+    "src/App.jsx": [
+      "src/App.css"
+    ],
+    "src/index.css": [],
+    "src/main.jsx": [
+      "src/App.jsx",
+      "src/index.css"
+    ],
+    "vite.config.js": []
+  },
+  "stats": {
+    "filesScanned": 10,
+    "byCategory": {
+      "code": 5,
+      "markup": 3,
+      "config": 1,
+      "docs": 1
+    },
+    "byLanguage": {
+      "unknown": 1,
+      "javascript": 4,
+      "html": 1,
+      "json": 1,
+      "markdown": 1,
+      "css": 2
+    },
+    "importMap": {
+      "filesScanned": 10,
+      "filesWithImports": 2,
+      "totalEdges": 3
+    }
+  }
+}

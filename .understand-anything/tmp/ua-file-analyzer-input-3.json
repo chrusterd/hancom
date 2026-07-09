@@ -1,0 +1,13 @@
+{
+  "projectRoot": "c:/Users/Har10/Desktop/hancom",
+  "batchFiles": [
+    {"path": "03_CSS/03/.stylelintrc.json", "language": "json", "sizeLines": 6, "fileCategory": "config"},
+    {"path": "03_CSS/03/index.html", "language": "html", "sizeLines": 12, "fileCategory": "markup"},
+    {"path": "03_CSS/03/package.json", "language": "json", "sizeLines": 8, "fileCategory": "config"}
+  ],
+  "batchImportData": {
+    "03_CSS/03/.stylelintrc.json": [],
+    "03_CSS/03/index.html": [],
+    "03_CSS/03/package.json": []
+  }
+}

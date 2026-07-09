@@ -1,0 +1,62 @@
+{
+  "nodes": [
+    {
+      "id": "config:03_CSS/03/.stylelintrc.json",
+      "type": "config",
+      "name": ".stylelintrc.json",
+      "filePath": "03_CSS/03/.stylelintrc.json",
+      "summary": "Stylelint configuration extending the standard config and enabling the stylelint-order plugin to enforce alphabetical CSS property ordering in this exercise's stylesheets.",
+      "tags": ["configuration", "linting", "css", "code-style"],
+      "complexity": "simple",
+      "languageNotes": "Uses the extends/plugins/rules pattern: a shared base config (stylelint-config-standard) is layered with a plugin rule (order/properties-alphabetical-order) for automatic property sorting."
+    },
+    {
+      "id": "file:03_CSS/03/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/03/index.html",
+      "summary": "Minimal Korean-language demo page that links styles/main.css and renders a single .box element to visually verify the Stylelint property-ordering exercise.",
+      "tags": ["markup", "demo-page", "entry-point", "css"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/03/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "03_CSS/03/package.json",
+      "summary": "Package manifest declaring only devDependencies for the linting exercise: htmlhint, stylelint, stylelint-config-standard, and stylelint-order.",
+      "tags": ["configuration", "build-system", "linting", "dependencies"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:03_CSS/03/index.html",
+      "target": "file:03_CSS/03/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/.stylelintrc.json",
+      "target": "file:03_CSS/03/styles/main.css",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/package.json",
+      "target": "config:03_CSS/03/.stylelintrc.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:03_CSS/03/package.json",
+      "target": "file:03_CSS/03/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

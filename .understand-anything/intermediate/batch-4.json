@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "file:04_JS/17/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/17/index.html",
+      "summary": "Front-end page for JS exercise 17 (server-connected CRUD): renders four buttons (CREATE, READ, UPDATE, DELETE) and an output area, wired to fetch-based REST calls in scripts/main.js against a local json-server backend.",
+      "tags": ["markup", "crud", "rest-client", "exercise", "entry-point"],
+      "complexity": "simple",
+      "languageNotes": "Korean-language (lang=\"ko\") page; a note instructs the learner to run npm install and npm start to launch the json-server backend before using the buttons."
+    },
+    {
+      "id": "config:04_JS/17/db.json",
+      "type": "config",
+      "name": "db.json",
+      "filePath": "04_JS/17/db.json",
+      "summary": "json-server database file holding the live users collection (four user records) that backs the REST endpoints exercised by the CRUD demo; mutated in place as the exercise's CREATE/UPDATE/DELETE calls run.",
+      "tags": ["configuration", "database", "json-server", "seed-data", "exercise"],
+      "complexity": "simple",
+      "languageNotes": "The inconsistent key ordering and duplicate 'John' entries show the file was mutated by json-server POST/PUT calls rather than authored by hand."
+    },
+    {
+      "id": "config:04_JS/17/db-1783407269920.json",
+      "type": "config",
+      "name": "db-1783407269920.json",
+      "filePath": "04_JS/17/db-1783407269920.json",
+      "summary": "Timestamped snapshot of the json-server users database (two seed users, Kim and Lee), created as an automatic backup of db.json before the CRUD exercise mutated it.",
+      "tags": ["configuration", "database", "json-server", "backup", "snapshot"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:04_JS/17/index.html",
+      "target": "file:04_JS/17/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/17/index.html",
+      "target": "file:04_JS/17/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:04_JS/17/db.json",
+      "target": "file:04_JS/17/scripts/main.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:04_JS/17/db-1783407269920.json",
+      "target": "config:04_JS/17/db.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

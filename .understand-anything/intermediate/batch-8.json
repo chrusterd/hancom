@@ -1,0 +1,363 @@
+{
+  "nodes": [
+    {
+      "id": "file:04_JS/04/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/04/scripts/main.js",
+      "summary": "JavaScript data-types exercise: an arrow function `show` prints a clicked value with its `typeof` result, wired to seven buttons covering string, number, boolean, undefined, null, array, and object.",
+      "tags": ["exercise", "event-handler", "data-types", "dom-manipulation"],
+      "complexity": "simple",
+      "languageNotes": "Demonstrates the classic `typeof null === \"object\"` quirk and uses JSON.stringify to render objects and arrays."
+    },
+    {
+      "id": "file:04_JS/04/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/04/styles/main.css",
+      "summary": "Minimal styling for the data-types exercise: button padding/spacing and a bold, larger output line (#out).",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/05/index.html",
+      "summary": "Markup for a mini calculator exercise: two number inputs, an operator select (+, -, *, /), a compute button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "form", "calculator"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/05/scripts/main.js",
+      "summary": "Conditional-logic exercise implementing a four-operation calculator: converts input strings with Number(), branches on the selected operator with if/else if, and renders the equation via a template literal.",
+      "tags": ["exercise", "event-handler", "conditionals", "calculator"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/05/styles/main.css",
+      "summary": "Styling for the calculator exercise: narrow number inputs, padded select/button controls, and a bold result line.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/06/index.html",
+      "summary": "Markup for an if/else-if exercise: an ice-cream flavor select, a confirm button, and a result paragraph, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "form"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/06/scripts/main.js",
+      "summary": "Branching exercise: on button click, compares the selected flavor with strict equality and writes a different message for chocolate, vanilla, or any other choice using if / else if / else.",
+      "tags": ["exercise", "event-handler", "conditionals", "dom-manipulation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/06/styles/main.css",
+      "summary": "Styling for the flavor-check exercise: bold enlarged result text and padded select/button controls.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/07/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/07/index.html",
+      "summary": "Markup for an arrow-function exercise: two number inputs separated by a multiplication sign, a multiply button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "form", "calculator"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/07/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/07/scripts/main.js",
+      "summary": "Function-basics exercise: defines a one-line arrow function `multiply(num1, num2)` with implicit return and calls it from a click handler to display the product via a template literal.",
+      "tags": ["exercise", "utility", "event-handler", "arrow-function"],
+      "complexity": "simple",
+      "languageNotes": "Teaches implicit return in single-expression arrow functions (no braces or `return` keyword needed)."
+    },
+    {
+      "id": "file:04_JS/07/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/07/styles/main.css",
+      "summary": "Styling for the multiply exercise: bold enlarged result text, narrow number inputs, and padded button.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/08/index.html",
+      "summary": "Markup for a countdown-click exercise: a button and a span showing the remaining count starting at 100, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "counter"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/08/scripts/main.js",
+      "summary": "State-mutation exercise: keeps a mutable `let` counter starting at 100 and decrements it on each button click, updating the span with a template literal.",
+      "tags": ["exercise", "event-handler", "counter", "state"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/08/styles/main.css",
+      "summary": "Styling for the countdown exercise: a large pointer-cursor button and bold enlarged count display.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/09/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/09/index.html",
+      "summary": "Markup for an image-toggle exercise: an img element with alt text and a hint paragraph, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "image"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/09/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/09/scripts/main.js",
+      "summary": "Attribute-manipulation exercise: toggles an image between two picsum.photos URLs on click by reading the current src with getAttribute and swapping it with setAttribute.",
+      "tags": ["exercise", "event-handler", "dom-manipulation", "image"],
+      "complexity": "simple",
+      "languageNotes": "Uses the element `onclick` property instead of addEventListener, and requires network access for the placeholder image service."
+    },
+    {
+      "id": "file:04_JS/09/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/09/styles/main.css",
+      "summary": "Styling for the image-toggle exercise: rounded image corners with pointer cursor and a gray hint line.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/10/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/10/index.html",
+      "summary": "Markup for a localStorage exercise: a greeting heading, name input, and save/clear buttons, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "form", "persistence"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/10/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/10/scripts/main.js",
+      "summary": "Browser-persistence exercise: greets a saved name on load via localStorage.getItem, stores the entered name with setItem on save, and deletes it with removeItem on reset.",
+      "tags": ["exercise", "event-handler", "local-storage", "persistence"],
+      "complexity": "simple",
+      "languageNotes": "Covers the full localStorage API triad (getItem, setItem, removeItem) with an empty-input guard clause."
+    },
+    {
+      "id": "file:04_JS/10/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/10/styles/main.css",
+      "summary": "Styling for the greeting exercise: purple greeting heading plus padded, spaced inputs and buttons.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/11/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/11/index.html",
+      "summary": "Markup for a loops exercise: a number input, repeat and countdown buttons, and an empty ul list to fill, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "loops"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/11/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/11/scripts/main.js",
+      "summary": "Loops exercise with two handlers: a for loop appending list items counting up from 1 to N, and a while loop counting down from N to 1, both building li elements with createElement/appendChild.",
+      "tags": ["exercise", "event-handler", "loops", "dom-manipulation"],
+      "complexity": "simple",
+      "languageNotes": "Contrasts for and while loops side by side, including an inline warning about infinite loops when the counter is not decremented."
+    },
+    {
+      "id": "file:04_JS/11/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/11/styles/main.css",
+      "summary": "Styling for the loops exercise: padded spaced buttons and an enlarged output list with generous line height.",
+      "tags": ["stylesheet", "exercise", "presentation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/12/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/12/index.html",
+      "summary": "Markup for a string-methods exercise: a text input prefilled with \"hello\", an analyze button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": ["exercise", "markup", "form", "strings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/12/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/12/scripts/main.js",
+      "summary": "String-methods exercise: on click, reports the input text's length and the results of toLowerCase, toUpperCase, and replaceAll(\"e\", \"E\"), assembled with template literals into innerHTML.",
+      "tags": ["exercise", "event-handler", "strings", "dom-manipulation"],
+      "complexity": "simple",
+      "languageNotes": "Distinguishes the `.length` property from string methods, and uses replaceAll (ES2021) rather than replace."
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/05/index.html",
+      "target": "file:04_JS/05/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/05/index.html",
+      "target": "file:04_JS/05/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/06/index.html",
+      "target": "file:04_JS/06/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/06/index.html",
+      "target": "file:04_JS/06/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/07/index.html",
+      "target": "file:04_JS/07/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/07/index.html",
+      "target": "file:04_JS/07/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/08/index.html",
+      "target": "file:04_JS/08/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/08/index.html",
+      "target": "file:04_JS/08/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/09/index.html",
+      "target": "file:04_JS/09/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/09/index.html",
+      "target": "file:04_JS/09/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/10/index.html",
+      "target": "file:04_JS/10/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/10/index.html",
+      "target": "file:04_JS/10/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/11/index.html",
+      "target": "file:04_JS/11/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/11/index.html",
+      "target": "file:04_JS/11/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/12/index.html",
+      "target": "file:04_JS/12/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/12/index.html",
+      "target": "file:04_JS/12/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

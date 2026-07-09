@@ -1,0 +1,177 @@
+{
+  "nodes": [
+    {
+      "id": "file:02_HTML/20_index.html",
+      "type": "file",
+      "name": "20_index.html",
+      "filePath": "02_HTML/20_index.html",
+      "summary": "HTML exercise demonstrating the div element as a block-level container, grouping an image, name, and price into a single product-card unit.",
+      "tags": ["html-exercise", "div", "block-element", "learning"],
+      "complexity": "simple",
+      "languageNotes": "Every line carries a Korean beginner-oriented comment explaining what the tag does."
+    },
+    {
+      "id": "file:02_HTML/21_index.html",
+      "type": "file",
+      "name": "21_index.html",
+      "filePath": "02_HTML/21_index.html",
+      "summary": "HTML exercise demonstrating the span element as an inline container, highlighting part of a sentence with inline styles without breaking the line.",
+      "tags": ["html-exercise", "span", "inline-element", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/22_index.html",
+      "type": "file",
+      "name": "22_index.html",
+      "filePath": "02_HTML/22_index.html",
+      "summary": "HTML exercise on image source paths, contrasting a relative path to a parent-folder image with absolute https URLs.",
+      "tags": ["html-exercise", "images", "relative-path", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/23_index.html",
+      "type": "file",
+      "name": "23_index.html",
+      "filePath": "02_HTML/23_index.html",
+      "summary": "HTML exercise on advanced anchor usage: opening links in a new tab with target=_blank, in-page fragment jumps (#top), and mailto:/tel: protocol links.",
+      "tags": ["html-exercise", "links", "anchor", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/24_index.html",
+      "type": "file",
+      "name": "24_index.html",
+      "filePath": "02_HTML/24_index.html",
+      "summary": "HTML exercise touring form input types: email, password, checkbox, radio, date, textarea, select dropdown, and a submit control.",
+      "tags": ["html-exercise", "forms", "input-types", "learning"],
+      "complexity": "simple",
+      "languageNotes": "The markup is intentionally rough student work: a label element is opened but closed with a stray </form> tag, and there is no wrapping form element."
+    },
+    {
+      "id": "file:02_HTML/25_index.html",
+      "type": "file",
+      "name": "25_index.html",
+      "filePath": "02_HTML/25_index.html",
+      "summary": "HTML exercise showcasing inline text-formatting tags: em, mark, small, code, blockquote, and sub/sup for subscripts and superscripts.",
+      "tags": ["html-exercise", "text-formatting", "inline-element", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/26_index.html",
+      "type": "file",
+      "name": "26_index.html",
+      "filePath": "02_HTML/26_index.html",
+      "summary": "HTML exercise on merging table cells with colspan and rowspan inside a thead/tbody grade-report table.",
+      "tags": ["html-exercise", "tables", "colspan-rowspan", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/27_index.html",
+      "type": "file",
+      "name": "27_index.html",
+      "filePath": "02_HTML/27_index.html",
+      "summary": "HTML exercise using details/summary to build a native collapsible 'show answer' box without JavaScript.",
+      "tags": ["html-exercise", "details-summary", "interactive", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/28_README.md",
+      "type": "document",
+      "name": "28_README.md",
+      "filePath": "02_HTML/28_README.md",
+      "summary": "Homework note for lesson 28 asking students to push the day's practice code to GitHub and write a blog post about a chosen topic.",
+      "tags": ["documentation", "homework", "course-notes"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/28_index.html",
+      "type": "file",
+      "name": "28_index.html",
+      "filePath": "02_HTML/28_index.html",
+      "summary": "HTML exercise laying out a full semantic page skeleton with header, nav, main, section, article, aside, and footer landmarks.",
+      "tags": ["html-exercise", "semantic-html", "page-structure", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/29_index.html",
+      "type": "file",
+      "name": "29_index.html",
+      "filePath": "02_HTML/29_index.html",
+      "summary": "HTML exercise embedding a video with the video element, combining autoplay, muted, controls, and width attributes with a relative src path.",
+      "tags": ["html-exercise", "video", "media-embedding", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/30_index.html",
+      "type": "file",
+      "name": "30_index.html",
+      "filePath": "02_HTML/30_index.html",
+      "summary": "HTML exercise embedding audio with multiple source fallbacks (mp3 then ogg) plus fallback text for unsupported browsers.",
+      "tags": ["html-exercise", "audio", "media-embedding", "fallback", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/31_index.html",
+      "type": "file",
+      "name": "31_index.html",
+      "filePath": "02_HTML/31_index.html",
+      "summary": "Bare practice page with an unordered list, class and id labelled divs, a heading, and a link — a base document for experimenting with selectors and dev tools.",
+      "tags": ["html-exercise", "selectors", "practice-base", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/32_README.md",
+      "type": "document",
+      "name": "32_README.md",
+      "filePath": "02_HTML/32_README.md",
+      "summary": "Study note on browser developer tools (F12): how to open them, inspect elements, live-edit styles for preview, and read Console errors, with tips for learning from other sites.",
+      "tags": ["documentation", "devtools", "debugging", "course-notes"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/33_README.md",
+      "type": "document",
+      "name": "33_README.md",
+      "filePath": "02_HTML/33_README.md",
+      "summary": "Setup note listing steps and links for installing Claude Code on Windows via winget and running it from Windows Terminal.",
+      "tags": ["documentation", "setup", "tooling", "course-notes"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/33_index.html",
+      "type": "file",
+      "name": "33_index.html",
+      "filePath": "02_HTML/33_index.html",
+      "summary": "Quiz-style review page: a semantic sign-up page (header/nav, form with label-for/id pairing, fieldset, table) annotated with 11 numbered comprehension questions in comments.",
+      "tags": ["html-exercise", "semantic-html", "forms", "quiz", "learning"],
+      "complexity": "moderate",
+      "languageNotes": "Each construct is paired with a Korean comment posing a 'what happens if' question — the file doubles as a self-test worksheet."
+    },
+    {
+      "id": "file:02_HTML/34_index.html",
+      "type": "file",
+      "name": "34_index.html",
+      "filePath": "02_HTML/34_index.html",
+      "summary": "Mini-project: a complete personal portfolio page (intro, career, skills, works, Q&A, contact) built with HTML only — no CSS or JavaScript — using tables, font/bgcolor attributes, progress bars, image maps, datalist, and details/summary.",
+      "tags": ["mini-project", "portfolio", "semantic-html", "no-css", "learning"],
+      "complexity": "complex",
+      "languageNotes": "Deliberately styles everything with legacy presentational HTML (font, bgcolor, align, table layout, center) since CSS is off-limits, while still mixing in modern elements like picture, progress, datalist, output, and abbr."
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:02_HTML/28_README.md",
+      "target": "file:02_HTML/28_index.html",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:02_HTML/33_README.md",
+      "target": "file:02_HTML/33_index.html",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

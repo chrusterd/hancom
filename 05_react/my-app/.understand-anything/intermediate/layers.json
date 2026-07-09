@@ -1,0 +1,33 @@
+[
+  {
+    "id": "layer:react-application",
+    "name": "React 애플리케이션",
+    "description": "브라우저 셸, React entry, 주요 컴포넌트, CSS 파일이 함께 Vite starter UI를 렌더링하고 스타일링합니다.",
+    "nodeIds": [
+      "file:index.html",
+      "file:src/main.jsx",
+      "file:src/App.jsx",
+      "file:src/App.css",
+      "file:src/index.css"
+    ]
+  },
+  {
+    "id": "layer:project-configuration",
+    "name": "프로젝트 설정",
+    "description": "패키지, lint, Vite 설정 파일이 의존성, 개발 스크립트, JSX tooling, 빌드 동작을 정의합니다.",
+    "nodeIds": [
+      "config:package.json",
+      "file:eslint.config.js",
+      "file:vite.config.js"
+    ]
+  },
+  {
+    "id": "layer:documentation-and-analysis",
+    "name": "문서와 분석 설정",
+    "description": "README와 Understand-Anything ignore 설정이 프로젝트 맥락과 분석 범위를 설명하고 제어합니다.",
+    "nodeIds": [
+      "document:README.md",
+      "file:.understand-anything/.understandignore"
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+/* styles/main.css */
+
+/* 페이지를 일부러 길게 만들어 스크롤 생성 → fixed·sticky 동작 확인용
+   (스크롤 자체는 브라우저 기본 기능 — 내용이 화면보다 길면 자동, JS 아님) */
+body { min-height: 1500px; }
+
+/* 부모 박스 : position: relative 를 줘야
+   안쪽 absolute 자식이 "이 박스" 기준으로 자리잡음 */
+.parent {
+  position: relative;          /* 기준이 되는 조상 */
+  height: 120px;
+  margin: 10px 0;
+  border: 2px dashed #8b5cf6;
+  border-radius: 8px;
+  background: #f6f0ff;
+}
+.ptag { position: absolute; top: 6px; left: 10px; color: #8b5cf6; font-weight: bold; }
+
+/* relative : 원래 자리 기준으로 이동 (자리는 그대로 차지) */
+.rel {
+  position: relative;
+  top: 30px;                   /* 원래 위치에서 아래로 30px */
+  left: 20px;                  /* 원래 위치에서 오른쪽으로 20px */
+  width: 150px; padding: 8px;
+  background: #34d399; color: #06301f; font-weight: bold; border-radius: 6px;
+}
+
+/* absolute : 가장 가까운 position 조상(.parent) 기준 — 흐름에서 빠짐 */
+.abs {
+  position: absolute;
+  top: 10px; right: 10px;      /* 부모의 오른쪽 위 구석 */
+  width: 120px; padding: 8px;
+  background: #f59e0b; color: #3a2400; font-weight: bold; border-radius: 6px;
+}
+
+/* fixed : 화면(뷰포트) 고정 — 스크롤해도 그 자리 */
+.fixed {
+  position: fixed;
+  top: 100px; left: 100px;   /* 화면 오른쪽 아래 구석 */
+  padding: 10px;
+  background: #ec4899; color: #fff; font-weight: bold; border-radius: 6px;
+  z-index: 10;                 /* 겹치면 숫자 큰 쪽이 위로 */
+}
+
+/* sticky : 스크롤하다 top: 0 지점에 닿으면 상단에 착 붙음 */
+.sticky {
+  position: sticky;
+  top: 0;                      /* 화면 맨 위에 닿으면 고정 */
+  margin: 10px 0;
+  padding: 8px 12px;
+  background: #2563eb; color: #fff; font-weight: bold; border-radius: 6px;
+}

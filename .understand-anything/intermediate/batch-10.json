@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "file:05_react/my-app/src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "05_react/my-app/src/main.jsx",
+      "summary": "React application entry point that mounts the App component into the #root DOM element using React 19's createRoot, wrapped in StrictMode, and loads the global stylesheet.",
+      "tags": ["entry-point", "react", "bootstrap", "component"],
+      "complexity": "simple",
+      "languageNotes": "Uses the modern react-dom/client createRoot API (React 18+) rather than the legacy ReactDOM.render."
+    },
+    {
+      "id": "file:05_react/my-app/vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "05_react/my-app/vite.config.js",
+      "summary": "Vite build configuration for the React starter app, registering the official @vitejs/plugin-react plugin to enable JSX transformation and Fast Refresh.",
+      "tags": ["config", "build-system", "vite", "react"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:img/dog.webp",
+      "type": "file",
+      "name": "dog.webp",
+      "filePath": "img/dog.webp",
+      "summary": "Shared WebP image asset of a dog, used as a sample picture by the HTML and CSS course exercises in this learning repository.",
+      "tags": ["asset", "image", "static", "media"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Minimal project README containing only the GitHub repository URL (https://github.com/chrusterd/hancom), with no further documentation.",
+      "tags": ["documentation", "overview", "minimal"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:05_react/my-app/src/main.jsx",
+      "target": "file:05_react/my-app/src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:05_react/my-app/src/main.jsx",
+      "target": "file:05_react/my-app/src/index.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:05_react/my-app/vite.config.js",
+      "target": "file:05_react/my-app/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:05_react/my-app/vite.config.js",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

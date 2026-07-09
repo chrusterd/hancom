@@ -1,0 +1,385 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "my-app",
+    "languages": [
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown",
+      "unknown"
+    ],
+    "frameworks": [
+      "React",
+      "Vite"
+    ],
+    "description": "A minimal React + Vite application template with HMR and ESLint configuration for frontend development.",
+    "analyzedAt": "2026-07-09T01:51:02.264Z",
+    "gitCommitHash": "no-git"
+  },
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview documentation for a React and Vite application template, covering HMR, available React plugins, React Compiler notes, and ESLint expansion guidance.",
+      "tags": [
+        "documentation",
+        "overview",
+        "react",
+        "vite"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "HTML application shell that defines the root mount element and loads the Vite module entry script for the React app.",
+      "tags": [
+        "entry-point",
+        "html",
+        "vite",
+        "app-shell"
+      ],
+      "complexity": "simple",
+      "languageNotes": "The module script points Vite at /src/main.jsx while the root div provides the React mount target."
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Package manifest for the React and Vite app, defining development, build, lint, and preview scripts plus React, Vite, and ESLint dependencies.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "dependencies",
+        "vite"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Defines suggested ignore patterns for Understand-Anything analysis, including generated artifacts, editor files, logs, and common test file conventions. Most entries are commented guidance rather than active exclusions.",
+      "tags": [
+        "ignore-config",
+        "analysis-scope",
+        "tooling",
+        "patterns"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:eslint.config.js",
+      "type": "file",
+      "name": "eslint.config.js",
+      "filePath": "eslint.config.js",
+      "summary": "Configures ESLint for JavaScript and JSX files with recommended JavaScript rules, React Hooks rules, Vite React Refresh checks, and browser globals.",
+      "tags": [
+        "configuration",
+        "linting",
+        "react",
+        "quality"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "src/App.css",
+      "summary": "Styles the main React application view, including the hero artwork, counter button, next-step panels, responsive layout, and decorative section separators.",
+      "tags": [
+        "styling",
+        "component-styles",
+        "responsive-layout",
+        "css-nesting"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Uses modern CSS nesting and media queries to keep component-specific rules close to their parent selectors."
+    },
+    {
+      "id": "file:src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "src/App.jsx",
+      "summary": "Defines the primary React application component with a starter hero, interactive counter state, documentation links, and community links. It imports local styling and image assets used by the rendered UI.",
+      "tags": [
+        "react-component",
+        "ui-composition",
+        "state",
+        "starter-app"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "src/App.jsx",
+      "lineRange": [
+        7,
+        120
+      ],
+      "summary": "Renders the main Vite React starter interface and owns the counter state updated by the button click handler.",
+      "tags": [
+        "react-component",
+        "stateful-ui",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "src/index.css",
+      "summary": "Provides global theme variables, base document styles, typography, root container layout, code styling, and dark-mode overrides for the application.",
+      "tags": [
+        "global-styles",
+        "theme",
+        "responsive-layout",
+        "dark-mode"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Centralizes design tokens as CSS custom properties and switches their values with prefers-color-scheme."
+    },
+    {
+      "id": "file:src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "src/main.jsx",
+      "summary": "Bootstraps the React application by creating the root renderer, applying StrictMode, loading global CSS, and mounting the App component into the DOM.",
+      "tags": [
+        "entry-point",
+        "react",
+        "bootstrap",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "Configures Vite to use the official React plugin for JSX transformation and React development features.",
+      "tags": [
+        "configuration",
+        "vite",
+        "react",
+        "build-system"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:README.md",
+      "target": "config:package.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/App.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/index.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:eslint.config.js",
+      "target": "file:src/App.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:vite.config.js",
+      "target": "file:src/main.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:react-application",
+      "name": "React Application",
+      "description": "The browser shell, React entry point, main component, and CSS files that render and style the Vite starter application.",
+      "nodeIds": [
+        "file:index.html",
+        "file:src/main.jsx",
+        "file:src/App.jsx",
+        "file:src/App.css",
+        "file:src/index.css"
+      ]
+    },
+    {
+      "id": "layer:project-configuration",
+      "name": "Project Configuration",
+      "description": "Package, linting, and Vite configuration files that define dependencies, development scripts, JSX tooling, and build behavior.",
+      "nodeIds": [
+        "config:package.json",
+        "file:eslint.config.js",
+        "file:vite.config.js"
+      ]
+    },
+    {
+      "id": "layer:documentation-and-analysis",
+      "name": "Documentation and Analysis",
+      "description": "Project documentation and Understand-Anything analysis scope settings that explain and control how this small app is understood.",
+      "nodeIds": [
+        "document:README.md",
+        "file:.understand-anything/.understandignore"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Start with the project overview",
+      "description": "README.md frames this repository as a React and Vite starter app. It explains the development model, hot module replacement, React plugin choices, and where the template expects linting guidance to grow.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Check the project commands and dependencies",
+      "description": "package.json is the manifest that turns the README guidance into runnable commands. It defines the development, build, lint, and preview scripts, and it records the React, Vite, and ESLint packages the app depends on.",
+      "nodeIds": [
+        "config:package.json"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Find the browser entry shell",
+      "description": "index.html is the first runtime file the browser loads. It provides the root DOM element for React and points Vite at /src/main.jsx as the module entry script.",
+      "nodeIds": [
+        "file:index.html"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Follow the React bootstrap",
+      "description": "src/main.jsx creates the React root renderer, wraps the app in StrictMode, imports the global stylesheet, and mounts the App component into the DOM element declared by index.html.",
+      "nodeIds": [
+        "file:src/main.jsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Inspect the main UI module",
+      "description": "src/App.jsx composes the starter interface. It imports local component styling and assets, then exports the component that renders the hero, counter, documentation links, and community links.",
+      "nodeIds": [
+        "file:src/App.jsx"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Zoom into the App component",
+      "description": "The App function is the stateful center of the UI. It owns the counter state and wires the button click behavior that updates the rendered count.",
+      "nodeIds": [
+        "function:src/App.jsx:App"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Review component-level styling",
+      "description": "src/App.css styles the view rendered by App.jsx. It handles the hero artwork, counter button, panels, responsive layout, and section separators using component-scoped CSS rules.",
+      "nodeIds": [
+        "file:src/App.css"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Review global styling",
+      "description": "src/index.css sets the application-wide visual foundation. It defines theme variables, document defaults, typography, root layout, code styling, and dark-mode overrides.",
+      "nodeIds": [
+        "file:src/index.css"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Connect Vite to React tooling",
+      "description": "vite.config.js configures Vite with the official React plugin. That plugin supports JSX transformation and React development behavior used by the source entry point.",
+      "nodeIds": [
+        "file:vite.config.js"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "Check code quality rules",
+      "description": "eslint.config.js applies JavaScript and JSX linting for the project. It combines recommended JavaScript rules, React Hooks checks, Vite React Refresh guidance, and browser globals.",
+      "nodeIds": [
+        "file:eslint.config.js"
+      ]
+    },
+    {
+      "order": 11,
+      "title": "Understand the analysis boundary",
+      "description": ".understandignore documents suggested ignore patterns for generated artifacts, editor files, logs, and test conventions. In this project, most entries are guidance rather than active exclusions.",
+      "nodeIds": [
+        "file:.understand-anything/.understandignore"
+      ]
+    }
+  ]
+}

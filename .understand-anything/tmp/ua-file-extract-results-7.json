@@ -1,0 +1,217 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "03_CSS/11/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/11/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/12/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 24,
+      "nonEmptyLines": 24,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/12/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 52,
+      "nonEmptyLines": 46,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/13/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/13/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/14/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 21,
+      "nonEmptyLines": 21,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/14/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 26,
+      "nonEmptyLines": 24,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/15/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/15/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 32,
+      "nonEmptyLines": 27,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/16/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/16/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 20,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/17/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/17/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 26,
+      "nonEmptyLines": 23,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/18/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/18/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 6,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/19/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 406,
+      "nonEmptyLines": 365,
+      "metrics": {}
+    },
+    {
+      "path": "03_CSS/19/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1148,
+      "nonEmptyLines": 1086,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/02/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/02/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/02/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/03/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/03/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/03/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/04/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 18,
+      "nonEmptyLines": 18,
+      "metrics": {}
+    }
+  ]
+}

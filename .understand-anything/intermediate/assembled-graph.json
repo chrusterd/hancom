@@ -1,0 +1,3474 @@
+{
+  "nodes": [
+    {
+      "id": "document:02_HTML/01_README.md",
+      "type": "document",
+      "name": "01_README.md",
+      "filePath": "02_HTML/01_README.md",
+      "summary": "Course note introducing the three building blocks of a web page — HTML for structure, CSS for design, and JS for behavior — written in Korean as the opening lesson of the HTML module.",
+      "tags": [
+        "documentation",
+        "course-notes",
+        "web-fundamentals",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/02_README.md",
+      "type": "document",
+      "name": "02_README.md",
+      "filePath": "02_HTML/02_README.md",
+      "summary": "Development-environment setup note walking through creating a working folder and opening it in VSCode, including the workspace-trust prompt.",
+      "tags": [
+        "documentation",
+        "course-notes",
+        "environment-setup",
+        "vscode"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/03_index.html",
+      "type": "file",
+      "name": "03_index.html",
+      "filePath": "02_HTML/03_index.html",
+      "summary": "First hands-on HTML page demonstrating the basic document skeleton (doctype, html, head, body) with headings, divs, and a canvas element, annotated with Korean beginner comments.",
+      "tags": [
+        "html-exercise",
+        "document-structure",
+        "beginner",
+        "lesson"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Every tag carries an inline Korean comment explaining its role, a teaching pattern repeated across all exercises in this module."
+    },
+    {
+      "id": "file:02_HTML/04_index.html",
+      "type": "file",
+      "name": "04_index.html",
+      "filePath": "02_HTML/04_index.html",
+      "summary": "Exercise teaching HTML comments — how to leave invisible notes and temporarily disable markup — using escaped comment syntax shown as visible page text.",
+      "tags": [
+        "html-exercise",
+        "comments",
+        "beginner",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/05_index.html",
+      "type": "file",
+      "name": "05_index.html",
+      "filePath": "02_HTML/05_index.html",
+      "summary": "Minimal HTML page showing the smallest complete document: doctype, head with charset and title, and a body containing a single h1 heading.",
+      "tags": [
+        "html-exercise",
+        "document-structure",
+        "beginner",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/06_index.html",
+      "type": "file",
+      "name": "06_index.html",
+      "filePath": "02_HTML/06_index.html",
+      "summary": "Exercise demonstrating the six heading levels (h1 through h6) and the paragraph tag, illustrating how heading size decreases with level.",
+      "tags": [
+        "html-exercise",
+        "headings",
+        "paragraphs",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/07_index.html",
+      "type": "file",
+      "name": "07_index.html",
+      "filePath": "02_HTML/07_index.html",
+      "summary": "Exercise on tag nesting and inline emphasis, using strong inside a paragraph plus HTML entities (&lt;, &gt;, &amp;) to display reserved characters.",
+      "tags": [
+        "html-exercise",
+        "nesting",
+        "html-entities",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/08_index.html",
+      "type": "file",
+      "name": "08_index.html",
+      "filePath": "02_HTML/08_index.html",
+      "summary": "Exercise embedding an image with the img tag, covering the src, width, and alt attributes and the self-closing void-element form.",
+      "tags": [
+        "html-exercise",
+        "images",
+        "attributes",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/09_index.html",
+      "type": "file",
+      "name": "09_index.html",
+      "filePath": "02_HTML/09_index.html",
+      "summary": "Exercise creating hyperlinks with the anchor tag, linking to Google, Naver, and Claude to show the href attribute and full URL requirement.",
+      "tags": [
+        "html-exercise",
+        "links",
+        "anchor-tag",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/10_index.html",
+      "type": "file",
+      "name": "10_index.html",
+      "filePath": "02_HTML/10_index.html",
+      "summary": "Exercise combining semantic layout tags (header, main, footer) with an unordered list, framing each section as a labeled box with a meaningful name.",
+      "tags": [
+        "html-exercise",
+        "semantic-html",
+        "lists",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/11_README.md",
+      "type": "document",
+      "name": "11_README.md",
+      "filePath": "02_HTML/11_README.md",
+      "summary": "Assignment sheet directing the student to build a self-introduction site in 11_index.html using all tags learned so far, plus homework covering GitHub repo creation, blog posting, and Google Drive uploads.",
+      "tags": [
+        "documentation",
+        "assignment",
+        "course-notes",
+        "homework"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/11_index.html",
+      "type": "file",
+      "name": "11_index.html",
+      "filePath": "02_HTML/11_index.html",
+      "summary": "Capstone self-introduction page for the HTML module, combining semantic layout (header, main, footer), an image, nested ordered and unordered lists of hobbies and books, strong emphasis, and an external blog link.",
+      "tags": [
+        "html-exercise",
+        "capstone",
+        "semantic-html",
+        "lists",
+        "portfolio"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Nests ol elements alongside li items inside a ul — a common beginner pattern that works visually but places the ordered lists as siblings of, rather than children of, their list items."
+    },
+    {
+      "id": "file:02_HTML/12_index.html",
+      "type": "file",
+      "name": "12_index.html",
+      "filePath": "02_HTML/12_index.html",
+      "summary": "Exercise on ordered lists, using an ol with three morning-routine items to show automatic numbering when sequence matters.",
+      "tags": [
+        "html-exercise",
+        "lists",
+        "ordered-list",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/13_index.html",
+      "type": "file",
+      "name": "13_index.html",
+      "filePath": "02_HTML/13_index.html",
+      "summary": "Exercise on line breaks and horizontal rules, demonstrating the br and hr void elements inside and between paragraphs.",
+      "tags": [
+        "html-exercise",
+        "void-elements",
+        "formatting",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/14_index.html",
+      "type": "file",
+      "name": "14_index.html",
+      "filePath": "02_HTML/14_index.html",
+      "summary": "Exercise building a simple class timetable with the table element, introducing tr rows, th header cells, td data cells, and the border attribute.",
+      "tags": [
+        "html-exercise",
+        "tables",
+        "lesson",
+        "beginner"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/15_index.html",
+      "type": "file",
+      "name": "15_index.html",
+      "filePath": "02_HTML/15_index.html",
+      "summary": "Exercise creating an input form with labeled text and number fields plus a submit button, introducing form, label, input, and button elements.",
+      "tags": [
+        "html-exercise",
+        "forms",
+        "user-input",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/16_index.html",
+      "type": "file",
+      "name": "16_index.html",
+      "filePath": "02_HTML/16_index.html",
+      "summary": "Exercise embedding two YouTube videos via iframe elements, covering the src embed URL, width/height sizing, and permission attributes.",
+      "tags": [
+        "html-exercise",
+        "iframe",
+        "embedding",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/17_index.html",
+      "type": "file",
+      "name": "17_index.html",
+      "filePath": "02_HTML/17_index.html",
+      "summary": "Exercise embedding a Google Maps view of a location using a single iframe with an embed URL, lazy loading, and referrer policy attributes.",
+      "tags": [
+        "html-exercise",
+        "iframe",
+        "embedding",
+        "maps"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/18_index.html",
+      "type": "file",
+      "name": "18_index.html",
+      "filePath": "02_HTML/18_index.html",
+      "summary": "Exercise introducing the class attribute as a reusable label, applying the same class name to two paragraphs to show it may repeat across elements.",
+      "tags": [
+        "html-exercise",
+        "class-attribute",
+        "css-preparation",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/19_index.html",
+      "type": "file",
+      "name": "19_index.html",
+      "filePath": "02_HTML/19_index.html",
+      "summary": "Exercise introducing the id attribute as a page-unique label, contrasting it with class by tagging a heading and a paragraph with distinct ids.",
+      "tags": [
+        "html-exercise",
+        "id-attribute",
+        "css-preparation",
+        "lesson"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/20_index.html",
+      "type": "file",
+      "name": "20_index.html",
+      "filePath": "02_HTML/20_index.html",
+      "summary": "HTML exercise demonstrating the div element as a block-level container, grouping an image, name, and price into a single product-card unit.",
+      "tags": [
+        "html-exercise",
+        "div",
+        "block-element",
+        "learning"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Every line carries a Korean beginner-oriented comment explaining what the tag does."
+    },
+    {
+      "id": "file:02_HTML/21_index.html",
+      "type": "file",
+      "name": "21_index.html",
+      "filePath": "02_HTML/21_index.html",
+      "summary": "HTML exercise demonstrating the span element as an inline container, highlighting part of a sentence with inline styles without breaking the line.",
+      "tags": [
+        "html-exercise",
+        "span",
+        "inline-element",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/22_index.html",
+      "type": "file",
+      "name": "22_index.html",
+      "filePath": "02_HTML/22_index.html",
+      "summary": "HTML exercise on image source paths, contrasting a relative path to a parent-folder image with absolute https URLs.",
+      "tags": [
+        "html-exercise",
+        "images",
+        "relative-path",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/23_index.html",
+      "type": "file",
+      "name": "23_index.html",
+      "filePath": "02_HTML/23_index.html",
+      "summary": "HTML exercise on advanced anchor usage: opening links in a new tab with target=_blank, in-page fragment jumps (#top), and mailto:/tel: protocol links.",
+      "tags": [
+        "html-exercise",
+        "links",
+        "anchor",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/24_index.html",
+      "type": "file",
+      "name": "24_index.html",
+      "filePath": "02_HTML/24_index.html",
+      "summary": "HTML exercise touring form input types: email, password, checkbox, radio, date, textarea, select dropdown, and a submit control.",
+      "tags": [
+        "html-exercise",
+        "forms",
+        "input-types",
+        "learning"
+      ],
+      "complexity": "simple",
+      "languageNotes": "The markup is intentionally rough student work: a label element is opened but closed with a stray </form> tag, and there is no wrapping form element."
+    },
+    {
+      "id": "file:02_HTML/25_index.html",
+      "type": "file",
+      "name": "25_index.html",
+      "filePath": "02_HTML/25_index.html",
+      "summary": "HTML exercise showcasing inline text-formatting tags: em, mark, small, code, blockquote, and sub/sup for subscripts and superscripts.",
+      "tags": [
+        "html-exercise",
+        "text-formatting",
+        "inline-element",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/26_index.html",
+      "type": "file",
+      "name": "26_index.html",
+      "filePath": "02_HTML/26_index.html",
+      "summary": "HTML exercise on merging table cells with colspan and rowspan inside a thead/tbody grade-report table.",
+      "tags": [
+        "html-exercise",
+        "tables",
+        "colspan-rowspan",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/27_index.html",
+      "type": "file",
+      "name": "27_index.html",
+      "filePath": "02_HTML/27_index.html",
+      "summary": "HTML exercise using details/summary to build a native collapsible 'show answer' box without JavaScript.",
+      "tags": [
+        "html-exercise",
+        "details-summary",
+        "interactive",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/28_README.md",
+      "type": "document",
+      "name": "28_README.md",
+      "filePath": "02_HTML/28_README.md",
+      "summary": "Homework note for lesson 28 asking students to push the day's practice code to GitHub and write a blog post about a chosen topic.",
+      "tags": [
+        "documentation",
+        "homework",
+        "course-notes"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/28_index.html",
+      "type": "file",
+      "name": "28_index.html",
+      "filePath": "02_HTML/28_index.html",
+      "summary": "HTML exercise laying out a full semantic page skeleton with header, nav, main, section, article, aside, and footer landmarks.",
+      "tags": [
+        "html-exercise",
+        "semantic-html",
+        "page-structure",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/29_index.html",
+      "type": "file",
+      "name": "29_index.html",
+      "filePath": "02_HTML/29_index.html",
+      "summary": "HTML exercise embedding a video with the video element, combining autoplay, muted, controls, and width attributes with a relative src path.",
+      "tags": [
+        "html-exercise",
+        "video",
+        "media-embedding",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/30_index.html",
+      "type": "file",
+      "name": "30_index.html",
+      "filePath": "02_HTML/30_index.html",
+      "summary": "HTML exercise embedding audio with multiple source fallbacks (mp3 then ogg) plus fallback text for unsupported browsers.",
+      "tags": [
+        "html-exercise",
+        "audio",
+        "media-embedding",
+        "fallback",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/31_index.html",
+      "type": "file",
+      "name": "31_index.html",
+      "filePath": "02_HTML/31_index.html",
+      "summary": "Bare practice page with an unordered list, class and id labelled divs, a heading, and a link — a base document for experimenting with selectors and dev tools.",
+      "tags": [
+        "html-exercise",
+        "selectors",
+        "practice-base",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/32_README.md",
+      "type": "document",
+      "name": "32_README.md",
+      "filePath": "02_HTML/32_README.md",
+      "summary": "Study note on browser developer tools (F12): how to open them, inspect elements, live-edit styles for preview, and read Console errors, with tips for learning from other sites.",
+      "tags": [
+        "documentation",
+        "devtools",
+        "debugging",
+        "course-notes"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/33_README.md",
+      "type": "document",
+      "name": "33_README.md",
+      "filePath": "02_HTML/33_README.md",
+      "summary": "Setup note listing steps and links for installing Claude Code on Windows via winget and running it from Windows Terminal.",
+      "tags": [
+        "documentation",
+        "setup",
+        "tooling",
+        "course-notes"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/33_index.html",
+      "type": "file",
+      "name": "33_index.html",
+      "filePath": "02_HTML/33_index.html",
+      "summary": "Quiz-style review page: a semantic sign-up page (header/nav, form with label-for/id pairing, fieldset, table) annotated with 11 numbered comprehension questions in comments.",
+      "tags": [
+        "html-exercise",
+        "semantic-html",
+        "forms",
+        "quiz",
+        "learning"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Each construct is paired with a Korean comment posing a 'what happens if' question — the file doubles as a self-test worksheet."
+    },
+    {
+      "id": "file:02_HTML/34_index.html",
+      "type": "file",
+      "name": "34_index.html",
+      "filePath": "02_HTML/34_index.html",
+      "summary": "Mini-project: a complete personal portfolio page (intro, career, skills, works, Q&A, contact) built with HTML only — no CSS or JavaScript — using tables, font/bgcolor attributes, progress bars, image maps, datalist, and details/summary.",
+      "tags": [
+        "mini-project",
+        "portfolio",
+        "semantic-html",
+        "no-css",
+        "learning"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Deliberately styles everything with legacy presentational HTML (font, bgcolor, align, table layout, center) since CSS is off-limits, while still mixing in modern elements like picture, progress, datalist, output, and abbr."
+    },
+    {
+      "id": "config:03_CSS/03/.stylelintrc.json",
+      "type": "config",
+      "name": ".stylelintrc.json",
+      "filePath": "03_CSS/03/.stylelintrc.json",
+      "summary": "Stylelint configuration extending the standard config and enabling the stylelint-order plugin to enforce alphabetical CSS property ordering in this exercise's stylesheets.",
+      "tags": [
+        "configuration",
+        "linting",
+        "css",
+        "code-style"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses the extends/plugins/rules pattern: a shared base config (stylelint-config-standard) is layered with a plugin rule (order/properties-alphabetical-order) for automatic property sorting."
+    },
+    {
+      "id": "file:03_CSS/03/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/03/index.html",
+      "summary": "Minimal Korean-language demo page that links styles/main.css and renders a single .box element to visually verify the Stylelint property-ordering exercise.",
+      "tags": [
+        "markup",
+        "demo-page",
+        "entry-point",
+        "css"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/03/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "03_CSS/03/package.json",
+      "summary": "Package manifest declaring only devDependencies for the linting exercise: htmlhint, stylelint, stylelint-config-standard, and stylelint-order.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "linting",
+        "dependencies"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/17/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/17/index.html",
+      "summary": "Front-end page for JS exercise 17 (server-connected CRUD): renders four buttons (CREATE, READ, UPDATE, DELETE) and an output area, wired to fetch-based REST calls in scripts/main.js against a local json-server backend.",
+      "tags": [
+        "markup",
+        "crud",
+        "rest-client",
+        "exercise",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Korean-language (lang=\"ko\") page; a note instructs the learner to run npm install and npm start to launch the json-server backend before using the buttons."
+    },
+    {
+      "id": "config:04_JS/17/db.json",
+      "type": "config",
+      "name": "db.json",
+      "filePath": "04_JS/17/db.json",
+      "summary": "json-server database file holding the live users collection (four user records) that backs the REST endpoints exercised by the CRUD demo; mutated in place as the exercise's CREATE/UPDATE/DELETE calls run.",
+      "tags": [
+        "configuration",
+        "database",
+        "json-server",
+        "seed-data",
+        "exercise"
+      ],
+      "complexity": "simple",
+      "languageNotes": "The inconsistent key ordering and duplicate 'John' entries show the file was mutated by json-server POST/PUT calls rather than authored by hand."
+    },
+    {
+      "id": "config:04_JS/17/db-1783407269920.json",
+      "type": "config",
+      "name": "db-1783407269920.json",
+      "filePath": "04_JS/17/db-1783407269920.json",
+      "summary": "Timestamped snapshot of the json-server users database (two seed users, Kim and Lee), created as an automatic backup of db.json before the CRUD exercise mutated it.",
+      "tags": [
+        "configuration",
+        "database",
+        "json-server",
+        "backup",
+        "snapshot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:05_react/my-app/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "05_react/my-app/README.md",
+      "summary": "Stock Vite + React template README explaining the scaffold's HMR setup via @vitejs/plugin-react, the optional React Compiler, and pointers for expanding the ESLint configuration.",
+      "tags": [
+        "documentation",
+        "react",
+        "vite",
+        "template",
+        "getting-started"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:05_react/my-app/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "05_react/my-app/index.html",
+      "summary": "Vite entry HTML page for the React app; provides the #root mount element and loads src/main.jsx as an ES module to bootstrap React rendering.",
+      "tags": [
+        "entry-point",
+        "markup",
+        "react",
+        "vite"
+      ],
+      "complexity": "simple",
+      "languageNotes": "In Vite projects, index.html is the true build entry point — the bundler follows the <script type=\"module\"> tag to discover the JavaScript graph."
+    },
+    {
+      "id": "config:05_react/my-app/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "05_react/my-app/package.json",
+      "summary": "NPM manifest for the my-app Vite + React 19 starter, defining dev/build/lint/preview scripts, React 19 runtime dependencies, and Vite 8 plus ESLint tooling as devDependencies.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "dependencies",
+        "react",
+        "vite"
+      ],
+      "complexity": "simple",
+      "languageNotes": "\"type\": \"module\" makes all .js files in the package ES modules by default, which is why the app's config files use ESM syntax."
+    },
+    {
+      "id": "document:01_vscode/01_README.md",
+      "type": "document",
+      "name": "01_README.md",
+      "filePath": "01_vscode/01_README.md",
+      "summary": "One-line note pointing to the Visual Studio Code download page, marking the starting point of the VS Code setup lesson.",
+      "tags": [
+        "documentation",
+        "vscode",
+        "setup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:01_vscode/02_README.md",
+      "type": "document",
+      "name": "02_README.md",
+      "filePath": "01_vscode/02_README.md",
+      "summary": "Bullet list (in Korean) of recommended VS Code extensions for the course, covering Live Server, Prettier, ESLint, Auto Rename Tag, GitLens, and Error Lens with a short purpose note for each.",
+      "tags": [
+        "documentation",
+        "vscode",
+        "development",
+        "tooling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/01/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/01/index.html",
+      "summary": "First CSS lesson page demonstrating basic selectors: heavily annotated HTML with an h1, plain and class-tagged paragraphs, and a list whose em element is styled via a descendant selector in the linked stylesheet.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "selectors",
+        "html-page"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Every line carries a Korean teaching comment explaining what the tag does and which CSS rule targets it."
+    },
+    {
+      "id": "file:03_CSS/01/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/01/styles/main.css",
+      "summary": "Stylesheet for lesson 01 contrasting the three fundamental selector kinds: element (h1, p), class (.special, .normal), and descendant (li em), each setting a distinct text color.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "selectors",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/02/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/02/index.html",
+      "summary": "Lesson page for CSS rule-ordering conventions, reusing the heading/paragraph/list structure so the stylesheet can show rules ordered from general to specific.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "code-conventions",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/02/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/02/styles/main.css",
+      "summary": "Stylesheet demonstrating the general-to-specific ordering convention: body defaults first, then element selectors, then a class selector, and finally a descendant selector, with numbered Korean comments labeling each tier.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "code-conventions",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/03/.htmlhintrc",
+      "type": "config",
+      "name": ".htmlhintrc",
+      "filePath": "03_CSS/03/.htmlhintrc",
+      "summary": "Minimal HTMLHint configuration enabling three lint rules — tag-pair, id-unique, and alt-require — for the lesson 03 HTML page.",
+      "tags": [
+        "configuration",
+        "linting",
+        "htmlhint"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/03/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/03/styles/main.css",
+      "summary": "Single .box rule with its properties listed alphabetically, used in the lesson about property ordering and CSS linting (paired with the folder's HTMLHint/Stylelint tooling exercises).",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "linting",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/04/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/04/index.html",
+      "summary": "Box-model lesson page containing two ul boxes that the stylesheet decorates with padding, border, and margin to visualize the CSS box model.",
+      "tags": [
+        "lesson",
+        "box-model",
+        "css-basics",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/04/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/04/styles/main.css",
+      "summary": "Stylesheet applying padding, border, and margin to ul elements to demonstrate each layer of the CSS box model, with list bullets removed.",
+      "tags": [
+        "lesson",
+        "box-model",
+        "css-basics",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/05/.stylelintrc.json",
+      "type": "config",
+      "name": ".stylelintrc.json",
+      "filePath": "03_CSS/05/.stylelintrc.json",
+      "summary": "Stylelint configuration extending stylelint-config-standard and enabling the stylelint-order plugin to enforce alphabetical CSS property ordering in lesson 05.",
+      "tags": [
+        "configuration",
+        "linting",
+        "stylelint",
+        "code-conventions"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/05/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/05/index.html",
+      "summary": "Flexbox introduction page with a three-item ul.menu navigation list that the stylesheet lays out horizontally via display:flex; note the file contains an accidentally duplicated head preamble.",
+      "tags": [
+        "lesson",
+        "flexbox",
+        "css-basics",
+        "html-page"
+      ],
+      "complexity": "simple",
+      "languageNotes": "The first five lines (comment, doctype, html, head, meta) are duplicated — a copy-paste artifact that browsers tolerate but linters would flag."
+    },
+    {
+      "id": "file:03_CSS/05/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/05/styles/main.css",
+      "summary": "Stylesheet introducing flexbox: .menu uses display:flex with gap to line list items up horizontally, and li rules style each item as a rounded light-blue pill.",
+      "tags": [
+        "lesson",
+        "flexbox",
+        "css-basics",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/06/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/06/index.html",
+      "summary": "Lesson page demonstrating the three ways to attach CSS: an external stylesheet link, an internal style block coloring paragraphs green, and an inline style attribute coloring one paragraph red.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "style-attachment",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/06/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/06/styles/main.css",
+      "summary": "One-rule external stylesheet (h1 navy) serving as the 'external' example in the lesson comparing external, internal, and inline CSS.",
+      "tags": [
+        "lesson",
+        "css-basics",
+        "style-attachment",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/07/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/07/index.html",
+      "summary": "Pseudo-class lesson page containing a single external link used to demonstrate the four anchor states (:link, :visited, :hover, :active) styled in the linked stylesheet.",
+      "tags": [
+        "lesson",
+        "pseudo-classes",
+        "css-basics",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/07/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/07/styles/main.css",
+      "summary": "Stylesheet assigning a distinct color to each of the four anchor pseudo-classes (a:link, a:visited, a:hover, a:active) in the conventional LVHA order.",
+      "tags": [
+        "lesson",
+        "pseudo-classes",
+        "css-basics",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/08/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/08/index.html",
+      "summary": "3D card-flip lesson page with two .card containers, each holding an .inner wrapper with stacked .front and .back faces that the stylesheet rotates on hover.",
+      "tags": [
+        "lesson",
+        "css-3d",
+        "transitions",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/08/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/08/styles/main.css",
+      "summary": "Implements the classic 3D card-flip effect: perspective on .card, preserve-3d and a transform transition on .inner, hover-triggered rotateY(180deg), and backface-visibility:hidden on the absolutely positioned front/back faces.",
+      "tags": [
+        "lesson",
+        "css-3d",
+        "transitions",
+        "transform",
+        "stylesheet"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Shows the full 3D-flip recipe — perspective, transform-style: preserve-3d, backface-visibility, and a pre-rotated back face — each annotated with a Korean explanation."
+    },
+    {
+      "id": "file:03_CSS/09/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/09/index.html",
+      "summary": "Hover-transform lesson page containing a single .box div that spins and scales up on mouse-over via the linked stylesheet.",
+      "tags": [
+        "lesson",
+        "transform",
+        "transitions",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/09/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/09/styles/main.css",
+      "summary": "Styles a flex-centered rounded .box and adds a :hover rule combining rotate(360deg) and scale(1.5), eased over 0.9 seconds via a transform transition.",
+      "tags": [
+        "lesson",
+        "transform",
+        "transitions",
+        "hover-effects",
+        "stylesheet"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/10/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/10/index.html",
+      "summary": "Keyframe-animation lesson page with two ball divs (.ball1, .ball2) that the stylesheet animates automatically — one floating vertically, one sliding horizontally.",
+      "tags": [
+        "lesson",
+        "animation",
+        "keyframes",
+        "html-page"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/10/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/10/styles/main.css",
+      "summary": "Defines two @keyframes animations — float (translateY bounce) and slide (translateX shuttle) — and applies each to a circular ball element on an infinite 1.5-second ease-in-out loop.",
+      "tags": [
+        "lesson",
+        "animation",
+        "keyframes",
+        "stylesheet"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Introduces @keyframes as a named 'script' of motion that the animation shorthand then plays, a mental model spelled out in the Korean comments."
+    },
+    {
+      "id": "file:03_CSS/11/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/11/index.html",
+      "summary": "Exercise page for CSS exercise 11 (neon gradient card): renders a single .neon box that the sibling stylesheet turns into a glowing gradient card.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "css-demo",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/11/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/11/styles/main.css",
+      "summary": "Styles the neon card exercise: a flex-centered box with a 135-degree linear-gradient background, a pink box-shadow glow, and a hover transition that spins and scales the card.",
+      "tags": [
+        "exercise",
+        "gradient",
+        "box-shadow",
+        "transition",
+        "hover-effect"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Demonstrates the flex centering trio (display: flex + align-items + justify-content) combined with transform on :hover for animated feedback."
+    },
+    {
+      "id": "file:03_CSS/12/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/12/index.html",
+      "summary": "Exercise page for CSS positioning: a relative parent containing relative and absolute children, plus fixed and sticky elements to observe scroll behavior.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "positioning",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/12/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/12/styles/main.css",
+      "summary": "Demonstrates all five CSS position values: a relative parent anchoring an absolute child, a relative offset box, a viewport-fixed badge with z-index, and a sticky bar that pins to the top on scroll.",
+      "tags": [
+        "exercise",
+        "positioning",
+        "sticky",
+        "z-index",
+        "layout"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Uses an artificially tall body (min-height: 1500px) to force scrolling so fixed vs. sticky behavior can be compared."
+    },
+    {
+      "id": "file:03_CSS/13/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/13/index.html",
+      "summary": "Exercise page for CSS Grid: six card divs inside a .grid container that the stylesheet lays out as a three-column grid.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "grid",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/13/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/13/styles/main.css",
+      "summary": "Minimal CSS Grid demo: display: grid with repeat(3, 1fr) columns and gap, auto-flowing six cards into two rows of three.",
+      "tags": [
+        "exercise",
+        "grid",
+        "layout",
+        "css-demo"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/14/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/14/index.html",
+      "summary": "Exercise page for responsive design: five cards in a flex .box container whose direction changes with a media query in the sibling stylesheet.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "responsive",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/14/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/14/styles/main.css",
+      "summary": "Media-query demo: a row of flex: 1 gradient cards that switches to a vertical column layout below a 600px viewport width via @media (max-width: 600px).",
+      "tags": [
+        "exercise",
+        "media-query",
+        "responsive",
+        "flexbox"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/15/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/15/index.html",
+      "summary": "Exercise page for CSS custom properties: two buttons that share the same variable-driven color defined in the sibling stylesheet.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "css-variables",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/15/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/15/styles/main.css",
+      "summary": "CSS variables demo: defines --main-color, --gap, and --body-color on :root and consumes them with var() so a single edit recolors both buttons and the page background.",
+      "tags": [
+        "exercise",
+        "css-variables",
+        "custom-properties",
+        "theming"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Shows the :root definition plus var() consumption pattern, the foundation for single-source theming."
+    },
+    {
+      "id": "file:03_CSS/16/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/16/index.html",
+      "summary": "Exercise page for visual effects: a single hoverable card demonstrating box-shadow, border-radius, opacity, and transition together.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "css-demo",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/16/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/16/styles/main.css",
+      "summary": "Combines four effect properties on one card — border-radius, opacity, box-shadow, and transition: all — with a :hover state that lifts the card via translateY, sharpens opacity, and morphs it toward a circle.",
+      "tags": [
+        "exercise",
+        "box-shadow",
+        "transition",
+        "hover-effect",
+        "border-radius"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/17/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/17/index.html",
+      "summary": "Exercise page for pseudo-elements: three paragraphs decorated by ::before/::after rules — a star prefix, wrapping quotation marks, and an underline bar.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "pseudo-elements",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/17/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/17/styles/main.css",
+      "summary": "Pseudo-element practice covering three patterns: ::before content injection (star prefix), paired ::before/::after quotation marks, and an empty-content ::after block styled as a decorative underline.",
+      "tags": [
+        "exercise",
+        "pseudo-elements",
+        "before-after",
+        "css-demo"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Highlights that a pseudo-element never renders without a content property, including the empty-string content: \"\" trick for drawing boxes."
+    },
+    {
+      "id": "file:03_CSS/18/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/18/index.html",
+      "summary": "Exercise page for the universal CSS reset: a heading and paragraph used to compare default browser margins against the reset applied in the sibling stylesheet.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "css-reset",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/18/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/18/styles/main.css",
+      "summary": "Three-line universal reset: * { margin: 0; padding: 0; box-sizing: border-box; } — the standard baseline that removes default browser spacing and unifies size calculation.",
+      "tags": [
+        "exercise",
+        "css-reset",
+        "box-sizing",
+        "baseline"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/19/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/19/index.html",
+      "summary": "Capstone mini-project page in an 8-bit retro arcade style: a full 'OS window' layout containing a hero with confetti, a design-concept grid, a CSS Design Awards site review card, nine HTML/CSS concept cards, and a five-question multiple-choice quiz with a score counter and hidden ending screen — all driven purely by HTML and CSS.",
+      "tags": [
+        "capstone",
+        "mini-project",
+        "html-page",
+        "quiz",
+        "retro-design"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Uses radio inputs with paired labels as the quiz mechanism (no JavaScript), plus aria-hidden decorative layers and an sr-only heading for accessibility. Pulls the Galmuri pixel font from a CDN."
+    },
+    {
+      "id": "file:03_CSS/19/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/19/styles/main.css",
+      "summary": "1,148-line capstone stylesheet implementing the retro pixel theme end to end: a :root two-color neon palette with pixel fonts, clip-path stair-step corners, CRT scanline and border-glow keyframe animations, a marquee ticker, and a JavaScript-free quiz engine built from :has()/:checked selectors with a CSS counter scoreboard that unlocks an all-clear ending screen.",
+      "tags": [
+        "capstone",
+        "animation",
+        "css-variables",
+        "quiz",
+        "advanced-selectors"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Notably implements interactive scoring in pure CSS: .quiz-card:has(.quiz-radio--correct:checked) increments counter(quiz-score) rendered via ::after, and an article:has() chain of all five correct answers swaps the ending panels. Also includes @media breakpoints and a prefers-reduced-motion fallback."
+    },
+    {
+      "id": "file:04_JS/02/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/02/index.html",
+      "summary": "Exercise page for JS event handling: a heading and a button wired up by the sibling script, with the stylesheet linked in head and the script loaded just before body close.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "dom-events",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/02/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/02/scripts/main.js",
+      "summary": "Event-listener exercise: selects the title and button via querySelector, then iterates an event-name-to-message map with Object.entries to register click, dblclick, keydown, and keyup listeners that swap the heading text.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "dom-manipulation",
+        "learning"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses Object.entries + destructuring in a forEach to register multiple event listeners from a data object instead of repeating addEventListener calls."
+    },
+    {
+      "id": "file:04_JS/02/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/02/styles/main.css",
+      "summary": "Minimal styling for the event exercise: tomato-colored large title text and a padded button with a pointer cursor.",
+      "tags": [
+        "exercise",
+        "css-demo",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/03/index.html",
+      "summary": "Exercise page for reading input values: a name input, a greet button, and an output paragraph updated by the sibling script.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "form-input",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/03/scripts/main.js",
+      "summary": "Input-value exercise: on button click, reads the text field's .value and writes a personalized greeting into the output paragraph using a template literal.",
+      "tags": [
+        "exercise",
+        "dom-manipulation",
+        "template-literal",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/03/styles/main.css",
+      "summary": "Minimal styling for the greeting exercise: bold enlarged output text and padded input and button controls.",
+      "tags": [
+        "exercise",
+        "css-demo",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/04/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/04/index.html",
+      "summary": "Exercise page for JavaScript data types: seven buttons (string, number, boolean, undefined, null, array, object) and an output paragraph that the sibling script fills with each value and its type.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "data-types",
+        "learning"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/04/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/04/scripts/main.js",
+      "summary": "JavaScript data-types exercise: an arrow function `show` prints a clicked value with its `typeof` result, wired to seven buttons covering string, number, boolean, undefined, null, array, and object.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "data-types",
+        "dom-manipulation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Demonstrates the classic `typeof null === \"object\"` quirk and uses JSON.stringify to render objects and arrays."
+    },
+    {
+      "id": "file:04_JS/04/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/04/styles/main.css",
+      "summary": "Minimal styling for the data-types exercise: button padding/spacing and a bold, larger output line (#out).",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/05/index.html",
+      "summary": "Markup for a mini calculator exercise: two number inputs, an operator select (+, -, *, /), a compute button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "form",
+        "calculator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/05/scripts/main.js",
+      "summary": "Conditional-logic exercise implementing a four-operation calculator: converts input strings with Number(), branches on the selected operator with if/else if, and renders the equation via a template literal.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "conditionals",
+        "calculator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/05/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/05/styles/main.css",
+      "summary": "Styling for the calculator exercise: narrow number inputs, padded select/button controls, and a bold result line.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/06/index.html",
+      "summary": "Markup for an if/else-if exercise: an ice-cream flavor select, a confirm button, and a result paragraph, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "form"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/06/scripts/main.js",
+      "summary": "Branching exercise: on button click, compares the selected flavor with strict equality and writes a different message for chocolate, vanilla, or any other choice using if / else if / else.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "conditionals",
+        "dom-manipulation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/06/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/06/styles/main.css",
+      "summary": "Styling for the flavor-check exercise: bold enlarged result text and padded select/button controls.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/07/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/07/index.html",
+      "summary": "Markup for an arrow-function exercise: two number inputs separated by a multiplication sign, a multiply button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "form",
+        "calculator"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/07/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/07/scripts/main.js",
+      "summary": "Function-basics exercise: defines a one-line arrow function `multiply(num1, num2)` with implicit return and calls it from a click handler to display the product via a template literal.",
+      "tags": [
+        "exercise",
+        "utility",
+        "event-handler",
+        "arrow-function"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Teaches implicit return in single-expression arrow functions (no braces or `return` keyword needed)."
+    },
+    {
+      "id": "file:04_JS/07/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/07/styles/main.css",
+      "summary": "Styling for the multiply exercise: bold enlarged result text, narrow number inputs, and padded button.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/08/index.html",
+      "summary": "Markup for a countdown-click exercise: a button and a span showing the remaining count starting at 100, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "counter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/08/scripts/main.js",
+      "summary": "State-mutation exercise: keeps a mutable `let` counter starting at 100 and decrements it on each button click, updating the span with a template literal.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "counter",
+        "state"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/08/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/08/styles/main.css",
+      "summary": "Styling for the countdown exercise: a large pointer-cursor button and bold enlarged count display.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/09/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/09/index.html",
+      "summary": "Markup for an image-toggle exercise: an img element with alt text and a hint paragraph, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/09/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/09/scripts/main.js",
+      "summary": "Attribute-manipulation exercise: toggles an image between two picsum.photos URLs on click by reading the current src with getAttribute and swapping it with setAttribute.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "dom-manipulation",
+        "image"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses the element `onclick` property instead of addEventListener, and requires network access for the placeholder image service."
+    },
+    {
+      "id": "file:04_JS/09/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/09/styles/main.css",
+      "summary": "Styling for the image-toggle exercise: rounded image corners with pointer cursor and a gray hint line.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/10/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/10/index.html",
+      "summary": "Markup for a localStorage exercise: a greeting heading, name input, and save/clear buttons, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "form",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/10/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/10/scripts/main.js",
+      "summary": "Browser-persistence exercise: greets a saved name on load via localStorage.getItem, stores the entered name with setItem on save, and deletes it with removeItem on reset.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "local-storage",
+        "persistence"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Covers the full localStorage API triad (getItem, setItem, removeItem) with an empty-input guard clause."
+    },
+    {
+      "id": "file:04_JS/10/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/10/styles/main.css",
+      "summary": "Styling for the greeting exercise: purple greeting heading plus padded, spaced inputs and buttons.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/11/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/11/index.html",
+      "summary": "Markup for a loops exercise: a number input, repeat and countdown buttons, and an empty ul list to fill, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "loops"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/11/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/11/scripts/main.js",
+      "summary": "Loops exercise with two handlers: a for loop appending list items counting up from 1 to N, and a while loop counting down from N to 1, both building li elements with createElement/appendChild.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "loops",
+        "dom-manipulation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Contrasts for and while loops side by side, including an inline warning about infinite loops when the counter is not decremented."
+    },
+    {
+      "id": "file:04_JS/11/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/11/styles/main.css",
+      "summary": "Styling for the loops exercise: padded spaced buttons and an enlarged output list with generous line height.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "presentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/12/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/12/index.html",
+      "summary": "Markup for a string-methods exercise: a text input prefilled with \"hello\", an analyze button, and an output paragraph, linked to its sibling stylesheet and script.",
+      "tags": [
+        "exercise",
+        "markup",
+        "form",
+        "strings"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/12/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/12/scripts/main.js",
+      "summary": "String-methods exercise: on click, reports the input text's length and the results of toLowerCase, toUpperCase, and replaceAll(\"e\", \"E\"), assembled with template literals into innerHTML.",
+      "tags": [
+        "exercise",
+        "event-handler",
+        "strings",
+        "dom-manipulation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Distinguishes the `.length` property from string methods, and uses replaceAll (ES2021) rather than replace."
+    },
+    {
+      "id": "file:04_JS/12/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/12/styles/main.css",
+      "summary": "Minimal stylesheet for the exercise-12 DOM input demo, adding padding to inputs and buttons and enlarging the #out result text.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/13/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/13/index.html",
+      "summary": "Exercise page for JavaScript array basics: a fruit-name input, an add button, and output paragraphs wired to the sibling script and stylesheet.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/13/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/13/scripts/main.js",
+      "summary": "Array-basics exercise: keeps a fruits array, renders it with join() plus a length count, and pushes new items from the input on button click.",
+      "tags": [
+        "exercise",
+        "array",
+        "dom-manipulation",
+        "event-handler"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Demonstrates Array.push/join, template literals, and arrow-function event handlers with Korean teaching comments."
+    },
+    {
+      "id": "file:04_JS/13/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/13/styles/main.css",
+      "summary": "Styles for the fruit-list exercise: input/button padding, bold fruit list, and gray count caption.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/14/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/14/index.html",
+      "summary": "Exercise page for JavaScript object basics with an output paragraph and two buttons (age +1, rename) driven by the sibling script.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/14/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/14/scripts/main.js",
+      "summary": "Object-basics exercise: defines a person object, renders its properties, increments age on click, and toggles the name with a ternary expression.",
+      "tags": [
+        "exercise",
+        "object",
+        "dom-manipulation",
+        "event-handler"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Teaches dot-notation property access, mutation, and the ternary operator for toggling values."
+    },
+    {
+      "id": "file:04_JS/14/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/14/styles/main.css",
+      "summary": "Styles for the object exercise: large purple output text and spaced buttons.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/15/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/15/index.html",
+      "summary": "Exercise page for JavaScript class basics with a single 'make them bark' button and an output paragraph.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/15/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/15/scripts/main.js",
+      "summary": "Class-basics exercise: defines a Dog class with constructor and bark method, instantiates two dogs, and prints both barks on button click.",
+      "tags": [
+        "exercise",
+        "class",
+        "oop",
+        "event-handler"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Introduces ES class syntax, constructor, this-binding, and instantiation with new."
+    },
+    {
+      "id": "class:04_JS/15/scripts/main.js:Dog",
+      "type": "class",
+      "name": "Dog",
+      "filePath": "04_JS/15/scripts/main.js",
+      "lineRange": [
+        2,
+        9
+      ],
+      "summary": "Teaching class that stores a dog's name in its constructor and returns a name-prefixed bark string from its bark() method.",
+      "tags": [
+        "class",
+        "oop",
+        "exercise"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/15/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/15/styles/main.css",
+      "summary": "Styles for the class exercise: bold output line and padded button.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/16/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/16/index.html",
+      "summary": "Bare exercise page for the debugging lesson: a single buy button plus the sibling script; intentionally has no stylesheet.",
+      "tags": [
+        "exercise",
+        "html-page",
+        "entry-point"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/16/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/16/scripts/main.js",
+      "summary": "Debugging exercise demonstrating console.log, typeof checks, the debugger statement, and a commented walkthrough of the common null-querySelector TypeError.",
+      "tags": [
+        "exercise",
+        "debugging",
+        "console",
+        "teaching"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses the debugger statement to pause execution in DevTools and explains the 'Cannot read properties of null' error pattern."
+    },
+    {
+      "id": "file:04_JS/17/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/17/scripts/main.js",
+      "summary": "Fetch-based CRUD client exercise against a local json-server users API: four buttons issue POST, GET, PUT, and DELETE requests and print normalized results to the page.",
+      "tags": [
+        "exercise",
+        "fetch",
+        "crud",
+        "api-client",
+        "event-handler"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Demonstrates async/await with fetch, JSON request headers/bodies, and normalizing response key order before display."
+    },
+    {
+      "id": "file:04_JS/17/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/17/styles/main.css",
+      "summary": "Styles for the CRUD exercise: flex button row and a dark console-like #out result panel with pre-wrap text.",
+      "tags": [
+        "stylesheet",
+        "exercise",
+        "styling"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/18-1/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/18-1/index.html",
+      "summary": "App shell for the MORNING SLOT capstone: animated sky scene, three slot-machine reels for clothes/food/music, jackpot rate badge and guide modal, result summary, and archive views.",
+      "tags": [
+        "capstone",
+        "html-page",
+        "entry-point",
+        "spa-shell"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:04_JS/18-1/planning.md",
+      "type": "document",
+      "name": "planning.md",
+      "filePath": "04_JS/18-1/planning.md",
+      "summary": "Korean-language project plan for the MORNING SLOT website covering concept, target users, screen layout, slot-machine and jackpot mechanics, weather/location features, record storage, animations, responsive strategy, and tech stack.",
+      "tags": [
+        "documentation",
+        "planning",
+        "specification",
+        "capstone"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:04_JS/18-1/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "summary": "Complete logic for the MORNING SLOT capstone: 3D cylinder reel spins with easing, jackpot combo detection with confetti/Web Audio celebration, Open-Meteo weather with geolocation fallbacks, and a localStorage-backed archive and daily streak.",
+      "tags": [
+        "capstone",
+        "animation",
+        "web-audio",
+        "fetch",
+        "localstorage"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Notable patterns: requestAnimationFrame easing for 3D CSS reels, lazy AudioContext creation, canvas particle confetti, and three successive fetchCurrentLocation declarations where the last (fixed-location) definition shadows the earlier geolocation versions."
+    },
+    {
+      "id": "file:04_JS/18-1/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/18-1/styles/main.css",
+      "summary": "Extensive stylesheet for MORNING SLOT: gold/sky design tokens, animated sun-cloud-bird background, 3D perspective slot reels, jackpot guide modal, result cards, archive lists, and responsive breakpoints.",
+      "tags": [
+        "stylesheet",
+        "capstone",
+        "animation",
+        "responsive",
+        "design-tokens"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Uses CSS custom properties for theming and 3D transforms with perspective for the rotating reel drums."
+    },
+    {
+      "id": "file:04_JS/18/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/18/index.html",
+      "summary": "Page for the Shared Dot Garden capstone: hero with test/formal mode switch, stats dashboard with progress bar, color palette, main garden canvas, minimap, and timelapse controls.",
+      "tags": [
+        "capstone",
+        "html-page",
+        "entry-point",
+        "canvas"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:04_JS/18/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/18/scripts/main.js",
+      "summary": "Canvas-based collaborative pixel garden: a 140x100 grid where visitors plant colored pixels with cooldown modes, persisted to localStorage, synced across tabs via BroadcastChannel, with age-based color fading, minimap, and timelapse replay of planting history.",
+      "tags": [
+        "capstone",
+        "canvas",
+        "localstorage",
+        "animation",
+        "state-management"
+      ],
+      "complexity": "complex",
+      "languageNotes": "Uses BroadcastChannel plus the storage event for cross-tab sync and requestAnimationFrame-driven planting animations."
+    },
+    {
+      "id": "file:04_JS/18/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/18/styles/main.css",
+      "summary": "Stylesheet for the Shared Dot Garden: garden-themed green palette via CSS variables, stat cards, canvas panels, tooltip, palette swatches, and responsive layout.",
+      "tags": [
+        "stylesheet",
+        "capstone",
+        "responsive",
+        "design-tokens"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:05_react/my-app/eslint.config.js",
+      "type": "file",
+      "name": "eslint.config.js",
+      "filePath": "05_react/my-app/eslint.config.js",
+      "summary": "ESLint flat config for the Vite React app: applies the recommended JS rules plus react-hooks and react-refresh presets to all .js/.jsx files and ignores dist.",
+      "tags": [
+        "config",
+        "linting",
+        "code-quality",
+        "react"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses ESLint's flat config API (defineConfig, globalIgnores) rather than legacy .eslintrc."
+    },
+    {
+      "id": "file:05_react/my-app/src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "05_react/my-app/src/App.css",
+      "summary": "Component styles for the Vite React starter App: counter button, layered hero logo composition, tick dividers, and documentation/social card sections.",
+      "tags": [
+        "stylesheet",
+        "react",
+        "component",
+        "styling"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Uses native CSS nesting for hover/focus states inside selectors."
+    },
+    {
+      "id": "file:05_react/my-app/src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "05_react/my-app/src/App.jsx",
+      "summary": "Default Vite React 19 starter component: renders a hero with layered Vite/React logos, a useState click counter, and documentation/community link sections.",
+      "tags": [
+        "react",
+        "component",
+        "entry-point",
+        "hook"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Function component using the useState hook and an SVG sprite (icons.svg) referenced via <use href>."
+    },
+    {
+      "id": "function:05_react/my-app/src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "05_react/my-app/src/App.jsx",
+      "lineRange": [
+        7,
+        120
+      ],
+      "summary": "Root React component (default export) holding a count state and rendering the starter page's hero, counter button, and link cards.",
+      "tags": [
+        "react",
+        "component",
+        "hook",
+        "exported"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:05_react/my-app/src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "05_react/my-app/src/index.css",
+      "summary": "Global stylesheet for the React starter: CSS custom properties for colors and fonts, light/dark color-scheme support, base typography, and responsive font sizing.",
+      "tags": [
+        "stylesheet",
+        "global-styles",
+        "design-tokens",
+        "react"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:loadCustomOptions",
+      "type": "function",
+      "name": "loadCustomOptions",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        307,
+        316
+      ],
+      "summary": "Reads a comma-separated custom option list from localStorage for a reel category, returning the defaults when nothing valid is saved.",
+      "tags": [
+        "localstorage",
+        "utility",
+        "options"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:renderJackpotGuide",
+      "type": "function",
+      "name": "renderJackpotGuide",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        386,
+        402
+      ],
+      "summary": "Renders the jackpot combo cards (title, three option labels, comment, accent color) into the guide modal via a template-literal map.",
+      "tags": [
+        "rendering",
+        "dom-manipulation",
+        "jackpot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:setupJackpotInfoRow",
+      "type": "function",
+      "name": "setupJackpotInfoRow",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        417,
+        432
+      ],
+      "summary": "Restructures the DOM so the jackpot-rate badge and guide button share a single info row, removing the original guide row.",
+      "tags": [
+        "dom-manipulation",
+        "layout",
+        "setup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:getTodayWeather",
+      "type": "function",
+      "name": "getTodayWeather",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        443,
+        455
+      ],
+      "summary": "Produces deterministic pseudo-random morning/afternoon/evening weather slots seeded from today's date, used as an offline fallback.",
+      "tags": [
+        "weather",
+        "fallback",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:getWeatherSlots",
+      "type": "function",
+      "name": "getWeatherSlots",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        524,
+        539
+      ],
+      "summary": "Builds display slots (location, current condition with icon, min/max temperatures) from fetched Open-Meteo data, falling back to placeholders when data is missing.",
+      "tags": [
+        "weather",
+        "data-transform",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:fetchOpenMeteoWeather",
+      "type": "function",
+      "name": "fetchOpenMeteoWeather",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        551,
+        568
+      ],
+      "summary": "Fetches current weather and daily min/max temperatures from the Open-Meteo API for given coordinates and stores the result in module state.",
+      "tags": [
+        "fetch",
+        "api-client",
+        "weather",
+        "async"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:fetchCurrentLocation",
+      "type": "function",
+      "name": "fetchCurrentLocation",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        600,
+        610
+      ],
+      "summary": "Effective (last-declared) version that loads weather for a fixed location and re-renders the weather pills; two earlier geolocation-based declarations are shadowed by it.",
+      "tags": [
+        "weather",
+        "fetch",
+        "geolocation",
+        "async"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Function declaration hoisting means this third definition wins over the two earlier fetchCurrentLocation implementations."
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:createReelItems",
+      "type": "function",
+      "name": "createReelItems",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        615,
+        650
+      ],
+      "summary": "Builds a 3D cylinder reel for one category: computes segment count and radius, creates scene/drum/tile elements with rotateX transforms, and marks the selected front tile.",
+      "tags": [
+        "dom-manipulation",
+        "3d-transform",
+        "slot-machine",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:renderArchive",
+      "type": "function",
+      "name": "renderArchive",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        681,
+        729
+      ],
+      "summary": "Renders the weekly archive (entries since week start) and the full history list, decorating jackpot entries with badges and formatted timestamps.",
+      "tags": [
+        "rendering",
+        "archive",
+        "dom-manipulation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:saveResultToArchive",
+      "type": "function",
+      "name": "saveResultToArchive",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        731,
+        747
+      ],
+      "summary": "Appends a spin result (with timestamp and jackpot flag) to the archive, caps its length, persists to localStorage, and re-renders the archive lists.",
+      "tags": [
+        "localstorage",
+        "archive",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:renderResult",
+      "type": "function",
+      "name": "renderResult",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        749,
+        783
+      ],
+      "summary": "Fills the result and summary views with the spun combination's labels, swatch color, weather pills, and jackpot styling, then saves to archive and scrolls the summary into view.",
+      "tags": [
+        "rendering",
+        "dom-manipulation",
+        "result-view"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:getColorByName",
+      "type": "function",
+      "name": "getColorByName",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        785,
+        797
+      ],
+      "summary": "Maps Korean clothing color names (red, blue, beige, etc.) to hex color values for the result swatch.",
+      "tags": [
+        "utility",
+        "color",
+        "mapping"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:ensureAudio",
+      "type": "function",
+      "name": "ensureAudio",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        803,
+        813
+      ],
+      "summary": "Lazily creates the shared AudioContext on first use and resumes it if suspended, returning null when Web Audio is unavailable.",
+      "tags": [
+        "web-audio",
+        "lazy-init",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:playTone",
+      "type": "function",
+      "name": "playTone",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        815,
+        828
+      ],
+      "summary": "Plays a single oscillator tone at a given frequency and duration with an exponential gain ramp, used as the building block for spin/result/jackpot sounds.",
+      "tags": [
+        "web-audio",
+        "sound",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:launchConfetti",
+      "type": "function",
+      "name": "launchConfetti",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        848,
+        900
+      ],
+      "summary": "Creates a full-screen canvas and animates falling, rotating confetti particles with requestAnimationFrame, removing the canvas when the show ends.",
+      "tags": [
+        "canvas",
+        "animation",
+        "celebration",
+        "particles"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:celebrateJackpot",
+      "type": "function",
+      "name": "celebrateJackpot",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        902,
+        915
+      ],
+      "summary": "Orchestrates the jackpot celebration: confetti launch, jackpot sound, temporary banner element, and a shake animation on the slot machine.",
+      "tags": [
+        "celebration",
+        "animation",
+        "jackpot",
+        "orchestration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:playSpin",
+      "type": "function",
+      "name": "playSpin",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        917,
+        961
+      ],
+      "summary": "Animates one reel's 3D drum rotation over multiple turns to land on a target index, using requestAnimationFrame with cubic ease-out and toggling spin/jackpot CSS classes.",
+      "tags": [
+        "animation",
+        "3d-transform",
+        "slot-machine",
+        "easing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:runSlotMachine",
+      "type": "function",
+      "name": "runSlotMachine",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        963,
+        1004
+      ],
+      "summary": "Main spin flow: rolls the jackpot probability, picks a jackpot combo or random options per reel, staggers the three reel spins, then renders the result and triggers celebration or result sound.",
+      "tags": [
+        "slot-machine",
+        "orchestration",
+        "randomness",
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18-1/scripts/main.js:updateStreak",
+      "type": "function",
+      "name": "updateStreak",
+      "filePath": "04_JS/18-1/scripts/main.js",
+      "lineRange": [
+        1038,
+        1048
+      ],
+      "summary": "Increments the daily visit streak when the last visit date differs from today and persists streak and timestamp to localStorage.",
+      "tags": [
+        "localstorage",
+        "streak",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:loadState",
+      "type": "function",
+      "name": "loadState",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        76,
+        95
+      ],
+      "summary": "Loads the persisted garden state from localStorage, validating pixel coordinates and rebuilding history when absent, with a console warning on parse failure.",
+      "tags": [
+        "localstorage",
+        "state-management",
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:saveState",
+      "type": "function",
+      "name": "saveState",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        97,
+        107
+      ],
+      "summary": "Persists the garden state to localStorage and broadcasts a state-update message to other tabs over BroadcastChannel.",
+      "tags": [
+        "localstorage",
+        "broadcast-channel",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:renderPalette",
+      "type": "function",
+      "name": "renderPalette",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        109,
+        123
+      ],
+      "summary": "Builds the 16-color swatch buttons, marks the active color, and re-renders itself when a swatch is selected.",
+      "tags": [
+        "dom-manipulation",
+        "palette",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:updateStats",
+      "type": "function",
+      "name": "updateStats",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        129,
+        147
+      ],
+      "summary": "Updates the dashboard: progress count and bar fill, unique gardener count, and cooldown status text based on the active mode.",
+      "tags": [
+        "rendering",
+        "dashboard",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:hexToRgb",
+      "type": "function",
+      "name": "hexToRgb",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        172,
+        181
+      ],
+      "summary": "Converts a 3- or 6-digit hex color string into an {r,g,b} object for color-blending math.",
+      "tags": [
+        "utility",
+        "color",
+        "conversion"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:getDisplayColor",
+      "type": "function",
+      "name": "getDisplayColor",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        183,
+        192
+      ],
+      "summary": "Computes a pixel's display color by blending its palette color toward white based on how recently it was planted, so new pixels 'grow' into full saturation.",
+      "tags": [
+        "color",
+        "animation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:drawGuideLines",
+      "type": "function",
+      "name": "drawGuideLines",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        194,
+        225
+      ],
+      "summary": "Draws faint quadratic-curve sketch guides on the garden canvas as a communal drawing outline, toggleable via the guide button.",
+      "tags": [
+        "canvas",
+        "drawing",
+        "guides"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        237,
+        298
+      ],
+      "summary": "Main canvas draw pass: clears and paints the background, draws planted or playback pixels with age-based colors, animates recently planted cells with a pop effect, then overlays guides and refreshes the minimap.",
+      "tags": [
+        "canvas",
+        "rendering",
+        "animation",
+        "core-loop"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:renderMinimap",
+      "type": "function",
+      "name": "renderMinimap",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        300,
+        316
+      ],
+      "summary": "Draws a scaled-down overview of the garden's pixels onto the minimap canvas, using playback pixels during timelapse.",
+      "tags": [
+        "canvas",
+        "minimap",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:plantPixel",
+      "type": "function",
+      "name": "plantPixel",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        349,
+        383
+      ],
+      "summary": "Handles a planting click: rejects during timelapse, occupied cells, or active cooldown, then records the pixel with gardener id and timestamp, starts its pop animation, persists, and updates stats.",
+      "tags": [
+        "event-handler",
+        "state-management",
+        "cooldown",
+        "core-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:stopTimelapse",
+      "type": "function",
+      "name": "stopTimelapse",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        393,
+        402
+      ],
+      "summary": "Halts timelapse playback, clears its timer, resets the button label, and re-renders the live garden state.",
+      "tags": [
+        "timelapse",
+        "playback",
+        "state-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:04_JS/18/scripts/main.js:startTimelapse",
+      "type": "function",
+      "name": "startTimelapse",
+      "filePath": "04_JS/18/scripts/main.js",
+      "lineRange": [
+        404,
+        444
+      ],
+      "summary": "Replays the planting history chronologically: sorts the timeline, steps through entries on a timer painting each pixel into a playback buffer, and stops when finished.",
+      "tags": [
+        "timelapse",
+        "animation",
+        "playback"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:05_react/my-app/src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "05_react/my-app/src/main.jsx",
+      "summary": "React application entry point that mounts the App component into the #root DOM element using React 19's createRoot, wrapped in StrictMode, and loads the global stylesheet.",
+      "tags": [
+        "entry-point",
+        "react",
+        "bootstrap",
+        "component"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Uses the modern react-dom/client createRoot API (React 18+) rather than the legacy ReactDOM.render."
+    },
+    {
+      "id": "file:05_react/my-app/vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "05_react/my-app/vite.config.js",
+      "summary": "Vite build configuration for the React starter app, registering the official @vitejs/plugin-react plugin to enable JSX transformation and Fast Refresh.",
+      "tags": [
+        "config",
+        "build-system",
+        "vite",
+        "react"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:img/dog.webp",
+      "type": "file",
+      "name": "dog.webp",
+      "filePath": "img/dog.webp",
+      "summary": "Shared WebP image asset of a dog, used as a sample picture by the HTML and CSS course exercises in this learning repository.",
+      "tags": [
+        "asset",
+        "image",
+        "static",
+        "media"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Minimal project README containing only the GitHub repository URL (https://github.com/chrusterd/hancom), with no further documentation.",
+      "tags": [
+        "documentation",
+        "overview",
+        "minimal"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:02_HTML/11_README.md",
+      "target": "file:02_HTML/11_index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:02_HTML/28_README.md",
+      "target": "file:02_HTML/28_index.html",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:02_HTML/33_README.md",
+      "target": "file:02_HTML/33_index.html",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:03_CSS/03/index.html",
+      "target": "file:03_CSS/03/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/.stylelintrc.json",
+      "target": "file:03_CSS/03/styles/main.css",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/package.json",
+      "target": "config:03_CSS/03/.stylelintrc.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:03_CSS/03/package.json",
+      "target": "file:03_CSS/03/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/17/index.html",
+      "target": "file:04_JS/17/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/17/index.html",
+      "target": "file:04_JS/17/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:04_JS/17/db.json",
+      "target": "file:04_JS/17/scripts/main.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:04_JS/17/db-1783407269920.json",
+      "target": "config:04_JS/17/db.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:05_react/my-app/index.html",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:05_react/my-app/package.json",
+      "target": "file:05_react/my-app/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:05_react/my-app/package.json",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:05_react/my-app/README.md",
+      "target": "file:05_react/my-app/index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:05_react/my-app/README.md",
+      "target": "file:05_react/my-app/src/App.jsx",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:03_CSS/01/index.html",
+      "target": "file:03_CSS/01/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/02/index.html",
+      "target": "file:03_CSS/02/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/.htmlhintrc",
+      "target": "file:03_CSS/03/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/04/index.html",
+      "target": "file:03_CSS/04/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/05/.stylelintrc.json",
+      "target": "file:03_CSS/05/styles/main.css",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/05/index.html",
+      "target": "file:03_CSS/05/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/06/index.html",
+      "target": "file:03_CSS/06/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/07/index.html",
+      "target": "file:03_CSS/07/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/08/index.html",
+      "target": "file:03_CSS/08/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/09/index.html",
+      "target": "file:03_CSS/09/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/10/index.html",
+      "target": "file:03_CSS/10/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/11/index.html",
+      "target": "file:03_CSS/11/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/12/index.html",
+      "target": "file:03_CSS/12/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/13/index.html",
+      "target": "file:03_CSS/13/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/14/index.html",
+      "target": "file:03_CSS/14/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/15/index.html",
+      "target": "file:03_CSS/15/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/16/index.html",
+      "target": "file:03_CSS/16/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/17/index.html",
+      "target": "file:03_CSS/17/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/18/index.html",
+      "target": "file:03_CSS/18/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/19/index.html",
+      "target": "file:03_CSS/19/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/02/index.html",
+      "target": "file:04_JS/02/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/02/index.html",
+      "target": "file:04_JS/02/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/03/index.html",
+      "target": "file:04_JS/03/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/03/index.html",
+      "target": "file:04_JS/03/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/05/index.html",
+      "target": "file:04_JS/05/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/05/index.html",
+      "target": "file:04_JS/05/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/06/index.html",
+      "target": "file:04_JS/06/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/06/index.html",
+      "target": "file:04_JS/06/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/07/index.html",
+      "target": "file:04_JS/07/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/07/index.html",
+      "target": "file:04_JS/07/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/08/index.html",
+      "target": "file:04_JS/08/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/08/index.html",
+      "target": "file:04_JS/08/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/09/index.html",
+      "target": "file:04_JS/09/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/09/index.html",
+      "target": "file:04_JS/09/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/10/index.html",
+      "target": "file:04_JS/10/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/10/index.html",
+      "target": "file:04_JS/10/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/11/index.html",
+      "target": "file:04_JS/11/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/11/index.html",
+      "target": "file:04_JS/11/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/12/index.html",
+      "target": "file:04_JS/12/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/12/index.html",
+      "target": "file:04_JS/12/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/15/scripts/main.js",
+      "target": "class:04_JS/15/scripts/main.js:Dog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:05_react/my-app/src/App.jsx",
+      "target": "function:05_react/my-app/src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:05_react/my-app/src/App.jsx",
+      "target": "function:05_react/my-app/src/App.jsx:App",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:loadCustomOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:renderJackpotGuide",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:setupJackpotInfoRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:getTodayWeather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:getWeatherSlots",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:fetchOpenMeteoWeather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:fetchCurrentLocation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:createReelItems",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:renderArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:saveResultToArchive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:renderResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:getColorByName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:ensureAudio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:playTone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:launchConfetti",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:celebrateJackpot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:playSpin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:runSlotMachine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18-1/scripts/main.js",
+      "target": "function:04_JS/18-1/scripts/main.js:updateStreak",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:loadState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:saveState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:renderPalette",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:updateStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:hexToRgb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:getDisplayColor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:drawGuideLines",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:renderMinimap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:plantPixel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:stopTimelapse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:04_JS/18/scripts/main.js",
+      "target": "function:04_JS/18/scripts/main.js:startTimelapse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:05_react/my-app/src/App.jsx",
+      "target": "file:05_react/my-app/src/App.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:04_JS/13/index.html",
+      "target": "file:04_JS/13/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/13/index.html",
+      "target": "file:04_JS/13/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/14/index.html",
+      "target": "file:04_JS/14/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/14/index.html",
+      "target": "file:04_JS/14/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/15/index.html",
+      "target": "file:04_JS/15/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/15/index.html",
+      "target": "file:04_JS/15/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/16/index.html",
+      "target": "file:04_JS/16/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/18-1/index.html",
+      "target": "file:04_JS/18-1/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/18-1/index.html",
+      "target": "file:04_JS/18-1/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/18/index.html",
+      "target": "file:04_JS/18/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/18/index.html",
+      "target": "file:04_JS/18/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/17/scripts/main.js",
+      "target": "config:04_JS/17/db.json",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "document:04_JS/18-1/planning.md",
+      "target": "file:04_JS/18-1/index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:04_JS/18-1/planning.md",
+      "target": "file:04_JS/18-1/scripts/main.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:04_JS/18-1/planning.md",
+      "target": "file:04_JS/18-1/styles/main.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:05_react/my-app/eslint.config.js",
+      "target": "file:05_react/my-app/src/App.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:05_react/my-app/src/main.jsx",
+      "target": "file:05_react/my-app/src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:05_react/my-app/src/main.jsx",
+      "target": "file:05_react/my-app/src/index.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:05_react/my-app/vite.config.js",
+      "target": "file:05_react/my-app/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:05_react/my-app/vite.config.js",
+      "target": "file:05_react/my-app/src/main.jsx",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

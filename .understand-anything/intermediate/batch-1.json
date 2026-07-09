@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "id": "document:02_HTML/01_README.md",
+      "type": "document",
+      "name": "01_README.md",
+      "filePath": "02_HTML/01_README.md",
+      "summary": "Course note introducing the three building blocks of a web page — HTML for structure, CSS for design, and JS for behavior — written in Korean as the opening lesson of the HTML module.",
+      "tags": ["documentation", "course-notes", "web-fundamentals", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/02_README.md",
+      "type": "document",
+      "name": "02_README.md",
+      "filePath": "02_HTML/02_README.md",
+      "summary": "Development-environment setup note walking through creating a working folder and opening it in VSCode, including the workspace-trust prompt.",
+      "tags": ["documentation", "course-notes", "environment-setup", "vscode"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/03_index.html",
+      "type": "file",
+      "name": "03_index.html",
+      "filePath": "02_HTML/03_index.html",
+      "summary": "First hands-on HTML page demonstrating the basic document skeleton (doctype, html, head, body) with headings, divs, and a canvas element, annotated with Korean beginner comments.",
+      "tags": ["html-exercise", "document-structure", "beginner", "lesson"],
+      "complexity": "simple",
+      "languageNotes": "Every tag carries an inline Korean comment explaining its role, a teaching pattern repeated across all exercises in this module."
+    },
+    {
+      "id": "file:02_HTML/04_index.html",
+      "type": "file",
+      "name": "04_index.html",
+      "filePath": "02_HTML/04_index.html",
+      "summary": "Exercise teaching HTML comments — how to leave invisible notes and temporarily disable markup — using escaped comment syntax shown as visible page text.",
+      "tags": ["html-exercise", "comments", "beginner", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/05_index.html",
+      "type": "file",
+      "name": "05_index.html",
+      "filePath": "02_HTML/05_index.html",
+      "summary": "Minimal HTML page showing the smallest complete document: doctype, head with charset and title, and a body containing a single h1 heading.",
+      "tags": ["html-exercise", "document-structure", "beginner", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/06_index.html",
+      "type": "file",
+      "name": "06_index.html",
+      "filePath": "02_HTML/06_index.html",
+      "summary": "Exercise demonstrating the six heading levels (h1 through h6) and the paragraph tag, illustrating how heading size decreases with level.",
+      "tags": ["html-exercise", "headings", "paragraphs", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/07_index.html",
+      "type": "file",
+      "name": "07_index.html",
+      "filePath": "02_HTML/07_index.html",
+      "summary": "Exercise on tag nesting and inline emphasis, using strong inside a paragraph plus HTML entities (&lt;, &gt;, &amp;) to display reserved characters.",
+      "tags": ["html-exercise", "nesting", "html-entities", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/08_index.html",
+      "type": "file",
+      "name": "08_index.html",
+      "filePath": "02_HTML/08_index.html",
+      "summary": "Exercise embedding an image with the img tag, covering the src, width, and alt attributes and the self-closing void-element form.",
+      "tags": ["html-exercise", "images", "attributes", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/09_index.html",
+      "type": "file",
+      "name": "09_index.html",
+      "filePath": "02_HTML/09_index.html",
+      "summary": "Exercise creating hyperlinks with the anchor tag, linking to Google, Naver, and Claude to show the href attribute and full URL requirement.",
+      "tags": ["html-exercise", "links", "anchor-tag", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/10_index.html",
+      "type": "file",
+      "name": "10_index.html",
+      "filePath": "02_HTML/10_index.html",
+      "summary": "Exercise combining semantic layout tags (header, main, footer) with an unordered list, framing each section as a labeled box with a meaningful name.",
+      "tags": ["html-exercise", "semantic-html", "lists", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:02_HTML/11_README.md",
+      "type": "document",
+      "name": "11_README.md",
+      "filePath": "02_HTML/11_README.md",
+      "summary": "Assignment sheet directing the student to build a self-introduction site in 11_index.html using all tags learned so far, plus homework covering GitHub repo creation, blog posting, and Google Drive uploads.",
+      "tags": ["documentation", "assignment", "course-notes", "homework"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/11_index.html",
+      "type": "file",
+      "name": "11_index.html",
+      "filePath": "02_HTML/11_index.html",
+      "summary": "Capstone self-introduction page for the HTML module, combining semantic layout (header, main, footer), an image, nested ordered and unordered lists of hobbies and books, strong emphasis, and an external blog link.",
+      "tags": ["html-exercise", "capstone", "semantic-html", "lists", "portfolio"],
+      "complexity": "moderate",
+      "languageNotes": "Nests ol elements alongside li items inside a ul — a common beginner pattern that works visually but places the ordered lists as siblings of, rather than children of, their list items."
+    },
+    {
+      "id": "file:02_HTML/12_index.html",
+      "type": "file",
+      "name": "12_index.html",
+      "filePath": "02_HTML/12_index.html",
+      "summary": "Exercise on ordered lists, using an ol with three morning-routine items to show automatic numbering when sequence matters.",
+      "tags": ["html-exercise", "lists", "ordered-list", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/13_index.html",
+      "type": "file",
+      "name": "13_index.html",
+      "filePath": "02_HTML/13_index.html",
+      "summary": "Exercise on line breaks and horizontal rules, demonstrating the br and hr void elements inside and between paragraphs.",
+      "tags": ["html-exercise", "void-elements", "formatting", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/14_index.html",
+      "type": "file",
+      "name": "14_index.html",
+      "filePath": "02_HTML/14_index.html",
+      "summary": "Exercise building a simple class timetable with the table element, introducing tr rows, th header cells, td data cells, and the border attribute.",
+      "tags": ["html-exercise", "tables", "lesson", "beginner"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/15_index.html",
+      "type": "file",
+      "name": "15_index.html",
+      "filePath": "02_HTML/15_index.html",
+      "summary": "Exercise creating an input form with labeled text and number fields plus a submit button, introducing form, label, input, and button elements.",
+      "tags": ["html-exercise", "forms", "user-input", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/16_index.html",
+      "type": "file",
+      "name": "16_index.html",
+      "filePath": "02_HTML/16_index.html",
+      "summary": "Exercise embedding two YouTube videos via iframe elements, covering the src embed URL, width/height sizing, and permission attributes.",
+      "tags": ["html-exercise", "iframe", "embedding", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/17_index.html",
+      "type": "file",
+      "name": "17_index.html",
+      "filePath": "02_HTML/17_index.html",
+      "summary": "Exercise embedding a Google Maps view of a location using a single iframe with an embed URL, lazy loading, and referrer policy attributes.",
+      "tags": ["html-exercise", "iframe", "embedding", "maps"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/18_index.html",
+      "type": "file",
+      "name": "18_index.html",
+      "filePath": "02_HTML/18_index.html",
+      "summary": "Exercise introducing the class attribute as a reusable label, applying the same class name to two paragraphs to show it may repeat across elements.",
+      "tags": ["html-exercise", "class-attribute", "css-preparation", "lesson"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:02_HTML/19_index.html",
+      "type": "file",
+      "name": "19_index.html",
+      "filePath": "02_HTML/19_index.html",
+      "summary": "Exercise introducing the id attribute as a page-unique label, contrasting it with class by tagging a heading and a paragraph with distinct ids.",
+      "tags": ["html-exercise", "id-attribute", "css-preparation", "lesson"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:02_HTML/11_README.md",
+      "target": "file:02_HTML/11_index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

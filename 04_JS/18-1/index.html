@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨MORNING SLOT✨</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="sky-scene" aria-hidden="true">
+      <div class="sun-orb"></div>
+      <div class="sun-ray ray-one"></div>
+      <div class="sun-ray ray-two"></div>
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="cloud cloud-three"></div>
+      <div class="sky-bird bird-one"></div>
+      <div class="sky-bird bird-two"></div>
+    </div>
+    <main class="app-shell">
+      <section id="homeView" class="view active">
+        <div class="hero">
+          <p class="eyebrow">결정 피로 없는 하루</p>
+          <h1>MORNING SLOT</h1>
+          <p class="subtitle">레버를 당기면 오늘의 옷 컬러, 식사 메뉴, 음악 장르가 한 번에 정해집니다.</p>
+        </div>
+
+        <div id="jackpotRateBadge" class="jackpot-rate">🎰 오늘의 잭팟 확률 <strong>50%</strong></div>
+
+        <section class="slot-machine" aria-label="모닝슬롯 머신">
+          <div class="reel-column">
+            <div class="reel" id="reelClothes"></div>
+          </div>
+          <div class="reel-column">
+            <div class="reel" id="reelFood"></div>
+          </div>
+          <div class="reel-column">
+            <div class="reel" id="reelMusic"></div>
+          </div>
+        </section>
+
+        <div class="jackpot-guide-row">
+          <button id="jackpotGuideButton" class="jackpot-guide-button" type="button">잭팟 콤보</button>
+        </div>
+
+        <div class="action-row">
+          <button id="pullButton" class="pull-button" type="button">레버 당기기</button>
+        </div>
+
+        <section id="resultSummary" class="result-summary" hidden>
+          <div class="result-summary-card">
+            <p class="eyebrow">오늘의 조합</p>
+            <div class="result-headline">
+              <div id="summaryWeather" class="weather-pill">🌤 오늘의 날씨</div>
+            </div>
+            <div id="summaryVisual" class="summary-visual"></div>
+            <p id="summaryComment" class="result-comment"></p>
+          </div>
+        </section>
+
+        <section id="historySection" class="history-section">
+          <div class="archive-head">
+            <p class="eyebrow">뽑은 내역</p>
+            <h3>지금까지 나온 조합들</h3>
+          </div>
+          <div id="historyList" class="archive-list"></div>
+        </section>
+
+      </section>
+
+      <section id="resultView" class="view">
+        <div id="resultCard" class="result-card">
+          <div class="result-head">
+            <p class="eyebrow">오늘의 조합</p>
+            <div class="result-headline">
+              <h2 id="resultTitle">오늘은 파란색입니다</h2>
+              <div id="resultWeather" class="weather-pill">🌤 오늘의 날씨</div>
+            </div>
+          </div>
+          <div class="result-body">
+            <div id="resultVisual" class="result-visual"></div>
+            <p id="resultComment" class="result-comment"></p>
+          </div>
+          <div class="archive-section">
+            <div class="archive-head">
+              <p class="eyebrow">주간 아카이브</p>
+              <h3>이번 주의 조합 기록</h3>
+            </div>
+            <div id="archiveList" class="archive-list"></div>
+          </div>
+          <div class="stats">
+            <div class="stat-pill"><span>연속 접속</span><strong id="streakCount">0일</strong></div>
+          </div>
+        </div>
+      </section>
+      <section id="jackpotGuideModal" class="jackpot-guide-modal" aria-labelledby="jackpotGuideTitle" aria-modal="true" role="dialog" hidden>
+        <div class="jackpot-guide-backdrop" data-close-jackpot-guide></div>
+        <div class="jackpot-guide-panel">
+          <div class="jackpot-guide-head">
+            <div>
+              <p class="eyebrow">Jackpot Archive</p>
+              <h2 id="jackpotGuideTitle">잭팟 콤보</h2>
+            </div>
+            <button id="jackpotGuideCloseButton" class="jackpot-guide-close" type="button" aria-label="잭팟 콤보 닫기">×</button>
+          </div>
+          <div id="jackpotGuideList" class="jackpot-guide-list"></div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <p>Copyright © HAYOUNG KANG</p>
+        <nav aria-label="관련 링크">
+          <a href="https://hyhancom.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a href="https://github.com/chrusterd/hancom" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </footer>
+    </main>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

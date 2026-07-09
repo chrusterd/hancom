@@ -1,0 +1,13 @@
+{
+  "projectRoot": "c:/Users/Har10/Desktop/hancom",
+  "batchFiles": [
+    {"path": "04_JS/17/db-1783407269920.json", "language": "json", "sizeLines": 11, "fileCategory": "config"},
+    {"path": "04_JS/17/db.json", "language": "json", "sizeLines": 19, "fileCategory": "config"},
+    {"path": "04_JS/17/index.html", "language": "html", "sizeLines": 19, "fileCategory": "markup"}
+  ],
+  "batchImportData": {
+    "04_JS/17/db-1783407269920.json": [],
+    "04_JS/17/db.json": [],
+    "04_JS/17/index.html": []
+  }
+}

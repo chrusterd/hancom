@@ -1,0 +1,2982 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "04_JS/12/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/13/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 14,
+      "nonEmptyLines": 14,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/13/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "render",
+          "startLine": 10,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "render",
+          "callee": "fruits.join",
+          "lineNumber": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/13/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/14/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/14/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "render",
+          "startLine": 11,
+          "endLine": 14,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/14/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/15/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 12,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/15/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "classes": [
+        {
+          "name": "Dog",
+          "startLine": 2,
+          "endLine": 9,
+          "methods": [
+            "constructor",
+            "bark"
+          ],
+          "properties": []
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "04_JS/15/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/16/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 10,
+      "nonEmptyLines": 10,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/16/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/17/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 56,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "show",
+          "startLine": 6,
+          "endLine": 8,
+          "params": [
+            "label",
+            "data"
+          ]
+        },
+        {
+          "name": "norm",
+          "startLine": 11,
+          "endLine": 14,
+          "params": [
+            "data"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "show",
+          "callee": "JSON.stringify",
+          "lineNumber": 7
+        },
+        {
+          "caller": "norm",
+          "callee": "Array.isArray",
+          "lineNumber": 12
+        },
+        {
+          "caller": "norm",
+          "callee": "data.map",
+          "lineNumber": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/17/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/18-1/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 121,
+      "nonEmptyLines": 112,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/18-1/planning.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 257,
+      "nonEmptyLines": 180,
+      "sections": [
+        {
+          "heading": "MORNING SLOT 웹사이트 기획서",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. 프로젝트 개요",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. 기획 의도",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "3. 주요 사용자",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "4. 핵심 콘셉트",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "키워드",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "디자인 방향",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "5. 화면 구성",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "5.1 홈 화면",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "구성 요소",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "5.2 슬롯머신 영역",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "릴 항목",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "5.3 결과 요약 영역",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "표시 정보",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "5.4 뽑은 내역",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "표시 정보",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "5.5 footer",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "구성",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "6. 주요 기능",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "6.1 슬롯머신 실행",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "동작 흐름",
+          "level": 3,
+          "line": 136
+        },
+        {
+          "heading": "6.2 잭팟 시스템",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "잭팟 연출",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "6.3 날씨 및 위치 정보",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "모바일 대응",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "6.4 기록 저장",
+          "level": 2,
+          "line": 172
+        },
+        {
+          "heading": "저장 데이터",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "7. 인터랙션 및 애니메이션",
+          "level": 2,
+          "line": 189
+        },
+        {
+          "heading": "배경",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "슬롯머신",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "버튼",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "결과",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "8. 반응형 전략",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "9. 기술 구성",
+          "level": 2,
+          "line": 230
+        },
+        {
+          "heading": "HTML",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "CSS",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "JavaScript",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "11. 기대 효과",
+          "level": 2,
+          "line": 255
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 38
+      }
+    },
+    {
+      "path": "04_JS/18-1/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 1060,
+      "nonEmptyLines": 975,
+      "functions": [
+        {
+          "name": "loadCustomOptions",
+          "startLine": 307,
+          "endLine": 316,
+          "params": [
+            "key",
+            "fallback"
+          ]
+        },
+        {
+          "name": "loadArchive",
+          "startLine": 318,
+          "endLine": 325,
+          "params": []
+        },
+        {
+          "name": "persistArchive",
+          "startLine": 364,
+          "endLine": 366,
+          "params": []
+        },
+        {
+          "name": "updateStats",
+          "startLine": 368,
+          "endLine": 370,
+          "params": []
+        },
+        {
+          "name": "setView",
+          "startLine": 372,
+          "endLine": 375,
+          "params": [
+            "viewName"
+          ]
+        },
+        {
+          "name": "getDisplayLabel",
+          "startLine": 377,
+          "endLine": 380,
+          "params": [
+            "category",
+            "value"
+          ]
+        },
+        {
+          "name": "getReelLabel",
+          "startLine": 382,
+          "endLine": 384,
+          "params": [
+            "category",
+            "value"
+          ]
+        },
+        {
+          "name": "renderJackpotGuide",
+          "startLine": 386,
+          "endLine": 402,
+          "params": []
+        },
+        {
+          "name": "openJackpotGuide",
+          "startLine": 404,
+          "endLine": 409,
+          "params": []
+        },
+        {
+          "name": "closeJackpotGuide",
+          "startLine": 411,
+          "endLine": 415,
+          "params": []
+        },
+        {
+          "name": "setupJackpotInfoRow",
+          "startLine": 417,
+          "endLine": 432,
+          "params": []
+        },
+        {
+          "name": "getTodayWeather",
+          "startLine": 443,
+          "endLine": 455,
+          "params": []
+        },
+        {
+          "name": "renderWeather",
+          "startLine": 459,
+          "endLine": 467,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "fetchCurrentLocation",
+          "startLine": 469,
+          "endLine": 486,
+          "params": []
+        },
+        {
+          "name": "getWeatherCodeInfo",
+          "startLine": 520,
+          "endLine": 522,
+          "params": [
+            "code"
+          ]
+        },
+        {
+          "name": "getWeatherSlots",
+          "startLine": 524,
+          "endLine": 539,
+          "params": []
+        },
+        {
+          "name": "renderWeather",
+          "startLine": 541,
+          "endLine": 549,
+          "params": [
+            "container"
+          ]
+        },
+        {
+          "name": "fetchOpenMeteoWeather",
+          "startLine": 551,
+          "endLine": 568,
+          "params": [
+            "latitude",
+            "longitude"
+          ]
+        },
+        {
+          "name": "fetchCurrentLocation",
+          "startLine": 570,
+          "endLine": 598,
+          "params": []
+        },
+        {
+          "name": "fetchCurrentLocation",
+          "startLine": 600,
+          "endLine": 610,
+          "params": []
+        },
+        {
+          "name": "createReelItems",
+          "startLine": 615,
+          "endLine": 650,
+          "params": [
+            "container",
+            "options",
+            "selectedIndex",
+            "category"
+          ]
+        },
+        {
+          "name": "initReels",
+          "startLine": 652,
+          "endLine": 656,
+          "params": []
+        },
+        {
+          "name": "getWeekStart",
+          "startLine": 658,
+          "endLine": 665,
+          "params": []
+        },
+        {
+          "name": "getArchiveJackpotName",
+          "startLine": 667,
+          "endLine": 670,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "formatArchiveDateTime",
+          "startLine": 672,
+          "endLine": 679,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "renderArchive",
+          "startLine": 681,
+          "endLine": 729,
+          "params": []
+        },
+        {
+          "name": "saveResultToArchive",
+          "startLine": 731,
+          "endLine": 747,
+          "params": [
+            "result",
+            "jackpot"
+          ]
+        },
+        {
+          "name": "renderResult",
+          "startLine": 749,
+          "endLine": 783,
+          "params": [
+            "result",
+            "jackpot"
+          ]
+        },
+        {
+          "name": "getColorByName",
+          "startLine": 785,
+          "endLine": 797,
+          "params": [
+            "name"
+          ]
+        },
+        {
+          "name": "getRandomPick",
+          "startLine": 799,
+          "endLine": 801,
+          "params": [
+            "options"
+          ]
+        },
+        {
+          "name": "ensureAudio",
+          "startLine": 803,
+          "endLine": 813,
+          "params": []
+        },
+        {
+          "name": "playTone",
+          "startLine": 815,
+          "endLine": 828,
+          "params": [
+            "freq",
+            "duration"
+          ]
+        },
+        {
+          "name": "playSpinSound",
+          "startLine": 830,
+          "endLine": 834,
+          "params": []
+        },
+        {
+          "name": "playResultSound",
+          "startLine": 836,
+          "endLine": 840,
+          "params": []
+        },
+        {
+          "name": "playJackpotSound",
+          "startLine": 842,
+          "endLine": 846,
+          "params": []
+        },
+        {
+          "name": "launchConfetti",
+          "startLine": 848,
+          "endLine": 900,
+          "params": []
+        },
+        {
+          "name": "celebrateJackpot",
+          "startLine": 902,
+          "endLine": 915,
+          "params": []
+        },
+        {
+          "name": "playSpin",
+          "startLine": 917,
+          "endLine": 961,
+          "params": [
+            "reel",
+            "options",
+            "targetIndex"
+          ]
+        },
+        {
+          "name": "runSlotMachine",
+          "startLine": 963,
+          "endLine": 1004,
+          "params": []
+        },
+        {
+          "name": "updateStreak",
+          "startLine": 1038,
+          "endLine": 1048,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "loadCustomOptions",
+          "callee": "localStorage.getItem",
+          "lineNumber": 309
+        },
+        {
+          "caller": "loadCustomOptions",
+          "callee": "saved.split(\",\").map((item) => item.trim()).filter",
+          "lineNumber": 311
+        },
+        {
+          "caller": "loadCustomOptions",
+          "callee": "saved.split(\",\").map",
+          "lineNumber": 311
+        },
+        {
+          "caller": "loadCustomOptions",
+          "callee": "saved.split",
+          "lineNumber": 311
+        },
+        {
+          "caller": "loadCustomOptions",
+          "callee": "item.trim",
+          "lineNumber": 311
+        },
+        {
+          "caller": "loadArchive",
+          "callee": "JSON.parse",
+          "lineNumber": 320
+        },
+        {
+          "caller": "loadArchive",
+          "callee": "localStorage.getItem",
+          "lineNumber": 320
+        },
+        {
+          "caller": "loadArchive",
+          "callee": "Array.isArray",
+          "lineNumber": 321
+        },
+        {
+          "caller": "persistArchive",
+          "callee": "localStorage.setItem",
+          "lineNumber": 365
+        },
+        {
+          "caller": "persistArchive",
+          "callee": "JSON.stringify",
+          "lineNumber": 365
+        },
+        {
+          "caller": "setView",
+          "callee": "homeView.classList.toggle",
+          "lineNumber": 373
+        },
+        {
+          "caller": "setView",
+          "callee": "resultView.classList.toggle",
+          "lineNumber": 374
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "jackpotCombos.map((combo, index) => `\n    <article class=\"jackpot-guide-card\" style=\"--guide-accent: ${combo.accent}\">\n      <div class=\"jackpot-guide-number\">${String(index + 1).padStart(2, \"0\")}</div>\n      <div class=\"jackpot-guide-content\">\n        <h3>${combo.title}</h3>\n        <div class=\"jackpot-guide-combo\">\n          <span>${getDisplayLabel(\"clothes\", combo.clothes)}</span>\n          <span>${getDisplayLabel(\"food\", combo.food)}</span>\n          <span>${getDisplayLabel(\"music\", combo.music)}</span>\n        </div>\n        <p>${combo.comment}</p>\n      </div>\n    </article>\n  `).join",
+          "lineNumber": 388
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "jackpotCombos.map",
+          "lineNumber": 388
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "String(index + 1).padStart",
+          "lineNumber": 390
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "String",
+          "lineNumber": 390
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "getDisplayLabel",
+          "lineNumber": 394
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "getDisplayLabel",
+          "lineNumber": 395
+        },
+        {
+          "caller": "renderJackpotGuide",
+          "callee": "getDisplayLabel",
+          "lineNumber": 396
+        },
+        {
+          "caller": "openJackpotGuide",
+          "callee": "renderJackpotGuide",
+          "lineNumber": 405
+        },
+        {
+          "caller": "openJackpotGuide",
+          "callee": "document.body.classList.add",
+          "lineNumber": 407
+        },
+        {
+          "caller": "openJackpotGuide",
+          "callee": "jackpotGuideCloseButton.focus",
+          "lineNumber": 408
+        },
+        {
+          "caller": "closeJackpotGuide",
+          "callee": "document.body.classList.remove",
+          "lineNumber": 413
+        },
+        {
+          "caller": "closeJackpotGuide",
+          "callee": "jackpotGuideButton.focus",
+          "lineNumber": 414
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "document.querySelector",
+          "lineNumber": 418
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "document.querySelector",
+          "lineNumber": 419
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "document.querySelector",
+          "lineNumber": 422
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "document.createElement",
+          "lineNumber": 424
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "jackpotRate.parentNode.insertBefore",
+          "lineNumber": 426
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "infoRow.append",
+          "lineNumber": 430
+        },
+        {
+          "caller": "setupJackpotInfoRow",
+          "callee": "guideRow.remove",
+          "lineNumber": 431
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "today.getFullYear",
+          "lineNumber": 445
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "today.getMonth",
+          "lineNumber": 445
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "today.getDate",
+          "lineNumber": 445
+        },
+        {
+          "caller": "pick",
+          "callee": "Math.abs",
+          "lineNumber": 447
+        },
+        {
+          "caller": "pick",
+          "callee": "Math.sin",
+          "lineNumber": 447
+        },
+        {
+          "caller": "pick",
+          "callee": "Math.floor",
+          "lineNumber": 448
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "pick",
+          "lineNumber": 451
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "pick",
+          "lineNumber": 452
+        },
+        {
+          "caller": "getTodayWeather",
+          "callee": "pick",
+          "lineNumber": 453
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getTodayWeather()\r\n    .map((slot) => `<span class=\"weather-slot\"><em>${slot.label}</em>${slot.icon} ${slot.text}</span>`)\r\n    .join",
+          "lineNumber": 463
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getTodayWeather()\r\n    .map",
+          "lineNumber": 463
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getTodayWeather",
+          "lineNumber": 463
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "navigator.geolocation.getCurrentPosition",
+          "lineNumber": 471
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetch",
+          "lineNumber": 474
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "response.json",
+          "lineNumber": 477
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "[data.principalSubdivision, data.city || data.locality].filter",
+          "lineNumber": 478
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "parts.join",
+          "lineNumber": 479
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 483
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 484
+        },
+        {
+          "caller": "getWeatherSlots",
+          "callee": "getWeatherCodeInfo",
+          "lineNumber": 533
+        },
+        {
+          "caller": "getWeatherSlots",
+          "callee": "Math.round",
+          "lineNumber": 536
+        },
+        {
+          "caller": "getWeatherSlots",
+          "callee": "Math.round",
+          "lineNumber": 536
+        },
+        {
+          "caller": "getWeatherSlots",
+          "callee": "Math.round",
+          "lineNumber": 537
+        },
+        {
+          "caller": "getWeatherSlots",
+          "callee": "Math.round",
+          "lineNumber": 537
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getWeatherSlots()\n    .map((slot) => `<span class=\"weather-slot\"><em>${slot.label}</em>${slot.icon} ${slot.text}</span>`)\n    .join",
+          "lineNumber": 545
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getWeatherSlots()\n    .map",
+          "lineNumber": 545
+        },
+        {
+          "caller": "renderWeather",
+          "callee": "getWeatherSlots",
+          "lineNumber": 545
+        },
+        {
+          "caller": "fetchOpenMeteoWeather",
+          "callee": "String",
+          "lineNumber": 553
+        },
+        {
+          "caller": "fetchOpenMeteoWeather",
+          "callee": "String",
+          "lineNumber": 554
+        },
+        {
+          "caller": "fetchOpenMeteoWeather",
+          "callee": "fetch",
+          "lineNumber": 558
+        },
+        {
+          "caller": "fetchOpenMeteoWeather",
+          "callee": "params.toString",
+          "lineNumber": 558
+        },
+        {
+          "caller": "fetchOpenMeteoWeather",
+          "callee": "response.json",
+          "lineNumber": 560
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 573
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 574
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "navigator.geolocation.getCurrentPosition",
+          "lineNumber": 578
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "Promise.all",
+          "lineNumber": 581
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetch",
+          "lineNumber": 582
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetchOpenMeteoWeather",
+          "lineNumber": 583
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "locationResponse.json",
+          "lineNumber": 585
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "[data.principalSubdivision, data.city || data.locality].filter",
+          "lineNumber": 586
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "parts.join",
+          "lineNumber": 587
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 591
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 592
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 595
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 596
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetchOpenMeteoWeather(FIXED_WEATHER_LOCATION.latitude, FIXED_WEATHER_LOCATION.longitude)\n    .catch(() => {\n      currentWeather = null;\n    })\n    .finally",
+          "lineNumber": 602
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetchOpenMeteoWeather(FIXED_WEATHER_LOCATION.latitude, FIXED_WEATHER_LOCATION.longitude)\n    .catch",
+          "lineNumber": 602
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "fetchOpenMeteoWeather",
+          "lineNumber": 602
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 607
+        },
+        {
+          "caller": "fetchCurrentLocation",
+          "callee": "renderWeather",
+          "lineNumber": 608
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "Math.max",
+          "lineNumber": 616
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "Math.ceil",
+          "lineNumber": 616
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "segments.push",
+          "lineNumber": 619
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "Math.tan",
+          "lineNumber": 622
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "document.createElement",
+          "lineNumber": 625
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "document.createElement",
+          "lineNumber": 627
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "segments.forEach",
+          "lineNumber": 630
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "document.createElement",
+          "lineNumber": 631
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "document.createElement",
+          "lineNumber": 633
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "getReelLabel",
+          "lineNumber": 635
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "tile.appendChild",
+          "lineNumber": 636
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "radius.toFixed",
+          "lineNumber": 637
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "drum.appendChild",
+          "lineNumber": 638
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "scene.appendChild",
+          "lineNumber": 641
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "container.appendChild",
+          "lineNumber": 642
+        },
+        {
+          "caller": "createReelItems",
+          "callee": "drum.children[selectedIndex]?.classList.add",
+          "lineNumber": 649
+        },
+        {
+          "caller": "initReels",
+          "callee": "createReelItems",
+          "lineNumber": 653
+        },
+        {
+          "caller": "initReels",
+          "callee": "createReelItems",
+          "lineNumber": 654
+        },
+        {
+          "caller": "initReels",
+          "callee": "createReelItems",
+          "lineNumber": 655
+        },
+        {
+          "caller": "getWeekStart",
+          "callee": "start.setHours",
+          "lineNumber": 660
+        },
+        {
+          "caller": "getWeekStart",
+          "callee": "start.getDay",
+          "lineNumber": 661
+        },
+        {
+          "caller": "getWeekStart",
+          "callee": "start.getDate",
+          "lineNumber": 662
+        },
+        {
+          "caller": "getWeekStart",
+          "callee": "start.setDate",
+          "lineNumber": 663
+        },
+        {
+          "caller": "getArchiveJackpotName",
+          "callee": "jackpotCombos.find",
+          "lineNumber": 669
+        },
+        {
+          "caller": "formatArchiveDateTime",
+          "callee": "new Date(value).toLocaleString",
+          "lineNumber": 673
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getWeekStart",
+          "lineNumber": 682
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "state.archive.filter((entry) => new Date(entry.createdAt) >= weekStart).slice(-7).reverse",
+          "lineNumber": 683
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "state.archive.filter((entry) => new Date(entry.createdAt) >= weekStart).slice",
+          "lineNumber": 683
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "state.archive.filter",
+          "lineNumber": 683
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "items.map((entry) => {\r\n      const date = formatArchiveDateTime(entry.createdAt);\r\n      const jackpotName = getArchiveJackpotName(entry);\r\n      const jackpotBadge = jackpotName ? `<span class=\"archive-jackpot-badge\">JACKPOT</span>` : \"\";\r\n      return `\r\n        <div class=\"archive-item${jackpotName ? \" is-jackpot-entry\" : \"\"}\">\r\n          <div>\r\n            ${jackpotBadge}\r\n            <strong>${entry.title}</strong>\r\n            <div>${getDisplayLabel(\"clothes\", entry.clothes)} · ${getDisplayLabel(\"food\", entry.food)} · ${getDisplayLabel(\"music\", entry.music)}</div>\r\n          </div>\r\n          <span class=\"archive-date\">${date}</span>\n        </div>\r\n      `;\r\n    }).join",
+          "lineNumber": 689
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "items.map",
+          "lineNumber": 689
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "formatArchiveDateTime",
+          "lineNumber": 690
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getArchiveJackpotName",
+          "lineNumber": 691
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 698
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 698
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 698
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "[...state.archive].reverse().slice",
+          "lineNumber": 706
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "[...state.archive].reverse",
+          "lineNumber": 706
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "historyItems.map((entry) => {\r\n    const date = formatArchiveDateTime(entry.createdAt);\r\n    const jackpotName = getArchiveJackpotName(entry);\r\n    const jackpotBadge = jackpotName ? `<span class=\"archive-jackpot-badge\">JACKPOT</span>` : \"\";\r\n    return `\r\n      <div class=\"archive-item${jackpotName ? \" is-jackpot-entry\" : \"\"}\">\r\n        <div>\r\n          ${jackpotBadge}\r\n          <strong>${entry.title}</strong>\r\n          <div>${getDisplayLabel(\"clothes\", entry.clothes)} · ${getDisplayLabel(\"food\", entry.food)} · ${getDisplayLabel(\"music\", entry.music)}</div>\r\n        </div>\r\n        <span class=\"archive-date\">${date}</span>\n      </div>\r\n    `;\r\n  }).join",
+          "lineNumber": 714
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "historyItems.map",
+          "lineNumber": 714
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "formatArchiveDateTime",
+          "lineNumber": 715
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getArchiveJackpotName",
+          "lineNumber": 716
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 723
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 723
+        },
+        {
+          "caller": "renderArchive",
+          "callee": "getDisplayLabel",
+          "lineNumber": 723
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "state.archive.push",
+          "lineNumber": 734
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "new Date().toISOString",
+          "lineNumber": 735
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "Boolean",
+          "lineNumber": 741
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "state.archive.slice",
+          "lineNumber": 744
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "persistArchive",
+          "lineNumber": 745
+        },
+        {
+          "caller": "saveResultToArchive",
+          "callee": "renderArchive",
+          "lineNumber": 746
+        },
+        {
+          "caller": "renderResult",
+          "callee": "getDisplayLabel",
+          "lineNumber": 758
+        },
+        {
+          "caller": "renderResult",
+          "callee": "getDisplayLabel",
+          "lineNumber": 758
+        },
+        {
+          "caller": "renderResult",
+          "callee": "getDisplayLabel",
+          "lineNumber": 758
+        },
+        {
+          "caller": "renderResult",
+          "callee": "getColorByName",
+          "lineNumber": 762
+        },
+        {
+          "caller": "renderResult",
+          "callee": "renderWeather",
+          "lineNumber": 767
+        },
+        {
+          "caller": "renderResult",
+          "callee": "renderWeather",
+          "lineNumber": 768
+        },
+        {
+          "caller": "renderResult",
+          "callee": "resultVisual.classList.toggle",
+          "lineNumber": 770
+        },
+        {
+          "caller": "renderResult",
+          "callee": "Boolean",
+          "lineNumber": 770
+        },
+        {
+          "caller": "renderResult",
+          "callee": "summaryVisual.classList.toggle",
+          "lineNumber": 771
+        },
+        {
+          "caller": "renderResult",
+          "callee": "Boolean",
+          "lineNumber": 771
+        },
+        {
+          "caller": "renderResult",
+          "callee": "saveResultToArchive",
+          "lineNumber": 778
+        },
+        {
+          "caller": "renderResult",
+          "callee": "setView",
+          "lineNumber": 779
+        },
+        {
+          "caller": "renderResult",
+          "callee": "window.setTimeout",
+          "lineNumber": 780
+        },
+        {
+          "caller": "renderResult",
+          "callee": "resultSummary.scrollIntoView",
+          "lineNumber": 781
+        },
+        {
+          "caller": "getRandomPick",
+          "callee": "Math.floor",
+          "lineNumber": 800
+        },
+        {
+          "caller": "getRandomPick",
+          "callee": "Math.random",
+          "lineNumber": 800
+        },
+        {
+          "caller": "ensureAudio",
+          "callee": "audioContext.resume",
+          "lineNumber": 810
+        },
+        {
+          "caller": "playTone",
+          "callee": "ensureAudio",
+          "lineNumber": 816
+        },
+        {
+          "caller": "playTone",
+          "callee": "ctx.createOscillator",
+          "lineNumber": 818
+        },
+        {
+          "caller": "playTone",
+          "callee": "ctx.createGain",
+          "lineNumber": 819
+        },
+        {
+          "caller": "playTone",
+          "callee": "oscillator.connect",
+          "lineNumber": 823
+        },
+        {
+          "caller": "playTone",
+          "callee": "gainNode.connect",
+          "lineNumber": 824
+        },
+        {
+          "caller": "playTone",
+          "callee": "oscillator.start",
+          "lineNumber": 825
+        },
+        {
+          "caller": "playTone",
+          "callee": "oscillator.stop",
+          "lineNumber": 826
+        },
+        {
+          "caller": "playTone",
+          "callee": "gainNode.gain.exponentialRampToValueAtTime",
+          "lineNumber": 827
+        },
+        {
+          "caller": "playSpinSound",
+          "callee": "[220, 330, 440, 560].forEach",
+          "lineNumber": 831
+        },
+        {
+          "caller": "playSpinSound",
+          "callee": "setTimeout",
+          "lineNumber": 832
+        },
+        {
+          "caller": "playSpinSound",
+          "callee": "playTone",
+          "lineNumber": 832
+        },
+        {
+          "caller": "playResultSound",
+          "callee": "[440, 660, 880].forEach",
+          "lineNumber": 837
+        },
+        {
+          "caller": "playResultSound",
+          "callee": "setTimeout",
+          "lineNumber": 838
+        },
+        {
+          "caller": "playResultSound",
+          "callee": "playTone",
+          "lineNumber": 838
+        },
+        {
+          "caller": "playJackpotSound",
+          "callee": "[523, 659, 784, 1046, 784, 1046, 1318].forEach",
+          "lineNumber": 843
+        },
+        {
+          "caller": "playJackpotSound",
+          "callee": "setTimeout",
+          "lineNumber": 844
+        },
+        {
+          "caller": "playJackpotSound",
+          "callee": "playTone",
+          "lineNumber": 844
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "document.createElement",
+          "lineNumber": 849
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "document.body.appendChild",
+          "lineNumber": 853
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "canvas.getContext",
+          "lineNumber": 854
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Array.from",
+          "lineNumber": 856
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 857
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 859
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 860
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 861
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.floor",
+          "lineNumber": 862
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 862
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 863
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 864
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "Math.random",
+          "lineNumber": 865
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "performance.now",
+          "lineNumber": 868
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.clearRect",
+          "lineNumber": 872
+        },
+        {
+          "caller": "tick",
+          "callee": "Math.max",
+          "lineNumber": 873
+        },
+        {
+          "caller": "tick",
+          "callee": "particles.forEach",
+          "lineNumber": 874
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.save",
+          "lineNumber": 880
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.translate",
+          "lineNumber": 881
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.rotate",
+          "lineNumber": 882
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.fillRect",
+          "lineNumber": 885
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.beginPath",
+          "lineNumber": 887
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.arc",
+          "lineNumber": 888
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.fill",
+          "lineNumber": 889
+        },
+        {
+          "caller": "tick",
+          "callee": "ctx.restore",
+          "lineNumber": 891
+        },
+        {
+          "caller": "tick",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 894
+        },
+        {
+          "caller": "tick",
+          "callee": "canvas.remove",
+          "lineNumber": 896
+        },
+        {
+          "caller": "launchConfetti",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 899
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "launchConfetti",
+          "lineNumber": 903
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "playJackpotSound",
+          "lineNumber": 904
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "document.createElement",
+          "lineNumber": 906
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "document.body.appendChild",
+          "lineNumber": 909
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "setTimeout",
+          "lineNumber": 910
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "banner.remove",
+          "lineNumber": 910
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "document.querySelector",
+          "lineNumber": 912
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "machine.classList.add",
+          "lineNumber": 913
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "setTimeout",
+          "lineNumber": 914
+        },
+        {
+          "caller": "celebrateJackpot",
+          "callee": "machine.classList.remove",
+          "lineNumber": 914
+        },
+        {
+          "caller": "playSpin",
+          "callee": "window.cancelAnimationFrame",
+          "lineNumber": 924
+        },
+        {
+          "caller": "playSpin",
+          "callee": "reel.classList.add",
+          "lineNumber": 928
+        },
+        {
+          "caller": "playSpin",
+          "callee": "reel.classList.add",
+          "lineNumber": 930
+        },
+        {
+          "caller": "playSpin",
+          "callee": "drum.querySelector(\".is-front\")?.classList.remove",
+          "lineNumber": 932
+        },
+        {
+          "caller": "playSpin",
+          "callee": "drum.querySelector",
+          "lineNumber": 932
+        },
+        {
+          "caller": "playSpin",
+          "callee": "Math.round",
+          "lineNumber": 935
+        },
+        {
+          "caller": "playSpin",
+          "callee": "performance.now",
+          "lineNumber": 940
+        },
+        {
+          "caller": "tick",
+          "callee": "Math.min",
+          "lineNumber": 943
+        },
+        {
+          "caller": "tick",
+          "callee": "Math.pow",
+          "lineNumber": 944
+        },
+        {
+          "caller": "tick",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 949
+        },
+        {
+          "caller": "tick",
+          "callee": "drum.children[landingIndex]?.classList.add",
+          "lineNumber": 954
+        },
+        {
+          "caller": "tick",
+          "callee": "reel.classList.remove",
+          "lineNumber": 955
+        },
+        {
+          "caller": "tick",
+          "callee": "reel.classList.remove",
+          "lineNumber": 957
+        },
+        {
+          "caller": "playSpin",
+          "callee": "window.requestAnimationFrame",
+          "lineNumber": 960
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "actionRow.classList.add",
+          "lineNumber": 966
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "playSpinSound",
+          "lineNumber": 969
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Math.random",
+          "lineNumber": 972
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Math.floor",
+          "lineNumber": 973
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Math.random",
+          "lineNumber": 973
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "getRandomPick",
+          "lineNumber": 975
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "getRandomPick",
+          "lineNumber": 976
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "getRandomPick",
+          "lineNumber": 977
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "state.custom.clothes.indexOf",
+          "lineNumber": 979
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "state.custom.food.indexOf",
+          "lineNumber": 980
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "state.custom.music.indexOf",
+          "lineNumber": 981
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "setTimeout",
+          "lineNumber": 983
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "playSpin",
+          "lineNumber": 984
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Boolean",
+          "lineNumber": 984
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "playSpin",
+          "lineNumber": 985
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Boolean",
+          "lineNumber": 985
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "playSpin",
+          "lineNumber": 986
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "Boolean",
+          "lineNumber": 986
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "setTimeout",
+          "lineNumber": 990
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "document.querySelectorAll(\".reel\").forEach",
+          "lineNumber": 991
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 991
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "reel.classList.remove",
+          "lineNumber": 992
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "renderResult",
+          "lineNumber": 994
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "celebrateJackpot",
+          "lineNumber": 996
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "playResultSound",
+          "lineNumber": 998
+        },
+        {
+          "caller": "runSlotMachine",
+          "callee": "actionRow.classList.remove",
+          "lineNumber": 1001
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "new Date().toISOString().slice",
+          "lineNumber": 1039
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "new Date().toISOString",
+          "lineNumber": 1039
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "new Date(last).toISOString().slice",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "new Date(last).toISOString",
+          "lineNumber": 1041
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "Date.now",
+          "lineNumber": 1044
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "localStorage.setItem",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "String",
+          "lineNumber": 1045
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "localStorage.setItem",
+          "lineNumber": 1046
+        },
+        {
+          "caller": "updateStreak",
+          "callee": "String",
+          "lineNumber": 1046
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 40,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/18-1/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 1687,
+      "nonEmptyLines": 1490,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/18/index.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 80,
+      "nonEmptyLines": 75,
+      "metrics": {}
+    },
+    {
+      "path": "04_JS/18/scripts/main.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 538,
+      "nonEmptyLines": 480,
+      "functions": [
+        {
+          "name": "createGardenerId",
+          "startLine": 70,
+          "endLine": 74,
+          "params": []
+        },
+        {
+          "name": "loadState",
+          "startLine": 76,
+          "endLine": 95,
+          "params": []
+        },
+        {
+          "name": "saveState",
+          "startLine": 97,
+          "endLine": 107,
+          "params": []
+        },
+        {
+          "name": "renderPalette",
+          "startLine": 109,
+          "endLine": 123,
+          "params": []
+        },
+        {
+          "name": "shortenNumber",
+          "startLine": 125,
+          "endLine": 127,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "updateStats",
+          "startLine": 129,
+          "endLine": 147,
+          "params": []
+        },
+        {
+          "name": "formatDuration",
+          "startLine": 149,
+          "endLine": 157,
+          "params": [
+            "ms"
+          ]
+        },
+        {
+          "name": "formatAge",
+          "startLine": 159,
+          "endLine": 166,
+          "params": [
+            "plantedAt"
+          ]
+        },
+        {
+          "name": "coordKey",
+          "startLine": 168,
+          "endLine": 170,
+          "params": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "name": "hexToRgb",
+          "startLine": 172,
+          "endLine": 181,
+          "params": [
+            "hex"
+          ]
+        },
+        {
+          "name": "getDisplayColor",
+          "startLine": 183,
+          "endLine": 192,
+          "params": [
+            "index",
+            "plantedAt"
+          ]
+        },
+        {
+          "name": "drawGuideLines",
+          "startLine": 194,
+          "endLine": 225,
+          "params": []
+        },
+        {
+          "name": "renderLoop",
+          "startLine": 227,
+          "endLine": 235,
+          "params": []
+        },
+        {
+          "name": "render",
+          "startLine": 237,
+          "endLine": 298,
+          "params": []
+        },
+        {
+          "name": "renderMinimap",
+          "startLine": 300,
+          "endLine": 316,
+          "params": []
+        },
+        {
+          "name": "buildTimelineFromPixels",
+          "startLine": 318,
+          "endLine": 326,
+          "params": []
+        },
+        {
+          "name": "getCellFromEvent",
+          "startLine": 328,
+          "endLine": 333,
+          "params": [
+            "event"
+          ]
+        },
+        {
+          "name": "showTooltip",
+          "startLine": 335,
+          "endLine": 343,
+          "params": [
+            "event",
+            "pixel"
+          ]
+        },
+        {
+          "name": "hideTooltip",
+          "startLine": 345,
+          "endLine": 347,
+          "params": []
+        },
+        {
+          "name": "plantPixel",
+          "startLine": 349,
+          "endLine": 383,
+          "params": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "name": "applyMode",
+          "startLine": 385,
+          "endLine": 391,
+          "params": [
+            "mode"
+          ]
+        },
+        {
+          "name": "stopTimelapse",
+          "startLine": 393,
+          "endLine": 402,
+          "params": []
+        },
+        {
+          "name": "startTimelapse",
+          "startLine": 404,
+          "endLine": 444,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createGardenerId",
+          "callee": "Math.random().toString(36).slice",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createGardenerId",
+          "callee": "Math.random().toString",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createGardenerId",
+          "callee": "Math.random",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createGardenerId",
+          "callee": "localStorage.setItem",
+          "lineNumber": 72
+        },
+        {
+          "caller": "loadState",
+          "callee": "JSON.parse",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadState",
+          "callee": "localStorage.getItem",
+          "lineNumber": 78
+        },
+        {
+          "caller": "loadState",
+          "callee": "Array.isArray",
+          "lineNumber": 81
+        },
+        {
+          "caller": "loadState",
+          "callee": "Object.entries(saved.pixels).map(([key, pixel]) => {\n            const [x, y] = key.split(\",\").map(Number);\n            return { ...pixel, x, y };\n          }).filter",
+          "lineNumber": 83
+        },
+        {
+          "caller": "loadState",
+          "callee": "Object.entries(saved.pixels).map",
+          "lineNumber": 83
+        },
+        {
+          "caller": "loadState",
+          "callee": "Object.entries",
+          "lineNumber": 83
+        },
+        {
+          "caller": "loadState",
+          "callee": "key.split(\",\").map",
+          "lineNumber": 84
+        },
+        {
+          "caller": "loadState",
+          "callee": "key.split",
+          "lineNumber": 84
+        },
+        {
+          "caller": "loadState",
+          "callee": "Number.isFinite",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadState",
+          "callee": "Number.isFinite",
+          "lineNumber": 86
+        },
+        {
+          "caller": "loadState",
+          "callee": "console.warn",
+          "lineNumber": 93
+        },
+        {
+          "caller": "saveState",
+          "callee": "localStorage.setItem",
+          "lineNumber": 103
+        },
+        {
+          "caller": "saveState",
+          "callee": "JSON.stringify",
+          "lineNumber": 103
+        },
+        {
+          "caller": "saveState",
+          "callee": "channel.postMessage",
+          "lineNumber": 105
+        },
+        {
+          "caller": "renderPalette",
+          "callee": "palette.forEach",
+          "lineNumber": 111
+        },
+        {
+          "caller": "renderPalette",
+          "callee": "document.createElement",
+          "lineNumber": 112
+        },
+        {
+          "caller": "renderPalette",
+          "callee": "button.addEventListener",
+          "lineNumber": 116
+        },
+        {
+          "caller": "renderPalette",
+          "callee": "renderPalette",
+          "lineNumber": 118
+        },
+        {
+          "caller": "renderPalette",
+          "callee": "paletteEl.appendChild",
+          "lineNumber": 121
+        },
+        {
+          "caller": "shortenNumber",
+          "callee": "Intl.NumberFormat(\"ko-KR\").format",
+          "lineNumber": 126
+        },
+        {
+          "caller": "shortenNumber",
+          "callee": "Intl.NumberFormat",
+          "lineNumber": 126
+        },
+        {
+          "caller": "updateStats",
+          "callee": "Object.keys",
+          "lineNumber": 131
+        },
+        {
+          "caller": "updateStats",
+          "callee": "shortenNumber",
+          "lineNumber": 133
+        },
+        {
+          "caller": "updateStats",
+          "callee": "shortenNumber",
+          "lineNumber": 133
+        },
+        {
+          "caller": "updateStats",
+          "callee": "(progressRatio * 100).toFixed",
+          "lineNumber": 134
+        },
+        {
+          "caller": "updateStats",
+          "callee": "shortenNumber",
+          "lineNumber": 135
+        },
+        {
+          "caller": "updateStats",
+          "callee": "Object.values(state.pixels).map",
+          "lineNumber": 135
+        },
+        {
+          "caller": "updateStats",
+          "callee": "Object.values",
+          "lineNumber": 135
+        },
+        {
+          "caller": "updateStats",
+          "callee": "Math.max",
+          "lineNumber": 138
+        },
+        {
+          "caller": "updateStats",
+          "callee": "Date.now",
+          "lineNumber": 138
+        },
+        {
+          "caller": "updateStats",
+          "callee": "formatDuration",
+          "lineNumber": 140
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Math.ceil",
+          "lineNumber": 150
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Math.floor",
+          "lineNumber": 154
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Date.now",
+          "lineNumber": 160
+        },
+        {
+          "caller": "formatAge",
+          "callee": "Math.floor",
+          "lineNumber": 161
+        },
+        {
+          "caller": "hexToRgb",
+          "callee": "hex.replace",
+          "lineNumber": 173
+        },
+        {
+          "caller": "hexToRgb",
+          "callee": "normalized.split(\"\").map((char) => `${char}${char}`).join",
+          "lineNumber": 174
+        },
+        {
+          "caller": "hexToRgb",
+          "callee": "normalized.split(\"\").map",
+          "lineNumber": 174
+        },
+        {
+          "caller": "hexToRgb",
+          "callee": "normalized.split",
+          "lineNumber": 174
+        },
+        {
+          "caller": "hexToRgb",
+          "callee": "Number.parseInt",
+          "lineNumber": 175
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "hexToRgb",
+          "lineNumber": 185
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "Date.now",
+          "lineNumber": 186
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "Math.min",
+          "lineNumber": 187
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "Math.round",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "Math.round",
+          "lineNumber": 189
+        },
+        {
+          "caller": "getDisplayColor",
+          "callee": "Math.round",
+          "lineNumber": 190
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.save",
+          "lineNumber": 199
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.beginPath",
+          "lineNumber": 204
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.moveTo",
+          "lineNumber": 205
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 206
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 207
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 208
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.stroke",
+          "lineNumber": 209
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.beginPath",
+          "lineNumber": 211
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.moveTo",
+          "lineNumber": 212
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 213
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 214
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 215
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.stroke",
+          "lineNumber": 216
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.beginPath",
+          "lineNumber": 218
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.moveTo",
+          "lineNumber": 219
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 220
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.quadraticCurveTo",
+          "lineNumber": 221
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.stroke",
+          "lineNumber": 222
+        },
+        {
+          "caller": "drawGuideLines",
+          "callee": "ctx.restore",
+          "lineNumber": 224
+        },
+        {
+          "caller": "renderLoop",
+          "callee": "requestAnimationFrame",
+          "lineNumber": 230
+        },
+        {
+          "caller": "renderLoop",
+          "callee": "render",
+          "lineNumber": 232
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.clearRect",
+          "lineNumber": 240
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.fillRect",
+          "lineNumber": 242
+        },
+        {
+          "caller": "render",
+          "callee": "coordKey",
+          "lineNumber": 246
+        },
+        {
+          "caller": "render",
+          "callee": "activeAnimations.get",
+          "lineNumber": 250
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.fillRect",
+          "lineNumber": 254
+        },
+        {
+          "caller": "render",
+          "callee": "Date.now",
+          "lineNumber": 259
+        },
+        {
+          "caller": "render",
+          "callee": "Math.min",
+          "lineNumber": 260
+        },
+        {
+          "caller": "render",
+          "callee": "Math.pow",
+          "lineNumber": 261
+        },
+        {
+          "caller": "render",
+          "callee": "activeAnimations.delete",
+          "lineNumber": 263
+        },
+        {
+          "caller": "render",
+          "callee": "renderLoop",
+          "lineNumber": 264
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.save",
+          "lineNumber": 268
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.translate",
+          "lineNumber": 269
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.beginPath",
+          "lineNumber": 272
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.arc",
+          "lineNumber": 273
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.fill",
+          "lineNumber": 274
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.restore",
+          "lineNumber": 275
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.save",
+          "lineNumber": 281
+        },
+        {
+          "caller": "render",
+          "callee": "getDisplayColor",
+          "lineNumber": 282
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.fillRect",
+          "lineNumber": 284
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.strokeRect",
+          "lineNumber": 289
+        },
+        {
+          "caller": "render",
+          "callee": "ctx.restore",
+          "lineNumber": 291
+        },
+        {
+          "caller": "render",
+          "callee": "drawGuideLines",
+          "lineNumber": 296
+        },
+        {
+          "caller": "render",
+          "callee": "renderMinimap",
+          "lineNumber": 297
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "minimapCtx.clearRect",
+          "lineNumber": 307
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "minimapCtx.fillRect",
+          "lineNumber": 309
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "Object.entries(sourcePixels).forEach",
+          "lineNumber": 311
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "Object.entries",
+          "lineNumber": 311
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "key.split(\",\").map",
+          "lineNumber": 312
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "key.split",
+          "lineNumber": 312
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "getDisplayColor",
+          "lineNumber": 313
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "minimapCtx.fillRect",
+          "lineNumber": 314
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "Math.max",
+          "lineNumber": 314
+        },
+        {
+          "caller": "renderMinimap",
+          "callee": "Math.max",
+          "lineNumber": 314
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Object.entries(state.pixels)\n    .map(([key, pixel]) => {\n      const [x, y] = key.split(\",\").map(Number);\n      return { ...pixel, x, y };\n    })\n    .filter((item) => Number.isFinite(item.x) && Number.isFinite(item.y))\n    .sort",
+          "lineNumber": 319
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Object.entries(state.pixels)\n    .map(([key, pixel]) => {\n      const [x, y] = key.split(\",\").map(Number);\n      return { ...pixel, x, y };\n    })\n    .filter",
+          "lineNumber": 319
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Object.entries(state.pixels)\n    .map",
+          "lineNumber": 319
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Object.entries",
+          "lineNumber": 319
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "key.split(\",\").map",
+          "lineNumber": 321
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "key.split",
+          "lineNumber": 321
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Number.isFinite",
+          "lineNumber": 324
+        },
+        {
+          "caller": "buildTimelineFromPixels",
+          "callee": "Number.isFinite",
+          "lineNumber": 324
+        },
+        {
+          "caller": "getCellFromEvent",
+          "callee": "canvas.getBoundingClientRect",
+          "lineNumber": 329
+        },
+        {
+          "caller": "getCellFromEvent",
+          "callee": "Math.floor",
+          "lineNumber": 330
+        },
+        {
+          "caller": "getCellFromEvent",
+          "callee": "Math.floor",
+          "lineNumber": 331
+        },
+        {
+          "caller": "getCellFromEvent",
+          "callee": "Number.isFinite",
+          "lineNumber": 332
+        },
+        {
+          "caller": "getCellFromEvent",
+          "callee": "Number.isFinite",
+          "lineNumber": 332
+        },
+        {
+          "caller": "showTooltip",
+          "callee": "canvas.getBoundingClientRect",
+          "lineNumber": 336
+        },
+        {
+          "caller": "showTooltip",
+          "callee": "formatAge",
+          "lineNumber": 339
+        },
+        {
+          "caller": "showTooltip",
+          "callee": "tooltip.classList.add",
+          "lineNumber": 340
+        },
+        {
+          "caller": "hideTooltip",
+          "callee": "tooltip.classList.remove",
+          "lineNumber": 346
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "coordKey",
+          "lineNumber": 355
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "Date.now",
+          "lineNumber": 361
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "formatDuration",
+          "lineNumber": 365
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "state.history.push",
+          "lineNumber": 375
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "localStorage.setItem",
+          "lineNumber": 377
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "String",
+          "lineNumber": 377
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "activeAnimations.set",
+          "lineNumber": 378
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "saveState",
+          "lineNumber": 379
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "updateStats",
+          "lineNumber": 380
+        },
+        {
+          "caller": "plantPixel",
+          "callee": "renderLoop",
+          "lineNumber": 381
+        },
+        {
+          "caller": "applyMode",
+          "callee": "saveState",
+          "lineNumber": 388
+        },
+        {
+          "caller": "applyMode",
+          "callee": "updateStats",
+          "lineNumber": 389
+        },
+        {
+          "caller": "stopTimelapse",
+          "callee": "clearTimeout",
+          "lineNumber": 395
+        },
+        {
+          "caller": "stopTimelapse",
+          "callee": "render",
+          "lineNumber": 401
+        },
+        {
+          "caller": "startTimelapse",
+          "callee": "buildTimelineFromPixels",
+          "lineNumber": 405
+        },
+        {
+          "caller": "startTimelapse",
+          "callee": "clearTimeout",
+          "lineNumber": 412
+        },
+        {
+          "caller": "startTimelapse",
+          "callee": "render",
+          "lineNumber": 421
+        },
+        {
+          "caller": "startTimelapse",
+          "callee": "[...timeline].sort",
+          "lineNumber": 423
+        },
+        {
+          "caller": "step",
+          "callee": "stopTimelapse",
+          "lineNumber": 429
+        },
+        {
+          "caller": "step",
+          "callee": "coordKey",
+          "lineNumber": 433
+        },
+        {
+          "caller": "step",
+          "callee": "render",
+          "lineNumber": 439
+        },
+        {
+          "caller": "step",
+          "callee": "setTimeout",
+          "lineNumber": 440
+        },
+        {
+          "caller": "startTimelapse",
+          "callee": "step",
+          "lineNumber": 443
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 23,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "04_JS/18/styles/main.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 332,
+      "nonEmptyLines": 289,
+      "metrics": {}
+    },
+    {
+      "path": "05_react/my-app/eslint.config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "05_react/my-app/src/App.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 184,
+      "nonEmptyLines": 158,
+      "metrics": {}
+    },
+    {
+      "path": "05_react/my-app/src/App.jsx",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 122,
+      "nonEmptyLines": 116,
+      "functions": [
+        {
+          "name": "App",
+          "startLine": 7,
+          "endLine": 120,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "App",
+          "callee": "useState",
+          "lineNumber": 8
+        },
+        {
+          "caller": "App",
+          "callee": "setCount",
+          "lineNumber": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "05_react/my-app/src/index.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 111,
+      "nonEmptyLines": 100,
+      "metrics": {}
+    }
+  ]
+}

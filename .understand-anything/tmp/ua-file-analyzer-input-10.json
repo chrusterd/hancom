@@ -1,0 +1,18 @@
+{
+  "projectRoot": "c:/Users/Har10/Desktop/hancom",
+  "batchFiles": [
+    {"path": "05_react/my-app/src/main.jsx", "language": "javascript", "sizeLines": 10, "fileCategory": "code"},
+    {"path": "05_react/my-app/vite.config.js", "language": "javascript", "sizeLines": 7, "fileCategory": "code"},
+    {"path": "img/dog.webp", "language": "webp", "sizeLines": 380, "fileCategory": "code"},
+    {"path": "README.md", "language": "markdown", "sizeLines": 0, "fileCategory": "docs"}
+  ],
+  "batchImportData": {
+    "05_react/my-app/src/main.jsx": [
+      "05_react/my-app/src/App.jsx",
+      "05_react/my-app/src/index.css"
+    ],
+    "05_react/my-app/vite.config.js": [],
+    "img/dog.webp": [],
+    "README.md": []
+  }
+}

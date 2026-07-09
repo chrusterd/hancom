@@ -1,0 +1,343 @@
+{
+  "nodes": [
+    {
+      "id": "file:03_CSS/11/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/11/index.html",
+      "summary": "Exercise page for CSS exercise 11 (neon gradient card): renders a single .neon box that the sibling stylesheet turns into a glowing gradient card.",
+      "tags": ["exercise", "html-page", "css-demo", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/11/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/11/styles/main.css",
+      "summary": "Styles the neon card exercise: a flex-centered box with a 135-degree linear-gradient background, a pink box-shadow glow, and a hover transition that spins and scales the card.",
+      "tags": ["exercise", "gradient", "box-shadow", "transition", "hover-effect"],
+      "complexity": "simple",
+      "languageNotes": "Demonstrates the flex centering trio (display: flex + align-items + justify-content) combined with transform on :hover for animated feedback."
+    },
+    {
+      "id": "file:03_CSS/12/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/12/index.html",
+      "summary": "Exercise page for CSS positioning: a relative parent containing relative and absolute children, plus fixed and sticky elements to observe scroll behavior.",
+      "tags": ["exercise", "html-page", "positioning", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/12/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/12/styles/main.css",
+      "summary": "Demonstrates all five CSS position values: a relative parent anchoring an absolute child, a relative offset box, a viewport-fixed badge with z-index, and a sticky bar that pins to the top on scroll.",
+      "tags": ["exercise", "positioning", "sticky", "z-index", "layout"],
+      "complexity": "moderate",
+      "languageNotes": "Uses an artificially tall body (min-height: 1500px) to force scrolling so fixed vs. sticky behavior can be compared."
+    },
+    {
+      "id": "file:03_CSS/13/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/13/index.html",
+      "summary": "Exercise page for CSS Grid: six card divs inside a .grid container that the stylesheet lays out as a three-column grid.",
+      "tags": ["exercise", "html-page", "grid", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/13/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/13/styles/main.css",
+      "summary": "Minimal CSS Grid demo: display: grid with repeat(3, 1fr) columns and gap, auto-flowing six cards into two rows of three.",
+      "tags": ["exercise", "grid", "layout", "css-demo"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/14/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/14/index.html",
+      "summary": "Exercise page for responsive design: five cards in a flex .box container whose direction changes with a media query in the sibling stylesheet.",
+      "tags": ["exercise", "html-page", "responsive", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/14/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/14/styles/main.css",
+      "summary": "Media-query demo: a row of flex: 1 gradient cards that switches to a vertical column layout below a 600px viewport width via @media (max-width: 600px).",
+      "tags": ["exercise", "media-query", "responsive", "flexbox"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/15/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/15/index.html",
+      "summary": "Exercise page for CSS custom properties: two buttons that share the same variable-driven color defined in the sibling stylesheet.",
+      "tags": ["exercise", "html-page", "css-variables", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/15/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/15/styles/main.css",
+      "summary": "CSS variables demo: defines --main-color, --gap, and --body-color on :root and consumes them with var() so a single edit recolors both buttons and the page background.",
+      "tags": ["exercise", "css-variables", "custom-properties", "theming"],
+      "complexity": "simple",
+      "languageNotes": "Shows the :root definition plus var() consumption pattern, the foundation for single-source theming."
+    },
+    {
+      "id": "file:03_CSS/16/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/16/index.html",
+      "summary": "Exercise page for visual effects: a single hoverable card demonstrating box-shadow, border-radius, opacity, and transition together.",
+      "tags": ["exercise", "html-page", "css-demo", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/16/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/16/styles/main.css",
+      "summary": "Combines four effect properties on one card — border-radius, opacity, box-shadow, and transition: all — with a :hover state that lifts the card via translateY, sharpens opacity, and morphs it toward a circle.",
+      "tags": ["exercise", "box-shadow", "transition", "hover-effect", "border-radius"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/17/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/17/index.html",
+      "summary": "Exercise page for pseudo-elements: three paragraphs decorated by ::before/::after rules — a star prefix, wrapping quotation marks, and an underline bar.",
+      "tags": ["exercise", "html-page", "pseudo-elements", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/17/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/17/styles/main.css",
+      "summary": "Pseudo-element practice covering three patterns: ::before content injection (star prefix), paired ::before/::after quotation marks, and an empty-content ::after block styled as a decorative underline.",
+      "tags": ["exercise", "pseudo-elements", "before-after", "css-demo"],
+      "complexity": "simple",
+      "languageNotes": "Highlights that a pseudo-element never renders without a content property, including the empty-string content: \"\" trick for drawing boxes."
+    },
+    {
+      "id": "file:03_CSS/18/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/18/index.html",
+      "summary": "Exercise page for the universal CSS reset: a heading and paragraph used to compare default browser margins against the reset applied in the sibling stylesheet.",
+      "tags": ["exercise", "html-page", "css-reset", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/18/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/18/styles/main.css",
+      "summary": "Three-line universal reset: * { margin: 0; padding: 0; box-sizing: border-box; } — the standard baseline that removes default browser spacing and unifies size calculation.",
+      "tags": ["exercise", "css-reset", "box-sizing", "baseline"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/19/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/19/index.html",
+      "summary": "Capstone mini-project page in an 8-bit retro arcade style: a full 'OS window' layout containing a hero with confetti, a design-concept grid, a CSS Design Awards site review card, nine HTML/CSS concept cards, and a five-question multiple-choice quiz with a score counter and hidden ending screen — all driven purely by HTML and CSS.",
+      "tags": ["capstone", "mini-project", "html-page", "quiz", "retro-design"],
+      "complexity": "complex",
+      "languageNotes": "Uses radio inputs with paired labels as the quiz mechanism (no JavaScript), plus aria-hidden decorative layers and an sr-only heading for accessibility. Pulls the Galmuri pixel font from a CDN."
+    },
+    {
+      "id": "file:03_CSS/19/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/19/styles/main.css",
+      "summary": "1,148-line capstone stylesheet implementing the retro pixel theme end to end: a :root two-color neon palette with pixel fonts, clip-path stair-step corners, CRT scanline and border-glow keyframe animations, a marquee ticker, and a JavaScript-free quiz engine built from :has()/:checked selectors with a CSS counter scoreboard that unlocks an all-clear ending screen.",
+      "tags": ["capstone", "animation", "css-variables", "quiz", "advanced-selectors"],
+      "complexity": "complex",
+      "languageNotes": "Notably implements interactive scoring in pure CSS: .quiz-card:has(.quiz-radio--correct:checked) increments counter(quiz-score) rendered via ::after, and an article:has() chain of all five correct answers swaps the ending panels. Also includes @media breakpoints and a prefers-reduced-motion fallback."
+    },
+    {
+      "id": "file:04_JS/02/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/02/index.html",
+      "summary": "Exercise page for JS event handling: a heading and a button wired up by the sibling script, with the stylesheet linked in head and the script loaded just before body close.",
+      "tags": ["exercise", "html-page", "dom-events", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/02/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/02/scripts/main.js",
+      "summary": "Event-listener exercise: selects the title and button via querySelector, then iterates an event-name-to-message map with Object.entries to register click, dblclick, keydown, and keyup listeners that swap the heading text.",
+      "tags": ["exercise", "event-handler", "dom-manipulation", "learning"],
+      "complexity": "simple",
+      "languageNotes": "Uses Object.entries + destructuring in a forEach to register multiple event listeners from a data object instead of repeating addEventListener calls."
+    },
+    {
+      "id": "file:04_JS/02/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/02/styles/main.css",
+      "summary": "Minimal styling for the event exercise: tomato-colored large title text and a padded button with a pointer cursor.",
+      "tags": ["exercise", "css-demo", "styling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/03/index.html",
+      "summary": "Exercise page for reading input values: a name input, a greet button, and an output paragraph updated by the sibling script.",
+      "tags": ["exercise", "html-page", "form-input", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/scripts/main.js",
+      "type": "file",
+      "name": "main.js",
+      "filePath": "04_JS/03/scripts/main.js",
+      "summary": "Input-value exercise: on button click, reads the text field's .value and writes a personalized greeting into the output paragraph using a template literal.",
+      "tags": ["exercise", "dom-manipulation", "template-literal", "learning"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/03/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "04_JS/03/styles/main.css",
+      "summary": "Minimal styling for the greeting exercise: bold enlarged output text and padded input and button controls.",
+      "tags": ["exercise", "css-demo", "styling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:04_JS/04/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "04_JS/04/index.html",
+      "summary": "Exercise page for JavaScript data types: seven buttons (string, number, boolean, undefined, null, array, object) and an output paragraph that the sibling script fills with each value and its type.",
+      "tags": ["exercise", "html-page", "data-types", "learning"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:03_CSS/11/index.html",
+      "target": "file:03_CSS/11/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/12/index.html",
+      "target": "file:03_CSS/12/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/13/index.html",
+      "target": "file:03_CSS/13/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/14/index.html",
+      "target": "file:03_CSS/14/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/15/index.html",
+      "target": "file:03_CSS/15/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/16/index.html",
+      "target": "file:03_CSS/16/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/17/index.html",
+      "target": "file:03_CSS/17/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/18/index.html",
+      "target": "file:03_CSS/18/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/19/index.html",
+      "target": "file:03_CSS/19/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/02/index.html",
+      "target": "file:04_JS/02/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/02/index.html",
+      "target": "file:04_JS/02/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/03/index.html",
+      "target": "file:04_JS/03/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/03/index.html",
+      "target": "file:04_JS/03/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:04_JS/04/index.html",
+      "target": "file:04_JS/04/scripts/main.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

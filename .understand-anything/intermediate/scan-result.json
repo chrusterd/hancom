@@ -1,0 +1,1077 @@
+{
+  "name": "hancom",
+  "description": "A web-development learning repository ('hancom' course exercises) with numbered practice folders covering Markdown/VS Code notes, standalone HTML pages, CSS styling exercises, vanilla JavaScript exercises, and a Vite + React 19 starter app. Note: this project has over 100 source files; consider scoping analysis to a subdirectory for faster results.",
+  "languages": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "markdown"
+  ],
+  "frameworks": [
+    "React",
+    "Vite"
+  ],
+  "files": [
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "01_vscode/01_README.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_vscode/02_README.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/01_README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/02_README.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/03_index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/04_index.html",
+      "language": "html",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/05_index.html",
+      "language": "html",
+      "sizeLines": 9,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/06_index.html",
+      "language": "html",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/07_index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/08_index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/09_index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/10_index.html",
+      "language": "html",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/11_index.html",
+      "language": "html",
+      "sizeLines": 35,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/11_README.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/12_index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/13_index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/14_index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/15_index.html",
+      "language": "html",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/16_index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/17_index.html",
+      "language": "html",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/18_index.html",
+      "language": "html",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/19_index.html",
+      "language": "html",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/20_index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/21_index.html",
+      "language": "html",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/22_index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/23_index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/24_index.html",
+      "language": "html",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/25_index.html",
+      "language": "html",
+      "sizeLines": 15,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/26_index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/27_index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/28_index.html",
+      "language": "html",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/28_README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/29_index.html",
+      "language": "html",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/30_index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/31_index.html",
+      "language": "html",
+      "sizeLines": 18,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/32_README.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/33_index.html",
+      "language": "html",
+      "sizeLines": 57,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_HTML/33_README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_HTML/34_index.html",
+      "language": "html",
+      "sizeLines": 314,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/01/index.html",
+      "language": "html",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/01/styles/main.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/02/index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/02/styles/main.css",
+      "language": "css",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/03/.htmlhintrc",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "03_CSS/03/.stylelintrc.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "03_CSS/03/index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/03/package.json",
+      "language": "json",
+      "sizeLines": 8,
+      "fileCategory": "config"
+    },
+    {
+      "path": "03_CSS/03/styles/main.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/04/index.html",
+      "language": "html",
+      "sizeLines": 18,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/04/styles/main.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/05/.stylelintrc.json",
+      "language": "json",
+      "sizeLines": 6,
+      "fileCategory": "config"
+    },
+    {
+      "path": "03_CSS/05/index.html",
+      "language": "html",
+      "sizeLines": 21,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/05/styles/main.css",
+      "language": "css",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/06/index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/06/styles/main.css",
+      "language": "css",
+      "sizeLines": 1,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/07/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/07/styles/main.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/08/index.html",
+      "language": "html",
+      "sizeLines": 25,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/08/styles/main.css",
+      "language": "css",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/09/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/09/styles/main.css",
+      "language": "css",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/10/index.html",
+      "language": "html",
+      "sizeLines": 15,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/10/styles/main.css",
+      "language": "css",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/11/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/11/styles/main.css",
+      "language": "css",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/12/index.html",
+      "language": "html",
+      "sizeLines": 23,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/12/styles/main.css",
+      "language": "css",
+      "sizeLines": 51,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/13/index.html",
+      "language": "html",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/13/styles/main.css",
+      "language": "css",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/14/index.html",
+      "language": "html",
+      "sizeLines": 20,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/14/styles/main.css",
+      "language": "css",
+      "sizeLines": 25,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/15/index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/15/styles/main.css",
+      "language": "css",
+      "sizeLines": 31,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/16/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/16/styles/main.css",
+      "language": "css",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/17/index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/17/styles/main.css",
+      "language": "css",
+      "sizeLines": 26,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/18/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/18/styles/main.css",
+      "language": "css",
+      "sizeLines": 5,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/19/index.html",
+      "language": "html",
+      "sizeLines": 406,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "03_CSS/19/styles/main.css",
+      "language": "css",
+      "sizeLines": 1148,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/02/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/02/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/02/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/03/index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/03/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/03/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/04/index.html",
+      "language": "html",
+      "sizeLines": 17,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/04/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/04/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/05/index.html",
+      "language": "html",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/05/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/05/styles/main.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/06/index.html",
+      "language": "html",
+      "sizeLines": 16,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/06/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/06/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/07/index.html",
+      "language": "html",
+      "sizeLines": 14,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/07/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/07/styles/main.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/08/index.html",
+      "language": "html",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/08/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/08/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/09/index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/09/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/09/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/10/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/10/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/10/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/11/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/11/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/11/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/12/index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/12/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/12/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/13/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/13/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/13/styles/main.css",
+      "language": "css",
+      "sizeLines": 7,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/14/index.html",
+      "language": "html",
+      "sizeLines": 12,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/14/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/14/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/15/index.html",
+      "language": "html",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/15/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/15/styles/main.css",
+      "language": "css",
+      "sizeLines": 4,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/16/index.html",
+      "language": "html",
+      "sizeLines": 9,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/16/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/17/db-1783407269920.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": "04_JS/17/db.json",
+      "language": "json",
+      "sizeLines": 19,
+      "fileCategory": "config"
+    },
+    {
+      "path": "04_JS/17/index.html",
+      "language": "html",
+      "sizeLines": 19,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/17/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/17/styles/main.css",
+      "language": "css",
+      "sizeLines": 11,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/18-1/index.html",
+      "language": "html",
+      "sizeLines": 121,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/18-1/planning.md",
+      "language": "markdown",
+      "sizeLines": 257,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_JS/18-1/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 1060,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/18-1/styles/main.css",
+      "language": "css",
+      "sizeLines": 1687,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/18/index.html",
+      "language": "html",
+      "sizeLines": 80,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "04_JS/18/scripts/main.js",
+      "language": "javascript",
+      "sizeLines": 538,
+      "fileCategory": "code"
+    },
+    {
+      "path": "04_JS/18/styles/main.css",
+      "language": "css",
+      "sizeLines": 332,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "05_react/my-app/eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "05_react/my-app/index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "05_react/my-app/package.json",
+      "language": "json",
+      "sizeLines": 27,
+      "fileCategory": "config"
+    },
+    {
+      "path": "05_react/my-app/README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "05_react/my-app/src/App.css",
+      "language": "css",
+      "sizeLines": 184,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "05_react/my-app/src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 122,
+      "fileCategory": "code"
+    },
+    {
+      "path": "05_react/my-app/src/index.css",
+      "language": "css",
+      "sizeLines": 111,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "05_react/my-app/src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "05_react/my-app/vite.config.js",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "img/dog.webp",
+      "language": "webp",
+      "sizeLines": 380,
+      "fileCategory": "code"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    }
+  ],
+  "totalFiles": 150,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "moderate",
+  "importMap": {
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "01_vscode/01_README.md": [],
+    "01_vscode/02_README.md": [],
+    "02_HTML/01_README.md": [],
+    "02_HTML/02_README.md": [],
+    "02_HTML/03_index.html": [],
+    "02_HTML/04_index.html": [],
+    "02_HTML/05_index.html": [],
+    "02_HTML/06_index.html": [],
+    "02_HTML/07_index.html": [],
+    "02_HTML/08_index.html": [],
+    "02_HTML/09_index.html": [],
+    "02_HTML/10_index.html": [],
+    "02_HTML/11_index.html": [],
+    "02_HTML/11_README.md": [],
+    "02_HTML/12_index.html": [],
+    "02_HTML/13_index.html": [],
+    "02_HTML/14_index.html": [],
+    "02_HTML/15_index.html": [],
+    "02_HTML/16_index.html": [],
+    "02_HTML/17_index.html": [],
+    "02_HTML/18_index.html": [],
+    "02_HTML/19_index.html": [],
+    "02_HTML/20_index.html": [],
+    "02_HTML/21_index.html": [],
+    "02_HTML/22_index.html": [],
+    "02_HTML/23_index.html": [],
+    "02_HTML/24_index.html": [],
+    "02_HTML/25_index.html": [],
+    "02_HTML/26_index.html": [],
+    "02_HTML/27_index.html": [],
+    "02_HTML/28_index.html": [],
+    "02_HTML/28_README.md": [],
+    "02_HTML/29_index.html": [],
+    "02_HTML/30_index.html": [],
+    "02_HTML/31_index.html": [],
+    "02_HTML/32_README.md": [],
+    "02_HTML/33_index.html": [],
+    "02_HTML/33_README.md": [],
+    "02_HTML/34_index.html": [],
+    "03_CSS/01/index.html": [],
+    "03_CSS/01/styles/main.css": [],
+    "03_CSS/02/index.html": [],
+    "03_CSS/02/styles/main.css": [],
+    "03_CSS/03/.htmlhintrc": [],
+    "03_CSS/03/.stylelintrc.json": [],
+    "03_CSS/03/index.html": [],
+    "03_CSS/03/package.json": [],
+    "03_CSS/03/styles/main.css": [],
+    "03_CSS/04/index.html": [],
+    "03_CSS/04/styles/main.css": [],
+    "03_CSS/05/.stylelintrc.json": [],
+    "03_CSS/05/index.html": [],
+    "03_CSS/05/styles/main.css": [],
+    "03_CSS/06/index.html": [],
+    "03_CSS/06/styles/main.css": [],
+    "03_CSS/07/index.html": [],
+    "03_CSS/07/styles/main.css": [],
+    "03_CSS/08/index.html": [],
+    "03_CSS/08/styles/main.css": [],
+    "03_CSS/09/index.html": [],
+    "03_CSS/09/styles/main.css": [],
+    "03_CSS/10/index.html": [],
+    "03_CSS/10/styles/main.css": [],
+    "03_CSS/11/index.html": [],
+    "03_CSS/11/styles/main.css": [],
+    "03_CSS/12/index.html": [],
+    "03_CSS/12/styles/main.css": [],
+    "03_CSS/13/index.html": [],
+    "03_CSS/13/styles/main.css": [],
+    "03_CSS/14/index.html": [],
+    "03_CSS/14/styles/main.css": [],
+    "03_CSS/15/index.html": [],
+    "03_CSS/15/styles/main.css": [],
+    "03_CSS/16/index.html": [],
+    "03_CSS/16/styles/main.css": [],
+    "03_CSS/17/index.html": [],
+    "03_CSS/17/styles/main.css": [],
+    "03_CSS/18/index.html": [],
+    "03_CSS/18/styles/main.css": [],
+    "03_CSS/19/index.html": [],
+    "03_CSS/19/styles/main.css": [],
+    "04_JS/02/index.html": [],
+    "04_JS/02/scripts/main.js": [],
+    "04_JS/02/styles/main.css": [],
+    "04_JS/03/index.html": [],
+    "04_JS/03/scripts/main.js": [],
+    "04_JS/03/styles/main.css": [],
+    "04_JS/04/index.html": [],
+    "04_JS/04/scripts/main.js": [],
+    "04_JS/04/styles/main.css": [],
+    "04_JS/05/index.html": [],
+    "04_JS/05/scripts/main.js": [],
+    "04_JS/05/styles/main.css": [],
+    "04_JS/06/index.html": [],
+    "04_JS/06/scripts/main.js": [],
+    "04_JS/06/styles/main.css": [],
+    "04_JS/07/index.html": [],
+    "04_JS/07/scripts/main.js": [],
+    "04_JS/07/styles/main.css": [],
+    "04_JS/08/index.html": [],
+    "04_JS/08/scripts/main.js": [],
+    "04_JS/08/styles/main.css": [],
+    "04_JS/09/index.html": [],
+    "04_JS/09/scripts/main.js": [],
+    "04_JS/09/styles/main.css": [],
+    "04_JS/10/index.html": [],
+    "04_JS/10/scripts/main.js": [],
+    "04_JS/10/styles/main.css": [],
+    "04_JS/11/index.html": [],
+    "04_JS/11/scripts/main.js": [],
+    "04_JS/11/styles/main.css": [],
+    "04_JS/12/index.html": [],
+    "04_JS/12/scripts/main.js": [],
+    "04_JS/12/styles/main.css": [],
+    "04_JS/13/index.html": [],
+    "04_JS/13/scripts/main.js": [],
+    "04_JS/13/styles/main.css": [],
+    "04_JS/14/index.html": [],
+    "04_JS/14/scripts/main.js": [],
+    "04_JS/14/styles/main.css": [],
+    "04_JS/15/index.html": [],
+    "04_JS/15/scripts/main.js": [],
+    "04_JS/15/styles/main.css": [],
+    "04_JS/16/index.html": [],
+    "04_JS/16/scripts/main.js": [],
+    "04_JS/17/db-1783407269920.json": [],
+    "04_JS/17/db.json": [],
+    "04_JS/17/index.html": [],
+    "04_JS/17/scripts/main.js": [],
+    "04_JS/17/styles/main.css": [],
+    "04_JS/18-1/index.html": [],
+    "04_JS/18-1/planning.md": [],
+    "04_JS/18-1/scripts/main.js": [],
+    "04_JS/18-1/styles/main.css": [],
+    "04_JS/18/index.html": [],
+    "04_JS/18/scripts/main.js": [],
+    "04_JS/18/styles/main.css": [],
+    "05_react/my-app/eslint.config.js": [],
+    "05_react/my-app/index.html": [],
+    "05_react/my-app/package.json": [],
+    "05_react/my-app/README.md": [],
+    "05_react/my-app/src/App.css": [],
+    "05_react/my-app/src/App.jsx": [
+      "05_react/my-app/src/App.css"
+    ],
+    "05_react/my-app/src/index.css": [],
+    "05_react/my-app/src/main.jsx": [
+      "05_react/my-app/src/App.jsx",
+      "05_react/my-app/src/index.css"
+    ],
+    "05_react/my-app/vite.config.js": [],
+    "img/dog.webp": [],
+    "README.md": []
+  }
+}

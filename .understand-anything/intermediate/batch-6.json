@@ -1,0 +1,301 @@
+{
+  "nodes": [
+    {
+      "id": "document:01_vscode/01_README.md",
+      "type": "document",
+      "name": "01_README.md",
+      "filePath": "01_vscode/01_README.md",
+      "summary": "One-line note pointing to the Visual Studio Code download page, marking the starting point of the VS Code setup lesson.",
+      "tags": ["documentation", "vscode", "setup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:01_vscode/02_README.md",
+      "type": "document",
+      "name": "02_README.md",
+      "filePath": "01_vscode/02_README.md",
+      "summary": "Bullet list (in Korean) of recommended VS Code extensions for the course, covering Live Server, Prettier, ESLint, Auto Rename Tag, GitLens, and Error Lens with a short purpose note for each.",
+      "tags": ["documentation", "vscode", "development", "tooling"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/01/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/01/index.html",
+      "summary": "First CSS lesson page demonstrating basic selectors: heavily annotated HTML with an h1, plain and class-tagged paragraphs, and a list whose em element is styled via a descendant selector in the linked stylesheet.",
+      "tags": ["lesson", "css-basics", "selectors", "html-page"],
+      "complexity": "simple",
+      "languageNotes": "Every line carries a Korean teaching comment explaining what the tag does and which CSS rule targets it."
+    },
+    {
+      "id": "file:03_CSS/01/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/01/styles/main.css",
+      "summary": "Stylesheet for lesson 01 contrasting the three fundamental selector kinds: element (h1, p), class (.special, .normal), and descendant (li em), each setting a distinct text color.",
+      "tags": ["lesson", "css-basics", "selectors", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/02/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/02/index.html",
+      "summary": "Lesson page for CSS rule-ordering conventions, reusing the heading/paragraph/list structure so the stylesheet can show rules ordered from general to specific.",
+      "tags": ["lesson", "css-basics", "code-conventions", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/02/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/02/styles/main.css",
+      "summary": "Stylesheet demonstrating the general-to-specific ordering convention: body defaults first, then element selectors, then a class selector, and finally a descendant selector, with numbered Korean comments labeling each tier.",
+      "tags": ["lesson", "css-basics", "code-conventions", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/03/.htmlhintrc",
+      "type": "config",
+      "name": ".htmlhintrc",
+      "filePath": "03_CSS/03/.htmlhintrc",
+      "summary": "Minimal HTMLHint configuration enabling three lint rules — tag-pair, id-unique, and alt-require — for the lesson 03 HTML page.",
+      "tags": ["configuration", "linting", "htmlhint"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/03/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/03/styles/main.css",
+      "summary": "Single .box rule with its properties listed alphabetically, used in the lesson about property ordering and CSS linting (paired with the folder's HTMLHint/Stylelint tooling exercises).",
+      "tags": ["lesson", "css-basics", "linting", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/04/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/04/index.html",
+      "summary": "Box-model lesson page containing two ul boxes that the stylesheet decorates with padding, border, and margin to visualize the CSS box model.",
+      "tags": ["lesson", "box-model", "css-basics", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/04/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/04/styles/main.css",
+      "summary": "Stylesheet applying padding, border, and margin to ul elements to demonstrate each layer of the CSS box model, with list bullets removed.",
+      "tags": ["lesson", "box-model", "css-basics", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:03_CSS/05/.stylelintrc.json",
+      "type": "config",
+      "name": ".stylelintrc.json",
+      "filePath": "03_CSS/05/.stylelintrc.json",
+      "summary": "Stylelint configuration extending stylelint-config-standard and enabling the stylelint-order plugin to enforce alphabetical CSS property ordering in lesson 05.",
+      "tags": ["configuration", "linting", "stylelint", "code-conventions"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/05/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/05/index.html",
+      "summary": "Flexbox introduction page with a three-item ul.menu navigation list that the stylesheet lays out horizontally via display:flex; note the file contains an accidentally duplicated head preamble.",
+      "tags": ["lesson", "flexbox", "css-basics", "html-page"],
+      "complexity": "simple",
+      "languageNotes": "The first five lines (comment, doctype, html, head, meta) are duplicated — a copy-paste artifact that browsers tolerate but linters would flag."
+    },
+    {
+      "id": "file:03_CSS/05/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/05/styles/main.css",
+      "summary": "Stylesheet introducing flexbox: .menu uses display:flex with gap to line list items up horizontally, and li rules style each item as a rounded light-blue pill.",
+      "tags": ["lesson", "flexbox", "css-basics", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/06/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/06/index.html",
+      "summary": "Lesson page demonstrating the three ways to attach CSS: an external stylesheet link, an internal style block coloring paragraphs green, and an inline style attribute coloring one paragraph red.",
+      "tags": ["lesson", "css-basics", "style-attachment", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/06/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/06/styles/main.css",
+      "summary": "One-rule external stylesheet (h1 navy) serving as the 'external' example in the lesson comparing external, internal, and inline CSS.",
+      "tags": ["lesson", "css-basics", "style-attachment", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/07/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/07/index.html",
+      "summary": "Pseudo-class lesson page containing a single external link used to demonstrate the four anchor states (:link, :visited, :hover, :active) styled in the linked stylesheet.",
+      "tags": ["lesson", "pseudo-classes", "css-basics", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/07/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/07/styles/main.css",
+      "summary": "Stylesheet assigning a distinct color to each of the four anchor pseudo-classes (a:link, a:visited, a:hover, a:active) in the conventional LVHA order.",
+      "tags": ["lesson", "pseudo-classes", "css-basics", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/08/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/08/index.html",
+      "summary": "3D card-flip lesson page with two .card containers, each holding an .inner wrapper with stacked .front and .back faces that the stylesheet rotates on hover.",
+      "tags": ["lesson", "css-3d", "transitions", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/08/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/08/styles/main.css",
+      "summary": "Implements the classic 3D card-flip effect: perspective on .card, preserve-3d and a transform transition on .inner, hover-triggered rotateY(180deg), and backface-visibility:hidden on the absolutely positioned front/back faces.",
+      "tags": ["lesson", "css-3d", "transitions", "transform", "stylesheet"],
+      "complexity": "moderate",
+      "languageNotes": "Shows the full 3D-flip recipe — perspective, transform-style: preserve-3d, backface-visibility, and a pre-rotated back face — each annotated with a Korean explanation."
+    },
+    {
+      "id": "file:03_CSS/09/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/09/index.html",
+      "summary": "Hover-transform lesson page containing a single .box div that spins and scales up on mouse-over via the linked stylesheet.",
+      "tags": ["lesson", "transform", "transitions", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/09/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/09/styles/main.css",
+      "summary": "Styles a flex-centered rounded .box and adds a :hover rule combining rotate(360deg) and scale(1.5), eased over 0.9 seconds via a transform transition.",
+      "tags": ["lesson", "transform", "transitions", "hover-effects", "stylesheet"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/10/index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "03_CSS/10/index.html",
+      "summary": "Keyframe-animation lesson page with two ball divs (.ball1, .ball2) that the stylesheet animates automatically — one floating vertically, one sliding horizontally.",
+      "tags": ["lesson", "animation", "keyframes", "html-page"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:03_CSS/10/styles/main.css",
+      "type": "file",
+      "name": "main.css",
+      "filePath": "03_CSS/10/styles/main.css",
+      "summary": "Defines two @keyframes animations — float (translateY bounce) and slide (translateX shuttle) — and applies each to a circular ball element on an infinite 1.5-second ease-in-out loop.",
+      "tags": ["lesson", "animation", "keyframes", "stylesheet"],
+      "complexity": "simple",
+      "languageNotes": "Introduces @keyframes as a named 'script' of motion that the animation shorthand then plays, a mental model spelled out in the Korean comments."
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:03_CSS/01/index.html",
+      "target": "file:03_CSS/01/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/02/index.html",
+      "target": "file:03_CSS/02/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/03/index.html",
+      "target": "file:03_CSS/03/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/03/.htmlhintrc",
+      "target": "file:03_CSS/03/index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/04/index.html",
+      "target": "file:03_CSS/04/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:03_CSS/05/.stylelintrc.json",
+      "target": "file:03_CSS/05/styles/main.css",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/05/index.html",
+      "target": "file:03_CSS/05/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/06/index.html",
+      "target": "file:03_CSS/06/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/07/index.html",
+      "target": "file:03_CSS/07/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/08/index.html",
+      "target": "file:03_CSS/08/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/09/index.html",
+      "target": "file:03_CSS/09/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:03_CSS/10/index.html",
+      "target": "file:03_CSS/10/styles/main.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}
