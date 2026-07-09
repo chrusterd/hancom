@@ -1,80 +1,26 @@
 <!DOCTYPE html>
+<!-- 기획서를 맨 위 주석으로 박아두기 (만들다 헷갈릴 때 나침반) -->
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공유 도트 정원</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <main class="app-shell">
-      <header class="hero">
-        <div>
-          <p class="eyebrow">공유 도트 정원</p>
-          <h1>방문자들이 픽셀을 하나씩 심어 함께 완성하는 정원</h1>
-          <p class="subtitle">
-            작은 씨앗이 모여 풍경이 됩니다. 테스트 모드와 정식 모드 모두 바로 전환해볼 수 있어요.
-          </p>
-        </div>
-        <div class="hero-controls">
-          <label class="mode-pill" for="modeSelect">
-            <span>운영 모드</span>
-            <select id="modeSelect">
-              <option value="test">테스트 모드</option>
-              <option value="formal">정식 모드</option>
-            </select>
-          </label>
-          <button id="resetButton" type="button">정원 초기화</button>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>나의 할 일 목록</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="app">
+    <h1>✓ 나의 할 일 목록</h1>
+    <p id="count" class="count">할 일 0개</p>
 
-      <section class="dashboard" aria-label="정원 상태">
-        <article class="stat-card">
-          <span class="stat-label">진행률</span>
-          <strong id="progressText">0 / 14000</strong>
-          <div class="progress-bar" aria-hidden="true">
-            <span id="progressFill"></span>
-          </div>
-        </article>
-        <article class="stat-card">
-          <span class="stat-label">정원사 수</span>
-          <strong id="gardenerCount">0</strong>
-        </article>
-        <article class="stat-card">
-          <span class="stat-label">현재 상태</span>
-          <strong id="statusText">테스트 모드</strong>
-        </article>
-      </section>
+    <!-- form = 버튼 클릭 + Enter 둘 다 제출됨 -->
+    <form id="form" class="input-row">
+      <input id="inp" placeholder="할 일을 입력하고 Enter" autocomplete="off">
+      <button type="submit">추가</button>
+    </form>
 
-      <section class="garden-area">
-        <canvas id="gardenCanvas" width="1120" height="800"></canvas>
-        <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
-      </section>
+    <ul id="list" class="list"></ul>
+  </main>
 
-      <section class="garden-meta">
-        <div class="garden-actions">
-          <button id="timelapseButton" type="button">타임랩스 재생</button>
-          <button id="toggleGuideButton" type="button" class="secondary">밑그림 가이드 끄기</button>
-        </div>
-        <div class="minimap-card">
-          <div class="minimap-title">
-            <h3>미니맵</h3>
-            <p>정원의 전체 모습을 한눈에 확인해보세요.</p>
-          </div>
-          <canvas id="minimapCanvas" width="220" height="150"></canvas>
-        </div>
-      </section>
-
-      <section class="control-panel">
-        <div class="panel-title">
-          <h2>팔레트</h2>
-          <p>정원 테마의 16색만 골라 심을 수 있어요.</p>
-        </div>
-        <div id="palette" class="palette"></div>
-        <div id="feedback" class="feedback">비어 있는 칸을 클릭해 씨앗을 심어보세요.</div>
-      </section>
-    </main>
-
-    <script src="scripts/main.js"></script>
-  </body>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
