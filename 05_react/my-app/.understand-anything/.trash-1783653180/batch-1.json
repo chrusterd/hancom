@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "src/App.jsx",
+      "summary": "React 애플리케이션의 루트 컴포넌트로, 18~30번대 실습에서 사용했던 Hello, Greeting, Profile, Card, Avatar, Badge, Alert 등 다양한 컴포넌트 렌더링 코드가 모두 주석 처리되어 남아있고, 현재는 29번 실습의 Counter 컴포넌트 하나만 렌더링한다.",
+      "tags": ["react-component", "루트-컴포넌트", "실습-코드", "주석-처리"],
+      "complexity": "simple",
+      "languageNotes": "실제 활성 코드는 3줄뿐이며 나머지 70여 줄은 이전 레슨(18~30번)의 실습 흔적이 주석으로 보존되어 있는 학습용 파일이다."
+    },
+    {
+      "id": "function:src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "src/App.jsx",
+      "lineRange": [73, 75],
+      "summary": "Counter 컴포넌트 하나를 렌더링하여 반환하는 화살표 함수 형태의 루트 App 컴포넌트.",
+      "tags": ["react-component", "컴포넌트-함수", "실습-코드"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/29/Counter.jsx",
+      "type": "file",
+      "name": "Counter.jsx",
+      "filePath": "src/components/29/Counter.jsx",
+      "summary": "useState 훅으로 클릭 횟수(count) 상태를 관리하는 29번 실습용 카운터 버튼 컴포넌트로, 버튼을 클릭할 때마다 카운트를 1씩 증가시켜 화면에 표시한다.",
+      "tags": ["react-component", "hook", "카운터", "이벤트-핸들러"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/29/Counter.jsx:Counter",
+      "type": "function",
+      "name": "Counter",
+      "filePath": "src/components/29/Counter.jsx",
+      "lineRange": [3, 13],
+      "summary": "useState(0)로 count 상태를 초기화하고, onClick 핸들러에서 setCount로 값을 증가시켜 클릭 횟수를 표시하는 버튼을 렌더링하는 함수형 컴포넌트.",
+      "tags": ["react-component", "hook", "state-관리", "이벤트-핸들러"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "src/main.jsx",
+      "summary": "Vite + React 애플리케이션의 진입점으로, 전역 스타일 index.css를 불러오고 App 컴포넌트를 StrictMode로 감싸 DOM의 root 엘리먼트에 마운트한다.",
+      "tags": ["entry-point", "부트스트랩", "react-dom", "strict-mode"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/components/29/Counter.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/index.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/29/Counter.jsx",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/29/Counter.jsx",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/App.jsx:App",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ]
+}

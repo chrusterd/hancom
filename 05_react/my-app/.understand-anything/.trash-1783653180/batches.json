@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 32,
+  "totalBatches": 4,
+  "exportsByPath": {
+    ".understand-anything/.understandignore": [],
+    "eslint.config.js": [],
+    "src/App.jsx": [],
+    "src/components/17/Hello.jsx": [],
+    "src/components/18/Hello.jsx": [],
+    "src/components/19/Greeting.jsx": [],
+    "src/components/20/Profile.jsx": [],
+    "src/components/21/Card.jsx": [],
+    "src/components/22/Avater.jsx": [],
+    "src/components/23/Badge.jsx": [],
+    "src/components/24/Alert.jsx": [],
+    "src/components/26/Tag.jsx": [],
+    "src/components/27/NewTextField.jsx": [],
+    "src/components/27/SubmitButton.jsx": [],
+    "src/components/28/Content.jsx": [],
+    "src/components/28/Footer.jsx": [],
+    "src/components/28/Header.jsx": [],
+    "src/components/28/Menu.jsx": [],
+    "src/components/29/Counter.jsx": [],
+    "src/components/30/Button.jsx": [],
+    "src/components/30/ButtonDemo.jsx": [],
+    "src/main.jsx": [],
+    "vite.config.js": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "src/App.jsx",
+          "language": "javascript",
+          "sizeLines": 76,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/29/Counter.jsx",
+          "language": "javascript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/main.jsx",
+          "language": "javascript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/App.jsx": [
+          "src/components/29/Counter.jsx"
+        ],
+        "src/components/29/Counter.jsx": [],
+        "src/main.jsx": [
+          "src/App.jsx",
+          "src/index.css"
+        ]
+      },
+      "neighborMap": {
+        "src/main.jsx": [
+          {
+            "path": "src/index.css",
+            "batchIndex": 3,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 16,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "index.html",
+          "language": "html",
+          "sizeLines": 13,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 32,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "README.md": [],
+        "index.html": [],
+        "package.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": ".understand-anything/.understandignore",
+          "language": "unknown",
+          "sizeLines": 67,
+          "fileCategory": "code"
+        },
+        {
+          "path": ".understand-anything/domain-graph.json",
+          "language": "json",
+          "sizeLines": 548,
+          "fileCategory": "config"
+        },
+        {
+          "path": "docs/ONBOARDING.md",
+          "language": "markdown",
+          "sizeLines": 86,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "eslint.config.js",
+          "language": "javascript",
+          "sizeLines": 21,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/App.css",
+          "language": "css",
+          "sizeLines": 184,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "src/components/17/Hello.jsx",
+          "language": "javascript",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/18/Hello.css",
+          "language": "css",
+          "sizeLines": 6,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "src/components/18/Hello.jsx",
+          "language": "javascript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/19/Greeting.jsx",
+          "language": "javascript",
+          "sizeLines": 4,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/20/Profile.jsx",
+          "language": "javascript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/21/Card.css",
+          "language": "css",
+          "sizeLines": 10,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "src/components/21/Card.jsx",
+          "language": "javascript",
+          "sizeLines": 12,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/22/Avater.jsx",
+          "language": "javascript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/23/Badge.jsx",
+          "language": "javascript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/24/Alert.jsx",
+          "language": "javascript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/26/Tag.jsx",
+          "language": "javascript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/27/NewTextField.jsx",
+          "language": "javascript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/27/SubmitButton.jsx",
+          "language": "javascript",
+          "sizeLines": 9,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/28/Content.jsx",
+          "language": "javascript",
+          "sizeLines": 15,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/28/Footer.jsx",
+          "language": "javascript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/28/Header.jsx",
+          "language": "javascript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/28/Menu.jsx",
+          "language": "javascript",
+          "sizeLines": 18,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/30/Button.jsx",
+          "language": "javascript",
+          "sizeLines": 46,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/30/ButtonDemo.jsx",
+          "language": "javascript",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/index.css",
+          "language": "css",
+          "sizeLines": 113,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        ".understand-anything/.understandignore": [],
+        ".understand-anything/domain-graph.json": [],
+        "docs/ONBOARDING.md": [],
+        "eslint.config.js": [],
+        "src/App.css": [],
+        "src/components/17/Hello.jsx": [],
+        "src/components/18/Hello.css": [],
+        "src/components/18/Hello.jsx": [
+          "src/components/18/Hello.css"
+        ],
+        "src/components/19/Greeting.jsx": [],
+        "src/components/20/Profile.jsx": [],
+        "src/components/21/Card.css": [],
+        "src/components/21/Card.jsx": [
+          "src/components/21/Card.css"
+        ],
+        "src/components/22/Avater.jsx": [],
+        "src/components/23/Badge.jsx": [],
+        "src/components/24/Alert.jsx": [],
+        "src/components/26/Tag.jsx": [],
+        "src/components/27/NewTextField.jsx": [],
+        "src/components/27/SubmitButton.jsx": [],
+        "src/components/28/Content.jsx": [],
+        "src/components/28/Footer.jsx": [],
+        "src/components/28/Header.jsx": [],
+        "src/components/28/Menu.jsx": [],
+        "src/components/30/Button.jsx": [],
+        "src/components/30/ButtonDemo.jsx": [
+          "src/components/30/Button.jsx"
+        ],
+        "src/index.css": []
+      },
+      "neighborMap": {
+        "src/index.css": [
+          {
+            "path": "src/main.jsx",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "vite.config.js",
+          "language": "javascript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "vite.config.js": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

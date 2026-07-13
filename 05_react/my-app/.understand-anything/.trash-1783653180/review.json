@@ -1,0 +1,28 @@
+{
+  "issues": [],
+  "warnings": [
+    "Node 'config:.understand-anything/domain-graph.json' has no edges (orphan)",
+    "Node 'file:vite.config.js' has no edges (orphan)"
+  ],
+  "stats": {
+    "totalNodes": 51,
+    "totalEdges": 53,
+    "totalLayers": 4,
+    "tourSteps": 15,
+    "nodeTypes": {
+      "file": 28,
+      "function": 19,
+      "document": 2,
+      "config": 2
+    },
+    "edgeTypes": {
+      "imports": 6,
+      "contains": 20,
+      "exports": 19,
+      "documents": 5,
+      "configures": 1,
+      "depends_on": 1,
+      "calls": 1
+    }
+  }
+}

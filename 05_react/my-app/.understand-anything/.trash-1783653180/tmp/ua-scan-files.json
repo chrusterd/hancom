@@ -1,8 +1,5 @@
 {
-  "name": "my-app",
-  "description": "React와 Vite 기반의 한국어 부트캠프 학습용 실습 프로젝트로, src/components 아래 17~30번 레슨 폴더마다 Hello, Greeting, Profile, Card, Avatar, Badge, Alert, Tag, SubmitButton, NewTextField, Header, Menu, Content, Footer, Counter, Button, ButtonDemo 등 작은 데모 컴포넌트를 만들며 React 기초 문법과 컴포넌트 패턴을 연습합니다.",
-  "languages": ["css", "html", "javascript", "json", "markdown"],
-  "frameworks": ["React", "Vite", "Tailwind CSS"],
+  "scriptCompleted": true,
   "files": [
     {
       "path": ".understand-anything/.understandignore",
@@ -200,49 +197,21 @@
   "totalFiles": 32,
   "filteredByIgnore": 41,
   "estimatedComplexity": "moderate",
-  "importMap": {
-    ".understand-anything/.understandignore": [],
-    ".understand-anything/domain-graph.json": [],
-    "docs/ONBOARDING.md": [],
-    "eslint.config.js": [],
-    "index.html": [],
-    "package.json": [],
-    "README.md": [],
-    "src/App.css": [],
-    "src/App.jsx": [
-      "src/components/29/Counter.jsx"
-    ],
-    "src/components/17/Hello.jsx": [],
-    "src/components/18/Hello.css": [],
-    "src/components/18/Hello.jsx": [
-      "src/components/18/Hello.css"
-    ],
-    "src/components/19/Greeting.jsx": [],
-    "src/components/20/Profile.jsx": [],
-    "src/components/21/Card.css": [],
-    "src/components/21/Card.jsx": [
-      "src/components/21/Card.css"
-    ],
-    "src/components/22/Avater.jsx": [],
-    "src/components/23/Badge.jsx": [],
-    "src/components/24/Alert.jsx": [],
-    "src/components/26/Tag.jsx": [],
-    "src/components/27/NewTextField.jsx": [],
-    "src/components/27/SubmitButton.jsx": [],
-    "src/components/28/Content.jsx": [],
-    "src/components/28/Footer.jsx": [],
-    "src/components/28/Header.jsx": [],
-    "src/components/28/Menu.jsx": [],
-    "src/components/29/Counter.jsx": [],
-    "src/components/30/Button.jsx": [],
-    "src/components/30/ButtonDemo.jsx": [
-      "src/components/30/Button.jsx"
-    ],
-    "src/index.css": [],
-    "src/main.jsx": [
-      "src/App.jsx",
-      "src/index.css"
-    ],
-    "vite.config.js": []
+  "stats": {
+    "filesScanned": 32,
+    "byCategory": {
+      "code": 23,
+      "config": 2,
+      "docs": 2,
+      "markup": 5
+    },
+    "byLanguage": {
+      "unknown": 1,
+      "json": 2,
+      "markdown": 2,
+      "javascript": 22,
+      "html": 1,
+      "css": 4
+    }
   }
 }
