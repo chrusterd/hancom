@@ -8,3 +8,10 @@
 *.png
 *.jpg
 *.jpeg
+
+# Local Netlify folder
+.netlify
+
+.env
+
+node_modules/
