@@ -1,0 +1,171 @@
+/* 클로드 스타일: 따뜻한 크림색 배경 + 세리프 제목 + 테라코타 포인트 컬러 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+  background: #F5F4EE;
+  color: #3D3929;
+  height: 100vh;
+}
+
+.container {
+  max-width: 760px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 36px 0 20px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #29261B;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #8A8570;
+}
+
+/* 대화 영역 */
+#chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.msg {
+  max-width: 85%;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* 사용자 말풍선: 오른쪽, 흰 카드 */
+.msg.user {
+  align-self: flex-end;
+  background: #FFFFFF;
+  border: 1px solid #E8E6DD;
+  border-radius: 16px 16px 4px 16px;
+  padding: 10px 16px;
+}
+
+/* AI 답변: 왼쪽, 배경 없이 본문처럼 */
+.msg.ai {
+  align-self: flex-start;
+  padding: 4px 2px;
+}
+
+.msg.ai.loading { color: #8A8570; font-style: italic; }
+.msg.ai.error { color: #B3502D; }
+
+/* 마크다운 렌더링 스타일 */
+.msg.ai h1, .msg.ai h2, .msg.ai h3 {
+  font-family: Georgia, serif;
+  font-weight: 600;
+  margin: 14px 0 6px;
+  color: #29261B;
+}
+.msg.ai h1 { font-size: 22px; }
+.msg.ai h2 { font-size: 19px; }
+.msg.ai h3 { font-size: 16px; }
+.msg.ai p { margin: 8px 0; }
+.msg.ai ul, .msg.ai ol { margin: 8px 0; padding-left: 24px; }
+.msg.ai li { margin: 4px 0; }
+.msg.ai blockquote {
+  border-left: 3px solid #D97757;
+  padding-left: 12px;
+  margin: 10px 0;
+  color: #6B6552;
+}
+.msg.ai code {
+  background: #ECEAE1;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13.5px;
+}
+.msg.ai pre {
+  background: #29261B;
+  color: #F5F4EE;
+  border-radius: 10px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+.msg.ai pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+.msg.ai table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.msg.ai th, .msg.ai td {
+  border: 1px solid #DDD9CB;
+  padding: 6px 12px;
+}
+.msg.ai th { background: #ECEAE1; }
+.msg.ai a { color: #C15F3C; }
+.msg.ai hr { border: none; border-top: 1px solid #DDD9CB; margin: 14px 0; }
+
+/* 입력 영역 */
+.input-area {
+  padding: 12px 0 24px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 1px solid #DDD9CB;
+  border-radius: 16px;
+  padding: 8px 8px 8px 18px;
+  box-shadow: 0 2px 8px rgba(61, 57, 41, 0.06);
+}
+
+.input-box:focus-within {
+  border-color: #C9C4B0;
+  box-shadow: 0 2px 12px rgba(61, 57, 41, 0.1);
+}
+
+#q {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+  color: #3D3929;
+  font-family: inherit;
+}
+
+#q::placeholder { color: #A8A28C; }
+
+#btn {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background: #D97757;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+#btn:hover { background: #C15F3C; }
+#btn:disabled { background: #DDD9CB; cursor: default; }
