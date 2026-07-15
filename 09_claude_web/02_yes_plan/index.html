@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>포트폴리오 | 개발자 바로</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --bg-soft: #171a23;
+    --card: #1c2030;
+    --text: #e8eaf0;
+    --muted: #9aa1b5;
+    --accent: #5eead4;
+    --accent-dim: rgba(94, 234, 212, 0.12);
+    --border: #2a2f42;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* ── 헤더 ───────────────────────── */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(15, 17, 23, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .logo {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--accent); }
+
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* ── 히어로 ─────────────────────── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:
+      radial-gradient(ellipse 60% 50% at 70% 20%, rgba(94, 234, 212, 0.10), transparent),
+      radial-gradient(ellipse 50% 40% at 20% 80%, rgba(129, 140, 248, 0.10), transparent),
+      var(--bg);
+  }
+
+  .hero-inner { padding-top: 60px; }
+
+  .hero .eyebrow {
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 .highlight { color: var(--accent); }
+
+  .hero p {
+    color: var(--muted);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    max-width: 34em;
+    margin-bottom: 2.25rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 1.9rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #0b0d12;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(94, 234, 212, 0.25);
+  }
+
+  .btn-ghost {
+    border: 1px solid var(--border);
+    color: var(--text);
+    margin-left: 0.75rem;
+  }
+
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── 섹션 공통 ──────────────────── */
+  section { padding: 5.5rem 0; }
+
+  .section-title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-sub {
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── 소개 ───────────────────────── */
+  #about { background: var(--bg-soft); }
+
+  .about-text {
+    max-width: 42em;
+    color: var(--muted);
+    margin-bottom: 1.75rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .skill-tag {
+    background: var(--accent-dim);
+    color: var(--accent);
+    border: 1px solid rgba(94, 234, 212, 0.25);
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  /* ── 프로젝트 ───────────────────── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, border-color 0.25s;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+  }
+
+  .card-thumb {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+  }
+
+  .thumb-1 { background: linear-gradient(135deg, #134e4a, #1e3a8a); }
+  .thumb-2 { background: linear-gradient(135deg, #4c1d95, #831843); }
+  .thumb-3 { background: linear-gradient(135deg, #78350f, #14532d); }
+
+  .card-body {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .card-body h3 { font-size: 1.15rem; }
+
+  .card-body p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    flex: 1;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .card-tags span {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+
+  .card-link {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .card-link:hover { text-decoration: underline; }
+
+  /* ── 푸터 ───────────────────────── */
+  footer {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    padding: 4rem 0 2.5rem;
+    text-align: center;
+  }
+
+  footer h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+
+  footer .contact-sub { color: var(--muted); margin-bottom: 1.75rem; }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .copyright {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  /* ── 스크롤 페이드인 ────────────── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ── 모바일 ─────────────────────── */
+  @media (max-width: 768px) {
+    .hamburger { display: flex; }
+
+    .nav-links {
+      position: absolute;
+      top: 60px; left: 0; right: 0;
+      flex-direction: column;
+      gap: 0;
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .nav-links.open { max-height: 240px; }
+
+    .nav-links li { border-top: 1px solid var(--border); }
+
+    .nav-links a {
+      display: block;
+      padding: 1rem 1.25rem;
+    }
+
+    .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .projects-grid { grid-template-columns: 1fr; }
+
+    section { padding: 4rem 0; }
+
+    .btn-ghost { margin-left: 0; margin-top: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">BARO.dev</a>
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">소개</a></li>
+      <li><a href="#projects">프로젝트</a></li>
+      <li><a href="#contact">연락처</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">WEB DEVELOPER PORTFOLIO</p>
+    <h1>안녕하세요,<br />웹을 만드는 개발자 <span class="highlight">바로</span>입니다</h1>
+    <p>HTML·CSS·JavaScript부터 Node.js 서버까지, 배우면서 만들고 만들면서 성장합니다. 작은 아이디어를 동작하는 서비스로 완성하는 과정을 좋아합니다.</p>
+    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+    <a href="#contact" class="btn btn-ghost">연락하기</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container fade-in">
+    <h2 class="section-title">소개</h2>
+    <p class="section-sub">About Me</p>
+    <p class="about-text">
+      프론트엔드와 백엔드를 오가며 웹 서비스 전체 흐름을 이해하려 노력하는 개발자입니다.
+      Express로 API 서버를 만들고, Vercel에 배포하고, AI API를 연동한 챗봇을 구현하는 등
+      직접 손으로 부딪히며 배운 경험을 바탕으로 꾸준히 프로젝트를 쌓아가고 있습니다.
+    </p>
+    <div class="skills">
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Express</span>
+      <span class="skill-tag">Vercel</span>
+      <span class="skill-tag">Git</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="fade-in">
+      <h2 class="section-title">프로젝트</h2>
+      <p class="section-sub">직접 만들어 본 미니 프로젝트들입니다.</p>
+    </div>
+    <div class="projects-grid">
+      <article class="card fade-in">
+        <div class="card-thumb thumb-1">🤖</div>
+        <div class="card-body">
+          <h3>Groq AI 챗봇</h3>
+          <p>Groq API를 프록시 서버로 연동한 클로드 스타일 채팅 서비스. 스트리밍 응답과 대화 UI를 구현하고 Vercel 서버리스로 배포했습니다.</p>
+          <div class="card-tags">
+            <span>Node.js</span><span>Express</span><span>Groq API</span><span>Vercel</span>
+          </div>
+          <a href="#" class="card-link">자세히 보기 →</a>
+        </div>
+      </article>
+
+      <article class="card fade-in">
+        <div class="card-thumb thumb-2">🪑</div>
+        <div class="card-body">
+          <h3>교실 배치도</h3>
+          <p>학생 자리를 시각적으로 배치하고 관리하는 웹 앱. Express 서버와 동적 DOM 조작으로 자리 배치 기능을 만들었습니다.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Express</span>
+          </div>
+          <a href="#" class="card-link">자세히 보기 →</a>
+        </div>
+      </article>
+
+      <article class="card fade-in">
+        <div class="card-thumb thumb-3">🧮</div>
+        <div class="card-body">
+          <h3>계산기</h3>
+          <p>사칙연산과 키보드 입력을 지원하는 웹 계산기. 상태 관리 로직을 직접 설계하며 JavaScript 기본기를 다졌습니다.</p>
+          <div class="card-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="#" class="card-link">자세히 보기 →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container fade-in">
+    <h2>연락처</h2>
+    <p class="contact-sub">함께 일하고 싶거나 궁금한 점이 있다면 편하게 연락 주세요.</p>
+    <div class="contact-links">
+      <a href="mailto:baro@ivyflynet.top" class="btn btn-primary">📧 이메일 보내기</a>
+      <a href="https://github.com/chrusterd" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+    </div>
+    <p class="copyright">© 2026 BARO.dev. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // 햄버거 메뉴 토글
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+
+  // 메뉴 링크 클릭 시 모바일 메뉴 닫기
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // 스크롤 페이드인
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+</script>
+
+</body>
+</html>
