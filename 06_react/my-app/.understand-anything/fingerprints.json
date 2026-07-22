@@ -1,0 +1,579 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "7f2009739c60d665d56297c2bd53b7745b7642a5",
+  "generatedAt": "2026-07-10T03:12:48.286Z",
+  "files": {
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "417aa1281cbf8cdc5fc164cab6d16a54462d96cb932eaf914be51f6b290ff22c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 68,
+      "hasStructuralAnalysis": false
+    },
+    ".understand-anything/domain-graph.json": {
+      "filePath": ".understand-anything/domain-graph.json",
+      "contentHash": "34c052a6e28578cd4ccb11489aa8c3c0a0282a348ca50f0c4ae6d77d0564c31f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 549,
+      "hasStructuralAnalysis": true
+    },
+    "docs/ONBOARDING.md": {
+      "filePath": "docs/ONBOARDING.md",
+      "contentHash": "19894bb5705616b712eab491e6cd7e13e02bf9dac22d64f360ed0ee334c9faf0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "eslint.config.js": {
+      "filePath": "eslint.config.js",
+      "contentHash": "0197d9a843aaae267303c4d1ab1a43afad1afacc7646cdf6cf94a5af6b815fb8",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@eslint/js",
+          "specifiers": [
+            "js"
+          ]
+        },
+        {
+          "source": "globals",
+          "specifiers": [
+            "globals"
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-hooks",
+          "specifiers": [
+            "reactHooks"
+          ]
+        },
+        {
+          "source": "eslint-plugin-react-refresh",
+          "specifiers": [
+            "reactRefresh"
+          ]
+        },
+        {
+          "source": "eslint/config",
+          "specifiers": [
+            "defineConfig",
+            "globalIgnores"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "index.html": {
+      "filePath": "index.html",
+      "contentHash": "b8a3794077643858b5d835107dd628f48cb6fc7bc1729b686999506d8b13a395",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "05065739794a0f1b0350934daa7a28a370963789c6f8431a463f306eae90b53e",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "a460b4dc7e6392e76aa54d844c9261b8db0adb7f967ba8300526456f1dcf5fb4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "src/App.css": {
+      "filePath": "src/App.css",
+      "contentHash": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 185,
+      "hasStructuralAnalysis": false
+    },
+    "src/App.jsx": {
+      "filePath": "src/App.jsx",
+      "contentHash": "4817c0b733677d1bd277461ae5577cad4c55168133ea5a25efb605653d939f61",
+      "functions": [
+        {
+          "name": "App",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./components/29/Counter.jsx",
+          "specifiers": [
+            "Counter"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/17/Hello.jsx": {
+      "filePath": "src/components/17/Hello.jsx",
+      "contentHash": "8a1050414541acac86b38b81eedcbdf5a9763a72585da6c64f395ca9d9e78d1e",
+      "functions": [
+        {
+          "name": "Hello",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/18/Hello.css": {
+      "filePath": "src/components/18/Hello.css",
+      "contentHash": "4b01c7bd3bed945c25bed49c8e3e2b3386f3c4e7ac1e5f9935d6af77ec6c96b7",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": false
+    },
+    "src/components/18/Hello.jsx": {
+      "filePath": "src/components/18/Hello.jsx",
+      "contentHash": "8f99cd8fb0a75cbe4b2f4683ff3884dc263e49ca6f4748cbda1387e9d4e8cdb9",
+      "functions": [
+        {
+          "name": "Hello",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./Hello.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/19/Greeting.jsx": {
+      "filePath": "src/components/19/Greeting.jsx",
+      "contentHash": "c72627be55a738d4fdc487701961981ee2b020b220f742ef77a058b682ad0e78",
+      "functions": [
+        {
+          "name": "Greeting",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/20/Profile.jsx": {
+      "filePath": "src/components/20/Profile.jsx",
+      "contentHash": "8a230cec24ae2eaf365e46b8a0b464dbcb4dec108875093dbd5be8cda8124877",
+      "functions": [
+        {
+          "name": "Profile",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/21/Card.css": {
+      "filePath": "src/components/21/Card.css",
+      "contentHash": "f914b3562580989fa76b2dc9a6a8f54fc136cff15b999b1c5e2ba058d42f8bf4",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": false
+    },
+    "src/components/21/Card.jsx": {
+      "filePath": "src/components/21/Card.jsx",
+      "contentHash": "777de1cca5675a5be9d4a870254a1a78393f7df4d647f442a883249212cf670c",
+      "functions": [
+        {
+          "name": "Card",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./Card.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/22/Avater.jsx": {
+      "filePath": "src/components/22/Avater.jsx",
+      "contentHash": "6871827670f3b4001a0c579bf64fd8747100271d94c394a4efcd9fc68ffb3374",
+      "functions": [
+        {
+          "name": "Avatar",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/23/Badge.jsx": {
+      "filePath": "src/components/23/Badge.jsx",
+      "contentHash": "0258fb3865f6825b17433451571990daf34ff684bf232912265279d65aa75210",
+      "functions": [
+        {
+          "name": "Badge",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/24/Alert.jsx": {
+      "filePath": "src/components/24/Alert.jsx",
+      "contentHash": "4219a1bf4fd4bf6de7650a2a43a73855cf0d1c7bd35a34062fcd23094954c6a9",
+      "functions": [
+        {
+          "name": "Alert",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/26/Tag.jsx": {
+      "filePath": "src/components/26/Tag.jsx",
+      "contentHash": "cef75a003a7b3efa4d5182ab1296aa80545d2ccda77d1c57eaec6a6e8027298e",
+      "functions": [
+        {
+          "name": "Tag",
+          "params": [],
+          "exported": false,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/27/NewTextField.jsx": {
+      "filePath": "src/components/27/NewTextField.jsx",
+      "contentHash": "29af6979de574249d3de8968bd4acd97b48f35c48747b7ebe5c313eb43941f8e",
+      "functions": [
+        {
+          "name": "NewTextField",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "TextField"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/27/SubmitButton.jsx": {
+      "filePath": "src/components/27/SubmitButton.jsx",
+      "contentHash": "56ac53b01bffa23897d3027b12ca7c3471c60f05c3af69e14b049b0ee9a9d153",
+      "functions": [
+        {
+          "name": "SubmitButton",
+          "params": [],
+          "exported": false,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@mui/material",
+          "specifiers": [
+            "Button"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/28/Content.jsx": {
+      "filePath": "src/components/28/Content.jsx",
+      "contentHash": "dd510f5d8ba380dbf00db24d11395ca76f8cb9d0dd2fd06aa584cc5da256dc8d",
+      "functions": [
+        {
+          "name": "Content",
+          "params": [],
+          "exported": false,
+          "lineCount": 13
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/28/Footer.jsx": {
+      "filePath": "src/components/28/Footer.jsx",
+      "contentHash": "07a5a15c7faeb53fe83062eebb597df6a90d5c15d0225a75d5e686b411c42477",
+      "functions": [
+        {
+          "name": "Footer",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/28/Header.jsx": {
+      "filePath": "src/components/28/Header.jsx",
+      "contentHash": "1d6520dbec33bfaf1b4fbc5f786a5dd7368d81965c65afc6b8d2595814a8f5f7",
+      "functions": [
+        {
+          "name": "Header",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/28/Menu.jsx": {
+      "filePath": "src/components/28/Menu.jsx",
+      "contentHash": "28a9e7fa5da89ac2c15fa5a2c913f4cc2718b363040720f9866c62b2028c5f59",
+      "functions": [
+        {
+          "name": "Menu",
+          "params": [],
+          "exported": false,
+          "lineCount": 14
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/29/Counter.jsx": {
+      "filePath": "src/components/29/Counter.jsx",
+      "contentHash": "30dfca3126eee34d727e8500408e3f79e8a2013b45b0238128f1564c7eb46a03",
+      "functions": [
+        {
+          "name": "Counter",
+          "params": [],
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/30/Button.jsx": {
+      "filePath": "src/components/30/Button.jsx",
+      "contentHash": "ac297f6f7f710b8aba44ead70b3843f13366f1acc06f20eb870e5f5a11113e0f",
+      "functions": [
+        {
+          "name": "Button",
+          "params": [],
+          "exported": false,
+          "lineCount": 27
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/30/ButtonDemo.jsx": {
+      "filePath": "src/components/30/ButtonDemo.jsx",
+      "contentHash": "9c493ccbc40b7dfe94eca1478ed6e5f415f39904ec33e57b9ca3eded52b279c3",
+      "functions": [
+        {
+          "name": "ButtonDemo",
+          "params": [],
+          "exported": false,
+          "lineCount": 28
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./Button.jsx",
+          "specifiers": [
+            "Button"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "src/index.css": {
+      "filePath": "src/index.css",
+      "contentHash": "35198c548ace68b8944e1af5c25df99a1deb29c62354a8c987a7edab00048626",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 114,
+      "hasStructuralAnalysis": false
+    },
+    "src/main.jsx": {
+      "filePath": "src/main.jsx",
+      "contentHash": "4b4b864dbe45253425d0c925337180ec07e204295179f80f59551216f466f618",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "StrictMode"
+          ]
+        },
+        {
+          "source": "react-dom/client",
+          "specifiers": [
+            "createRoot"
+          ]
+        },
+        {
+          "source": "./index.css",
+          "specifiers": []
+        },
+        {
+          "source": "./App.jsx",
+          "specifiers": [
+            "App"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "vite.config.js": {
+      "filePath": "vite.config.js",
+      "contentHash": "0c03207436c9eb3f2f35ec9ff13d17c6ae7e4c8d46ad394a556578cf12c80d74",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "vite",
+          "specifiers": [
+            "defineConfig"
+          ]
+        },
+        {
+          "source": "@vitejs/plugin-react",
+          "specifiers": [
+            "react"
+          ]
+        },
+        {
+          "source": "@tailwindcss/vite",
+          "specifiers": [
+            "tailwindcss"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

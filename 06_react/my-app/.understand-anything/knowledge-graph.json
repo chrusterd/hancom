@@ -1,0 +1,1376 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "my-app",
+    "languages": [
+      "css",
+      "html",
+      "javascript",
+      "json",
+      "markdown"
+    ],
+    "frameworks": [
+      "React",
+      "Vite",
+      "Tailwind CSS"
+    ],
+    "description": "Korean React/Vite bootcamp practice project — numbered lesson folders (17–30) under src/components/ demonstrate progressive React concepts (functional components, props, conditional rendering, list rendering, hooks/state, MUI, Tailwind CSS), while src/App.jsx/main.jsx form the app entry point.",
+    "analyzedAt": "2026-07-10T03:11:38.000Z",
+    "gitCommitHash": "7f2009739c60d665d56297c2bd53b7745b7642a5"
+  },
+  "nodes": [
+    {
+      "id": "file:src/App.jsx",
+      "type": "file",
+      "name": "App.jsx",
+      "filePath": "src/App.jsx",
+      "summary": "React 애플리케이션의 루트 컴포넌트로, 18~30번대 실습에서 사용했던 Hello, Greeting, Profile, Card, Avatar, Badge, Alert 등 다양한 컴포넌트 렌더링 코드가 모두 주석 처리되어 남아있고, 현재는 29번 실습의 Counter 컴포넌트 하나만 렌더링한다.",
+      "tags": [
+        "react-component",
+        "루트-컴포넌트",
+        "실습-코드",
+        "주석-처리"
+      ],
+      "complexity": "simple",
+      "languageNotes": "실제 활성 코드는 3줄뿐이며 나머지 70여 줄은 이전 레슨(18~30번)의 실습 흔적이 주석으로 보존되어 있는 학습용 파일이다."
+    },
+    {
+      "id": "function:src/App.jsx:App",
+      "type": "function",
+      "name": "App",
+      "filePath": "src/App.jsx",
+      "lineRange": [
+        73,
+        75
+      ],
+      "summary": "Counter 컴포넌트 하나를 렌더링하여 반환하는 화살표 함수 형태의 루트 App 컴포넌트.",
+      "tags": [
+        "react-component",
+        "컴포넌트-함수",
+        "실습-코드"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/29/Counter.jsx",
+      "type": "file",
+      "name": "Counter.jsx",
+      "filePath": "src/components/29/Counter.jsx",
+      "summary": "useState 훅으로 클릭 횟수(count) 상태를 관리하는 29번 실습용 카운터 버튼 컴포넌트로, 버튼을 클릭할 때마다 카운트를 1씩 증가시켜 화면에 표시한다.",
+      "tags": [
+        "react-component",
+        "hook",
+        "카운터",
+        "이벤트-핸들러"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/29/Counter.jsx:Counter",
+      "type": "function",
+      "name": "Counter",
+      "filePath": "src/components/29/Counter.jsx",
+      "lineRange": [
+        3,
+        13
+      ],
+      "summary": "useState(0)로 count 상태를 초기화하고, onClick 핸들러에서 setCount로 값을 증가시켜 클릭 횟수를 표시하는 버튼을 렌더링하는 함수형 컴포넌트.",
+      "tags": [
+        "react-component",
+        "hook",
+        "state-관리",
+        "이벤트-핸들러"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main.jsx",
+      "type": "file",
+      "name": "main.jsx",
+      "filePath": "src/main.jsx",
+      "summary": "Vite + React 애플리케이션의 진입점으로, 전역 스타일 index.css를 불러오고 App 컴포넌트를 StrictMode로 감싸 DOM의 root 엘리먼트에 마운트한다.",
+      "tags": [
+        "entry-point",
+        "부트스트랩",
+        "react-dom",
+        "strict-mode"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Vite로 부트스트랩된 React 프로젝트의 기본 안내 문서로, HMR을 지원하는 Vite 설정, 공식 플러그인(@vitejs/plugin-react 또는 plugin-react-swc) 선택 안내, React Compiler 도입 방법, ESLint 설정 확장 방법을 간략히 설명한다.",
+      "tags": [
+        "문서",
+        "가이드",
+        "vite",
+        "react",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Vite `create-vite` 스캐폴딩이 생성하는 기본 템플릿 README로, 프로젝트 고유의 커스텀 설명은 포함하고 있지 않다."
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Vite React 애플리케이션의 HTML 진입점으로, `#root` 컨테이너 div와 `src/main.jsx`를 모듈 스크립트로 로드하는 태그를 포함하여 React 앱을 브라우저에 부트스트랩한다.",
+      "tags": [
+        "entry-point",
+        "html",
+        "vite",
+        "markup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "my-app 프로젝트의 npm 매니페스트로, dev/build/lint/preview 스크립트를 정의하고 React 19, MUI(@mui/material), Emotion, Tailwind CSS 4 등 런타임 의존성과 ESLint 10 기반 개발 의존성을 관리한다.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "npm",
+        "dependencies"
+      ],
+      "complexity": "simple",
+      "languageNotes": "`\"type\": \"module\"` 설정으로 ESM 모듈 시스템을 사용하며, Tailwind CSS 4와 `@tailwindcss/vite` 플러그인을 채택한 비교적 최신 구성이다."
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Understand-Anything 분석 도구가 어떤 파일/디렉터리를 무시할지 정의하는 gitignore 스타일 패턴 목록으로, 대부분은 예시로 주석 처리되어 있고 생성물 경로만 활성화되어 있다.",
+      "tags": [
+        "configuration",
+        "ignore-패턴",
+        "분석-설정",
+        "generated-artifact"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "gitignore와 동일한 glob 문법을 사용하며 활성화된 규칙은 .understand-anything 하위 생성 파일 제외에 한정된다."
+    },
+    {
+      "id": "config:.understand-anything/domain-graph.json",
+      "type": "config",
+      "name": "domain-graph.json",
+      "filePath": ".understand-anything/domain-graph.json",
+      "summary": "Understand-Anything이 생성한 도메인 그래프 산출물로, 프로젝트의 노드/엣지/레이어/투어 정보를 담은 JSON 데이터이다.",
+      "tags": [
+        "generated-artifact",
+        "domain-graph",
+        "knowledge-graph",
+        "분석-산출물"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/ONBOARDING.md",
+      "type": "document",
+      "name": "ONBOARDING.md",
+      "filePath": "docs/ONBOARDING.md",
+      "summary": "my-app 프로젝트의 구조, 아키텍처 레이어, 핵심 개념, 가이드 투어와 파일 지도를 설명하는 온보딩 문서로 신규 참여자가 코드베이스를 빠르게 이해하도록 돕는다.",
+      "tags": [
+        "documentation",
+        "온보딩-가이드",
+        "entry-point",
+        "아키텍처-개요"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:eslint.config.js",
+      "type": "file",
+      "name": "eslint.config.js",
+      "filePath": "eslint.config.js",
+      "summary": "React/JSX 프로젝트를 위한 ESLint flat config로, 기본 recommended 규칙과 react-hooks, react-refresh(Vite HMR) 규칙을 결합해 lint 대상과 브라우저 전역 변수를 설정한다.",
+      "tags": [
+        "configuration",
+        "eslint",
+        "lint-설정",
+        "react-hooks"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/App.css",
+      "type": "file",
+      "name": "App.css",
+      "filePath": "src/App.css",
+      "summary": "App 컴포넌트 화면에 적용되는 컴포넌트 단위 스타일시트로, 로고 애니메이션과 카드/레이아웃 관련 CSS 규칙을 정의한다.",
+      "tags": [
+        "css",
+        "컴포넌트-스타일",
+        "레이아웃"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/17/Hello.jsx",
+      "type": "file",
+      "name": "Hello.jsx",
+      "filePath": "src/components/17/Hello.jsx",
+      "summary": "JSX를 반환하는 함수형 컴포넌트의 가장 기본적인 형태를 보여주는 학습용 예제로, 인사 문구만 렌더링한다.",
+      "tags": [
+        "react-컴포넌트",
+        "함수형-컴포넌트",
+        "jsx-기초",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/17/Hello.jsx:Hello",
+      "type": "function",
+      "name": "Hello",
+      "filePath": "src/components/17/Hello.jsx",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "props 없이 고정된 인사말(h1)을 렌더링하는 가장 단순한 함수형 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "학습-예제",
+        "jsx-기초"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/18/Hello.css",
+      "type": "file",
+      "name": "Hello.css",
+      "filePath": "src/components/18/Hello.css",
+      "summary": "같은 폴더의 Hello.jsx에서 사용하는 .box 클래스 스타일을 정의해 배경색, 여백, 둥근 모서리를 지정하는 컴포넌트 전용 CSS.",
+      "tags": [
+        "css",
+        "스타일시트",
+        "컴포넌트-스타일"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/18/Hello.jsx",
+      "type": "file",
+      "name": "Hello.jsx",
+      "filePath": "src/components/18/Hello.jsx",
+      "summary": "동일 폴더의 Hello.css를 import해 className으로 스타일을 연결하고 여러 JSX 요소를 하나의 태그로 감싸 반환하는 방법을 보여주는 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "css-임포트",
+        "함수형-컴포넌트",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/18/Hello.jsx:Hello",
+      "type": "function",
+      "name": "Hello",
+      "filePath": "src/components/18/Hello.jsx",
+      "lineRange": [
+        3,
+        10
+      ],
+      "summary": "className으로 Hello.css의 .box 스타일을 적용해 제목과 문구를 함께 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "css-임포트",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/19/Greeting.jsx",
+      "type": "file",
+      "name": "Greeting.jsx",
+      "filePath": "src/components/19/Greeting.jsx",
+      "summary": "name이라는 단일 prop을 구조분해 할당으로 받아 동적인 인사 문구를 렌더링하는 props 사용 입문 예제.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/19/Greeting.jsx:Greeting",
+      "type": "function",
+      "name": "Greeting",
+      "filePath": "src/components/19/Greeting.jsx",
+      "lineRange": [
+        2,
+        4
+      ],
+      "summary": "name prop 값을 문자열 템플릿에 끼워 넣어 개인화된 인사말을 출력하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/20/Profile.jsx",
+      "type": "file",
+      "name": "Profile.jsx",
+      "filePath": "src/components/20/Profile.jsx",
+      "summary": "name과 job(기본값 \"개발자\") 두 개의 prop을 받아 프로필 정보를 렌더링하며 props 기본값 문법을 보여주는 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "기본값-props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/20/Profile.jsx:Profile",
+      "type": "function",
+      "name": "Profile",
+      "filePath": "src/components/20/Profile.jsx",
+      "lineRange": [
+        2,
+        9
+      ],
+      "summary": "job prop이 생략되면 기본값 \"개발자\"를 사용해 이름과 직업 정보를 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "기본값-props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/21/Card.css",
+      "type": "file",
+      "name": "Card.css",
+      "filePath": "src/components/21/Card.css",
+      "summary": "Card 컴포넌트에 ::before/::after 가상 요소로 그라디언트 장식 효과를 추가하는 스타일시트.",
+      "tags": [
+        "css",
+        "스타일시트",
+        "가상요소"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/21/Card.jsx",
+      "type": "file",
+      "name": "Card.jsx",
+      "filePath": "src/components/21/Card.jsx",
+      "summary": "title, desc, emoji 세 개의 prop을 구조분해로 한 번에 받아 카드 UI를 렌더링하고 같은 폴더의 Card.css를 import하는 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "css-임포트",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/21/Card.jsx:Card",
+      "type": "function",
+      "name": "Card",
+      "filePath": "src/components/21/Card.jsx",
+      "lineRange": [
+        4,
+        12
+      ],
+      "summary": "emoji, title, desc 세 prop을 받아 카드 형태의 요소를 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/22/Avater.jsx",
+      "type": "file",
+      "name": "Avater.jsx",
+      "filePath": "src/components/22/Avater.jsx",
+      "summary": "name과 online prop을 받아 온라인 상태일 때만 이모지를 조건부로 렌더링하는 Avatar 컴포넌트로 논리 연산자를 활용한 조건부 렌더링을 보여준다.",
+      "tags": [
+        "react-컴포넌트",
+        "조건부-렌더링",
+        "props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/22/Avater.jsx:Avatar",
+      "type": "function",
+      "name": "Avatar",
+      "filePath": "src/components/22/Avater.jsx",
+      "lineRange": [
+        1,
+        8
+      ],
+      "summary": "online이 true일 때 `{online && <p>...}` 패턴으로 이모지를 조건부 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "조건부-렌더링",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/23/Badge.jsx",
+      "type": "file",
+      "name": "Badge.jsx",
+      "filePath": "src/components/23/Badge.jsx",
+      "summary": "text와 type prop을 받아 type 값에 따라 삼항 연산자로 배경색을 다르게 적용하는 뱃지 컴포넌트 예제.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "조건부-스타일",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/23/Badge.jsx:Badge",
+      "type": "function",
+      "name": "Badge",
+      "filePath": "src/components/23/Badge.jsx",
+      "lineRange": [
+        1,
+        6
+      ],
+      "summary": "type이 'new'인지에 따라 인라인 스타일 색상을 삼항 연산자로 분기하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "조건부-스타일",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/24/Alert.jsx",
+      "type": "file",
+      "name": "Alert.jsx",
+      "filePath": "src/components/24/Alert.jsx",
+      "summary": "type/text prop을 받아 success, error, warning 상태별 아이콘과 색상을 매핑 객체에서 조회해 알림 메시지를 렌더링하는 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "props",
+        "매핑-객체",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/24/Alert.jsx:Alert",
+      "type": "function",
+      "name": "Alert",
+      "filePath": "src/components/24/Alert.jsx",
+      "lineRange": [
+        1,
+        9
+      ],
+      "summary": "type 값을 key로 사용해 아이콘/색상 설정 객체를 조회한 뒤 스타일이 적용된 문구를 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "매핑-객체",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/26/Tag.jsx",
+      "type": "file",
+      "name": "Tag.jsx",
+      "filePath": "src/components/26/Tag.jsx",
+      "summary": "tags 배열 prop을 map으로 순회해 '#'이 붙은 태그 칩 목록을 렌더링하는 리스트 렌더링 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "list-rendering",
+        "props",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/26/Tag.jsx:Tag",
+      "type": "function",
+      "name": "Tag",
+      "filePath": "src/components/26/Tag.jsx",
+      "lineRange": [
+        2,
+        10
+      ],
+      "summary": "tags 배열을 map()으로 펼쳐 각 항목을 '#tag' 형태의 span 요소로 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "list-rendering",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/27/NewTextField.jsx",
+      "type": "file",
+      "name": "NewTextField.jsx",
+      "filePath": "src/components/27/NewTextField.jsx",
+      "summary": "MUI(@mui/material)의 TextField 컴포넌트를 그대로 감싸 렌더링하는 예제로 외부 UI 라이브러리 사용법을 보여준다.",
+      "tags": [
+        "react-컴포넌트",
+        "mui",
+        "외부-라이브러리",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/27/NewTextField.jsx:NewTextField",
+      "type": "function",
+      "name": "NewTextField",
+      "filePath": "src/components/27/NewTextField.jsx",
+      "lineRange": [
+        3,
+        7
+      ],
+      "summary": "MUI TextField를 outlined variant로 렌더링하는 래퍼 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "mui",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/27/SubmitButton.jsx",
+      "type": "file",
+      "name": "SubmitButton.jsx",
+      "filePath": "src/components/27/SubmitButton.jsx",
+      "summary": "MUI Button 컴포넌트에 variant, onClick props를 전달해 클릭 시 alert를 띄우는 제출 버튼 예제 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "mui",
+        "이벤트-핸들러",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/27/SubmitButton.jsx:SubmitButton",
+      "type": "function",
+      "name": "SubmitButton",
+      "filePath": "src/components/27/SubmitButton.jsx",
+      "lineRange": [
+        3,
+        9
+      ],
+      "summary": "MUI Button을 contained variant로 렌더링하고 onClick에서 alert('안녕!')를 호출하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "mui",
+        "이벤트-핸들러",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/28/Content.jsx",
+      "type": "file",
+      "name": "Content.jsx",
+      "filePath": "src/components/28/Content.jsx",
+      "summary": "페이지 레이아웃의 본문 영역을 나타내는 정적 컴포넌트로 Tailwind 유틸리티 클래스를 사용해 메인 컨텐츠 카드를 렌더링한다.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "tailwind",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/28/Content.jsx:Content",
+      "type": "function",
+      "name": "Content",
+      "filePath": "src/components/28/Content.jsx",
+      "lineRange": [
+        2,
+        14
+      ],
+      "summary": "props 없이 고정된 본문 레이아웃(main 영역)을 렌더링하는 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/28/Footer.jsx",
+      "type": "file",
+      "name": "Footer.jsx",
+      "filePath": "src/components/28/Footer.jsx",
+      "summary": "페이지 레이아웃의 하단 영역을 나타내는 정적 Footer 컴포넌트로 저작권 문구를 렌더링한다.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/28/Footer.jsx:Footer",
+      "type": "function",
+      "name": "Footer",
+      "filePath": "src/components/28/Footer.jsx",
+      "lineRange": [
+        2,
+        6
+      ],
+      "summary": "footer 태그와 저작권 문구를 렌더링하는 고정 레이아웃 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/28/Header.jsx",
+      "type": "file",
+      "name": "Header.jsx",
+      "filePath": "src/components/28/Header.jsx",
+      "summary": "페이지 레이아웃의 상단 영역을 나타내는 정적 Header 컴포넌트로 그라디언트 배경과 앱 타이틀을 렌더링한다.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/28/Header.jsx:Header",
+      "type": "function",
+      "name": "Header",
+      "filePath": "src/components/28/Header.jsx",
+      "lineRange": [
+        2,
+        7
+      ],
+      "summary": "header 태그와 앱 타이틀/브랜드명을 렌더링하는 고정 레이아웃 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "레이아웃",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/28/Menu.jsx",
+      "type": "file",
+      "name": "Menu.jsx",
+      "filePath": "src/components/28/Menu.jsx",
+      "summary": "고정된 items 배열을 map으로 순회해 네비게이션 메뉴 항목을 렌더링하는 nav 컴포넌트 예제.",
+      "tags": [
+        "react-컴포넌트",
+        "list-rendering",
+        "네비게이션",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/28/Menu.jsx:Menu",
+      "type": "function",
+      "name": "Menu",
+      "filePath": "src/components/28/Menu.jsx",
+      "lineRange": [
+        4,
+        17
+      ],
+      "summary": "items 배열을 map()으로 펼쳐 각 메뉴 항목을 li 요소로 렌더링하는 네비게이션 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "list-rendering",
+        "네비게이션",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/30/Button.jsx",
+      "type": "file",
+      "name": "Button.jsx",
+      "filePath": "src/components/30/Button.jsx",
+      "summary": "variant(primary/secondary/outline/danger)와 size(sm/md/lg) props로 스타일을 조합하는 재사용 가능한 Tailwind 기반 버튼 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "재사용-컴포넌트",
+        "variant-props",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/30/Button.jsx:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "src/components/30/Button.jsx",
+      "lineRange": [
+        18,
+        44
+      ],
+      "summary": "variants/sizes 매핑 객체에서 className을 조합해 다양한 스타일의 버튼을 렌더링하고 disabled, onClick, children props를 지원하는 재사용 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "재사용-컴포넌트",
+        "variant-props",
+        "tailwind"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/30/ButtonDemo.jsx",
+      "type": "file",
+      "name": "ButtonDemo.jsx",
+      "filePath": "src/components/30/ButtonDemo.jsx",
+      "summary": "같은 폴더의 Button 컴포넌트를 다양한 variant와 size 조합으로 렌더링해 사용법을 보여주는 데모 페이지 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "데모",
+        "이벤트-핸들러",
+        "tailwind"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/30/ButtonDemo.jsx:ButtonDemo",
+      "type": "function",
+      "name": "ButtonDemo",
+      "filePath": "src/components/30/ButtonDemo.jsx",
+      "lineRange": [
+        3,
+        30
+      ],
+      "summary": "Button 컴포넌트를 여러 variant/size/disabled 조합으로 렌더링하고 primary 버튼 클릭 시 alert를 띄우는 데모 컴포넌트.",
+      "tags": [
+        "react-컴포넌트",
+        "데모",
+        "이벤트-핸들러",
+        "학습-예제"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/index.css",
+      "type": "file",
+      "name": "index.css",
+      "filePath": "src/index.css",
+      "summary": "프로젝트 전역 테마, 타이포그래피, 다크 모드 대응, 루트 레이아웃을 정의하는 전역 스타일시트로 Vite React 스타터 템플릿의 기본 CSS이다.",
+      "tags": [
+        "css",
+        "전역-스타일",
+        "테마",
+        "다크모드"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:vite.config.js",
+      "type": "file",
+      "name": "vite.config.js",
+      "filePath": "vite.config.js",
+      "summary": "React와 Tailwind CSS 플러그인을 등록하는 Vite 빌드 도구 설정 파일로, 개발 서버와 번들링 동작을 정의한다.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "vite",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "languageNotes": "defineConfig 헬퍼로 타입 힌트를 제공하며, plugins 배열에 @vitejs/plugin-react와 @tailwindcss/vite를 등록하는 전형적인 Vite 설정 패턴이다."
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/App.jsx",
+      "target": "file:src/components/29/Counter.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/App.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main.jsx",
+      "target": "file:src/index.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/App.jsx",
+      "target": "function:src/App.jsx:App",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/29/Counter.jsx",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/29/Counter.jsx",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/App.jsx:App",
+      "target": "function:src/components/29/Counter.jsx:Counter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/main.jsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/components/18/Hello.jsx",
+      "target": "file:src/components/18/Hello.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/21/Card.jsx",
+      "target": "file:src/components/21/Card.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/30/ButtonDemo.jsx",
+      "target": "file:src/components/30/Button.jsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/components/17/Hello.jsx",
+      "target": "function:src/components/17/Hello.jsx:Hello",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/17/Hello.jsx",
+      "target": "function:src/components/17/Hello.jsx:Hello",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/18/Hello.jsx",
+      "target": "function:src/components/18/Hello.jsx:Hello",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/18/Hello.jsx",
+      "target": "function:src/components/18/Hello.jsx:Hello",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/19/Greeting.jsx",
+      "target": "function:src/components/19/Greeting.jsx:Greeting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/19/Greeting.jsx",
+      "target": "function:src/components/19/Greeting.jsx:Greeting",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/20/Profile.jsx",
+      "target": "function:src/components/20/Profile.jsx:Profile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/20/Profile.jsx",
+      "target": "function:src/components/20/Profile.jsx:Profile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/21/Card.jsx",
+      "target": "function:src/components/21/Card.jsx:Card",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/21/Card.jsx",
+      "target": "function:src/components/21/Card.jsx:Card",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/22/Avater.jsx",
+      "target": "function:src/components/22/Avater.jsx:Avatar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/22/Avater.jsx",
+      "target": "function:src/components/22/Avater.jsx:Avatar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/23/Badge.jsx",
+      "target": "function:src/components/23/Badge.jsx:Badge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/23/Badge.jsx",
+      "target": "function:src/components/23/Badge.jsx:Badge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/24/Alert.jsx",
+      "target": "function:src/components/24/Alert.jsx:Alert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/24/Alert.jsx",
+      "target": "function:src/components/24/Alert.jsx:Alert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/26/Tag.jsx",
+      "target": "function:src/components/26/Tag.jsx:Tag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/26/Tag.jsx",
+      "target": "function:src/components/26/Tag.jsx:Tag",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/27/NewTextField.jsx",
+      "target": "function:src/components/27/NewTextField.jsx:NewTextField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/27/NewTextField.jsx",
+      "target": "function:src/components/27/NewTextField.jsx:NewTextField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/27/SubmitButton.jsx",
+      "target": "function:src/components/27/SubmitButton.jsx:SubmitButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/27/SubmitButton.jsx",
+      "target": "function:src/components/27/SubmitButton.jsx:SubmitButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/28/Content.jsx",
+      "target": "function:src/components/28/Content.jsx:Content",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/28/Content.jsx",
+      "target": "function:src/components/28/Content.jsx:Content",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/28/Footer.jsx",
+      "target": "function:src/components/28/Footer.jsx:Footer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/28/Footer.jsx",
+      "target": "function:src/components/28/Footer.jsx:Footer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/28/Header.jsx",
+      "target": "function:src/components/28/Header.jsx:Header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/28/Header.jsx",
+      "target": "function:src/components/28/Header.jsx:Header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/28/Menu.jsx",
+      "target": "function:src/components/28/Menu.jsx:Menu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/28/Menu.jsx",
+      "target": "function:src/components/28/Menu.jsx:Menu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/30/Button.jsx",
+      "target": "function:src/components/30/Button.jsx:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/30/Button.jsx",
+      "target": "function:src/components/30/Button.jsx:Button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/30/ButtonDemo.jsx",
+      "target": "function:src/components/30/ButtonDemo.jsx:ButtonDemo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/components/30/ButtonDemo.jsx",
+      "target": "function:src/components/30/ButtonDemo.jsx:ButtonDemo",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/components/30/ButtonDemo.jsx:ButtonDemo",
+      "target": "function:src/components/30/Button.jsx:Button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "document:docs/ONBOARDING.md",
+      "target": "file:eslint.config.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/ONBOARDING.md",
+      "target": "file:src/App.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/ONBOARDING.md",
+      "target": "file:src/index.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "document:docs/ONBOARDING.md",
+      "target": "file:.understand-anything/.understandignore",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:entry",
+      "name": "앱 진입점",
+      "description": "index.html의 HTML 진입점부터 main.jsx의 React 마운트 로직, 루트 컴포넌트 App.jsx, 전역 스타일시트(App.css, index.css)까지 포함하는 애플리케이션 부트스트랩 계층.",
+      "nodeIds": [
+        "file:src/App.jsx",
+        "file:src/main.jsx",
+        "file:index.html",
+        "file:src/App.css",
+        "file:src/index.css"
+      ]
+    },
+    {
+      "id": "layer:lesson-components",
+      "name": "실습 컴포넌트",
+      "description": "17번부터 30번까지 번호가 매겨진 실습 폴더에 담긴 독립적인 학습용 React 컴포넌트 모음으로, 함수형 컴포넌트 기초, props, 조건부 렌더링, 리스트 렌더링, useState 훅, MUI, Tailwind 활용 등 수업 단계별 개념을 각각 보여준다.",
+      "nodeIds": [
+        "file:src/components/29/Counter.jsx",
+        "file:src/components/17/Hello.jsx",
+        "file:src/components/18/Hello.css",
+        "file:src/components/18/Hello.jsx",
+        "file:src/components/19/Greeting.jsx",
+        "file:src/components/20/Profile.jsx",
+        "file:src/components/21/Card.css",
+        "file:src/components/21/Card.jsx",
+        "file:src/components/22/Avater.jsx",
+        "file:src/components/23/Badge.jsx",
+        "file:src/components/24/Alert.jsx",
+        "file:src/components/26/Tag.jsx",
+        "file:src/components/27/NewTextField.jsx",
+        "file:src/components/27/SubmitButton.jsx",
+        "file:src/components/28/Content.jsx",
+        "file:src/components/28/Footer.jsx",
+        "file:src/components/28/Header.jsx",
+        "file:src/components/28/Menu.jsx",
+        "file:src/components/30/Button.jsx",
+        "file:src/components/30/ButtonDemo.jsx"
+      ]
+    },
+    {
+      "id": "layer:config",
+      "name": "설정 및 빌드 도구",
+      "description": "npm 의존성 관리(package.json), Vite 빌드 설정, ESLint 린트 규칙과 Understand-Anything 분석 도구가 생성한 무시 패턴 및 도메인 그래프 산출물을 포함하는 프로젝트 설정 계층.",
+      "nodeIds": [
+        "config:package.json",
+        "file:.understand-anything/.understandignore",
+        "config:.understand-anything/domain-graph.json",
+        "file:eslint.config.js",
+        "file:vite.config.js"
+      ]
+    },
+    {
+      "id": "layer:documentation",
+      "name": "문서",
+      "description": "프로젝트 개요를 담은 README와 아키텍처 및 가이드 투어를 설명하는 온보딩 문서로 구성된 계층.",
+      "nodeIds": [
+        "document:README.md",
+        "document:docs/ONBOARDING.md"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "프로젝트 개요 (README)",
+      "description": "README.md는 Vite의 create-vite 기본 템플릿 안내문으로, HMR(Hot Module Replacement)과 ESLint 설정에 대한 일반적인 설명만 담고 있다. 이 프로젝트의 진짜 정체성은 템플릿 문서가 아니라 코드 구조 자체에 있다 — 바로 이어지는 ONBOARDING.md와 src/components 폴더들이 실제 학습 스토리를 담고 있으므로, 이 README는 '빈 캔버스에서 시작했다'는 출발점 정도로 이해하면 된다.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "온보딩 문서로 보는 진짜 지도",
+      "description": "docs/ONBOARDING.md는 이 저장소의 실제 구조와 아키텍처 레이어(진입점, 실습 컴포넌트, 설정, 문서)를 설명하는 문서다. README와 달리 이 프로젝트가 '한국 부트캠프 수강생의 실습 저장소'이며, 각 수업 회차가 src/components 아래 번호 폴더로 정리되어 있다는 핵심 맥락을 알려준다. 이 투어는 이 지도를 따라 진입점부터 시작해 17번부터 30번까지의 실습 폴더를 순서대로 둘러본다.",
+      "nodeIds": [
+        "document:docs/ONBOARDING.md"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "빌드 설정과 의존성",
+      "description": "index.html은 Vite React 앱의 HTML 진입점으로 root div와 main.jsx를 모듈 스크립트로 불러오며, package.json은 React 19, MUI, Emotion, Tailwind CSS 4 등 이 프로젝트가 실습에서 사용하는 라이브러리들을 정의한다. 이 두 파일은 이후 등장할 27번(MUI)과 28~30번(Tailwind) 실습이 어떤 기술 스택 위에서 동작하는지 미리 알려주는 역할을 한다.",
+      "nodeIds": [
+        "file:index.html",
+        "config:package.json"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Vite 빌드 설정",
+      "description": "vite.config.js는 React 플러그인과 Tailwind CSS 플러그인을 등록하는 빌드 설정 파일이다. 이 설정 덕분에 JSX 파일이 트랜스파일되고, 28번과 29번, 30번 실습에서 사용하는 Tailwind 유틸리티 클래스가 별도의 CSS 빌드 과정 없이 바로 동작한다.",
+      "nodeIds": [
+        "file:vite.config.js"
+      ],
+      "languageLesson": "Vite는 플러그인 배열(plugins) 방식으로 기능을 확장한다. @vitejs/plugin-react가 JSX/Fast Refresh를 담당하고, @tailwindcss/vite 같은 플러그인이 CSS 파이프라인에 개입해 별도의 PostCSS 설정 없이도 Tailwind를 사용할 수 있게 해준다."
+    },
+    {
+      "order": 5,
+      "title": "React 마운트 지점 (main.jsx)",
+      "description": "src/main.jsx는 실제 애플리케이션 진입점으로, index.css를 불러와 전역 스타일을 적용하고 App 컴포넌트를 React.StrictMode로 감싸 index.html의 root DOM 노드에 마운트한다. index.html → main.jsx → App.jsx로 이어지는 이 흐름이 브라우저에서 화면이 그려지기까지의 전체 경로다.",
+      "nodeIds": [
+        "file:src/main.jsx"
+      ],
+      "languageLesson": "StrictMode는 실제 프로덕션에는 영향을 주지 않는 개발 전용 래퍼로, 컴포넌트를 의도적으로 두 번 렌더링해 부작용(side effect)이 없는 순수한 렌더 로직을 작성하도록 유도한다."
+    },
+    {
+      "order": 6,
+      "title": "루트 컴포넌트와 실습 이력 (App.jsx)",
+      "description": "src/App.jsx는 이 저장소의 진짜 역사책이다. 18번부터 30번까지 각 수업에서 렌더링했던 컴포넌트 호출 코드가 주석으로 차곡차곡 쌓여 있고, 현재는 29번 실습의 Counter 컴포넌트만 실제로 렌더링된다. 즉 App.jsx 하나만 봐도 이 프로젝트가 어떤 순서로 학습을 진행해왔는지 알 수 있으며, 이 투어는 그 주석들이 가리키는 폴더를 번호 순서대로 따라간다.",
+      "nodeIds": [
+        "file:src/App.jsx"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "17~18번: 함수형 컴포넌트와 CSS 연결",
+      "description": "17번 Hello.jsx는 가장 기본적인 함수형 컴포넌트로, props도 상태도 없이 JSX만 반환하는 React의 최소 단위를 보여준다. 18번 Hello.jsx는 여기서 한 걸음 나아가 별도의 Hello.css 파일을 import하고 className으로 스타일을 적용하는 방법을 소개하며, 이는 이후 21번 Card.jsx에서도 반복되는 'CSS import + className' 패턴의 첫 등장이다.",
+      "nodeIds": [
+        "file:src/components/17/Hello.jsx",
+        "file:src/components/18/Hello.jsx",
+        "file:src/components/18/Hello.css"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "19~20번: props의 기초",
+      "description": "19번 Greeting.jsx는 단일 prop을 전달받아 사용하는 가장 단순한 props 예제이고, 20번 Profile.jsx는 여기서 발전해 props에 기본값을 지정하는 문법(default parameter)을 보여준다. 컴포넌트 재사용의 핵심인 props 개념이 이 두 단계에 걸쳐 점진적으로 소개된다.",
+      "nodeIds": [
+        "file:src/components/19/Greeting.jsx",
+        "file:src/components/20/Profile.jsx"
+      ],
+      "languageLesson": "JS 함수 매개변수 구조분해에 `= 기본값` 문법을 결합하면 `function Profile({ name = '익명' })`처럼 props가 전달되지 않아도 안전한 기본 동작을 보장할 수 있다."
+    },
+    {
+      "order": 9,
+      "title": "21번: 복수 props와 구조분해",
+      "description": "Card.jsx는 여러 개의 props를 한 번에 구조분해(destructuring)하는 패턴과 함께, 18번에서 배운 CSS import 패턴을 다시 사용해 가상요소(::before/::after)로 카드에 장식 스타일을 입힌다. 단일 prop(19번)에서 복수 props로, 기본값(20번)에서 구조분해로 자연스럽게 난이도가 올라가는 지점이다.",
+      "nodeIds": [
+        "file:src/components/21/Card.jsx",
+        "file:src/components/21/Card.css"
+      ]
+    },
+    {
+      "order": 10,
+      "title": "22~24번: 조건부 렌더링의 세 가지 방식",
+      "description": "이 세 개의 컴포넌트는 조건부 렌더링을 점점 더 정교한 방식으로 다룬다. 22번 Avater.jsx는 기본적인 조건부 렌더링을, 23번 Badge.jsx는 삼항 연산자로 조건에 따라 다른 스타일을 적용하는 방법을, 24번 Alert.jsx는 매핑 객체(lookup object)를 활용해 상태값에 대응하는 스타일을 조회하는 더 확장 가능한 패턴을 보여준다. if문 → 삼항 연산자 → 매핑 객체 순으로 조건부 로직을 다루는 관용구가 발전하는 흐름이다.",
+      "nodeIds": [
+        "file:src/components/22/Avater.jsx",
+        "file:src/components/23/Badge.jsx",
+        "file:src/components/24/Alert.jsx"
+      ],
+      "languageLesson": "매핑 객체 패턴(`const styles = { success: '...', error: '...' }; styles[status]`)은 분기가 3개 이상으로 늘어날 때 중첩 삼항 연산자보다 가독성과 확장성이 뛰어나다."
+    },
+    {
+      "order": 11,
+      "title": "26번: 배열 map으로 리스트 렌더링",
+      "description": "Tag.jsx는 배열의 `.map()` 메서드를 사용해 데이터 배열을 JSX 엘리먼트 리스트로 변환하는 리스트 렌더링 패턴을 소개한다. 25번 실습은 존재하지 않고 24번에서 바로 26번으로 건너뛰지만, 조건부 렌더링(22~24번)에서 반복 렌더링으로 넘어가는 자연스러운 다음 단계다.",
+      "nodeIds": [
+        "file:src/components/26/Tag.jsx"
+      ],
+      "languageLesson": "React에서 배열을 렌더링할 때는 각 항목에 고유한 `key` prop을 지정해야 하며, 이는 React가 리스트 변경 시 어떤 항목이 추가·삭제·이동됐는지 효율적으로 추적하도록 돕는다."
+    },
+    {
+      "order": 12,
+      "title": "27번: 외부 UI 라이브러리(MUI) 도입",
+      "description": "NewTextField.jsx와 SubmitButton.jsx는 지금까지 직접 만들던 컴포넌트에서 벗어나 Material UI(MUI)라는 외부 컴포넌트 라이브러리를 감싸서(wrapping) 사용하는 방법을 보여준다. 특히 SubmitButton.jsx는 MUI의 Button 컴포넌트에 onClick 이벤트 핸들러를 연결하는 패턴을 다루며, 이는 3번 스텝에서 살펴본 package.json의 MUI/Emotion 의존성이 실제로 사용되는 첫 지점이다.",
+      "nodeIds": [
+        "file:src/components/27/NewTextField.jsx",
+        "file:src/components/27/SubmitButton.jsx"
+      ]
+    },
+    {
+      "order": 13,
+      "title": "28번: Tailwind로 페이지 레이아웃 구성",
+      "description": "Header, Menu, Content, Footer 네 컴포넌트는 각각 헤더, 네비게이션 메뉴, 본문, 푸터를 담당하며 조합했을 때 하나의 페이지 레이아웃을 완성한다. Menu.jsx는 26번에서 배운 리스트 렌더링을 메뉴 항목에 재적용하고, Content.jsx는 Tailwind CSS 유틸리티 클래스 기반 스타일링을 본격적으로 도입해 이후 29~30번 실습의 스타일링 방식을 예고한다.",
+      "nodeIds": [
+        "file:src/components/28/Header.jsx",
+        "file:src/components/28/Menu.jsx",
+        "file:src/components/28/Content.jsx",
+        "file:src/components/28/Footer.jsx"
+      ],
+      "languageLesson": "Tailwind CSS는 별도의 CSS 파일 없이 `className=\"flex items-center gap-4\"`처럼 유틸리티 클래스를 조합해 스타일링하는 방식으로, 18번과 21번에서 본 개별 CSS 파일 import 방식과 대비되는 접근이다."
+    },
+    {
+      "order": 14,
+      "title": "29번: useState 훅과 상태 관리 (현재 App.jsx가 렌더링하는 컴포넌트)",
+      "description": "Counter.jsx는 useState 훅으로 클릭 횟수를 관리하는 카운터 버튼이며, Tailwind CSS로 스타일링되어 있다. 6번 스텝에서 본 것처럼 App.jsx가 현재 실제로 렌더링하는 유일한 컴포넌트가 바로 이 Counter이며, 지금까지의 정적인 props/조건부 렌더링 예제들과 달리 처음으로 컴포넌트 내부에 '상태(state)'가 등장해 사용자 상호작용에 따라 화면이 다시 그려지는 것을 보여준다.",
+      "nodeIds": [
+        "file:src/components/29/Counter.jsx"
+      ],
+      "languageLesson": "useState는 `const [count, setCount] = useState(0)`처럼 현재 값과 그 값을 갱신하는 함수를 반환하는 React 훅이다. setCount를 호출하면 컴포넌트가 리렌더링되며, 이것이 정적 렌더링(17~28번)과 상태 기반 렌더링(29번 이후)을 가르는 핵심 개념이다."
+    },
+    {
+      "order": 15,
+      "title": "30번: 재사용 가능한 컴포넌트 설계",
+      "description": "Button.jsx는 variant와 size라는 props 조합으로 여러 형태의 버튼을 만들어내는 재사용 가능한 컴포넌트이며, ButtonDemo.jsx는 이 Button을 다양한 조합으로 렌더링해 사용법을 보여주는 데모 페이지다. 8~9번 스텝에서 배운 props 설계와 13번 스텝의 Tailwind 스타일링, 그리고 14번 스텝의 컴포넌트 조합 감각이 모두 합쳐진 이 저장소의 최종 학습 지점으로, 실무에서 디자인 시스템의 버튼 컴포넌트를 만들 때 쓰이는 패턴과 동일하다.",
+      "nodeIds": [
+        "file:src/components/30/Button.jsx",
+        "file:src/components/30/ButtonDemo.jsx"
+      ],
+      "languageLesson": "variant/size처럼 props로 스타일 조합을 제어하는 패턴은 Tailwind 클래스 문자열을 조건부로 매핑하는 객체(예: `variantStyles[variant]`)와 결합해 자주 쓰이며, 이는 10번 스텝(24번 Alert.jsx)에서 본 매핑 객체 패턴이 컴포넌트 설계 전체로 확장된 형태다."
+    }
+  ]
+}

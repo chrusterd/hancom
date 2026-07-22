@@ -1,8 +1,0 @@
-/* styles/main.css */
-ul {
-  background-color: white;
-  padding: 100px 50px;          /* 안쪽 여백 */
-  border: 2px solid navy; /* 테두리 */
-  margin: 20px;           /* 바깥 여백 */
-  list-style: none;
-}

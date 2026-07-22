@@ -1,6 +1,0 @@
-/* styles/main.css : 맨 위에 먼저 */
-* {
-  margin: 0;              /* 기본 바깥 여백 제거 */
-  padding: 0;             /* 기본 안쪽 여백 제거 */
-  box-sizing: border-box; /* 크기 계산 방식 변경 */
-}

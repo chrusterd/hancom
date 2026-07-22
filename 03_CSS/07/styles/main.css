@@ -1,5 +1,0 @@
-/* styles/main.css */
-a:link    { color: royalblue; }   /* 방문 전 */
-a:visited { color: purple; }      /* 방문 후 */
-a:hover   { color: tomato; }      /* 마우스 올림 */
-a:active  { color: red; }         /* 누르는 중 */

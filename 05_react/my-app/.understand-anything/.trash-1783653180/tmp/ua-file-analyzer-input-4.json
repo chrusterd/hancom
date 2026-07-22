@@ -1,9 +1,0 @@
-{
-  "projectRoot": "C:/Users/Har10/Desktop/hancom/05_react/my-app",
-  "batchFiles": [
-    {"path": "vite.config.js", "language": "javascript", "sizeLines": 8, "fileCategory": "code"}
-  ],
-  "batchImportData": {
-    "vite.config.js": []
-  }
-}

@@ -1,0 +1,16 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "All 4 batch files (batch-1..4.json) were already well-formed: every node had a valid id following <type>:<filePath>[:<name>], every type was one of file/function/document/config, and every complexity was already simple/moderate/complex. The merge script's 0-fix report is accurate, not a sign of skipped work.",
+    "Verified assembled-graph.json programmatically: 51 nodes with 51 unique ids (no duplicates), 53 edges all resolving to existing node ids (no dangling references).",
+    "All 7 non-empty relationships in $IMPORT_MAP (App.jsx->Counter.jsx, main.jsx->App.jsx, main.jsx->index.css, Hello.jsx(18)->Hello.css(18), Card.jsx->Card.css, ButtonDemo.jsx->Button.jsx) already exist as imports edges in the assembled graph; no cross-batch gaps found.",
+    "All 32 files referenced in $IMPORT_MAP have a corresponding node in the assembled graph.",
+    "The Node.js reimplementation's omission of the tested_by two-pass linker is confirmed to be a genuine no-op for this project: no test files (*.test.*, *.spec.*, test/__tests__ paths) exist, consistent with scan-result.json and the import map.",
+    "No edits were made to assembled-graph.json; it was already correct."
+  ]
+}

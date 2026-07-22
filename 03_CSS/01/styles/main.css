@@ -1,6 +1,0 @@
-/* styles/main.css */
-h1 { color: red; }            /* 요소 — 모든 h1 */
-p { color: green; }           /* 요소 — 모든 p */
-.special { color: orange; }   /* 클래스 — class="special" */
-.normal { color: black; }
-li em { color: purple; }      /* 자손 — li 안의 em */

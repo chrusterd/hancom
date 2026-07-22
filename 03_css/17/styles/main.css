@@ -1,0 +1,26 @@
+/* ===== 가상 요소(::before / ::after) 연습 ===== */
+/* 핵심: content 속성이 없으면 화면에 절대 안 나타남! */
+
+/* 1) 제목 앞에 별 붙이기 — ::before */
+.star-title { color: navy; font-size: 18px; font-weight: 700; }
+.star-title::before {
+  content: "★ ";   /* 콘텐츠 '앞'에 별 + 공백 삽입 */
+  color: gold;
+}
+
+/* 2) 인용문 양옆에 따옴표 — ::before + ::after */
+.quote { color: #444; font-style: italic; }
+.quote::before { content: "“ "; color: tomato; font-weight: 700; }  /* 앞 따옴표 */
+.quote::after  { content: " ”"; color: tomato; font-weight: 700; }  /* 뒤 따옴표 */
+
+/* 3) 글자 아래 밑줄 장식 — 빈 content + 네모 박스 */
+.underline-deco { position: relative; display: inline-block; color: #24292f; }
+.underline-deco::after {
+  content: "";        /* 빈 따옴표라도 꼭 있어야 보임 */
+  display: block;     /* 블록으로 바꿔 줄 모양을 만듦 */
+  width: 100%;
+  height: 4px;
+  margin-top: 3px;
+  background: royalblue;
+  border-radius: 2px;
+}

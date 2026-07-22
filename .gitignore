@@ -15,3 +15,15 @@
 .env
 
 node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# YOLO / ML weights & artifacts
+*.pt
+weights/
+*_openvino_model/
+*.npy
+*.zip
+kernel.errors.txt

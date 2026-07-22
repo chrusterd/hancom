@@ -1,7 +1,0 @@
-.box {                     /* Hello.jsx의 className="box"와 연결 */
-  padding: 20px;
-  background: #f3e8ff;
-  border-radius: 12px;
-  text-align: center;
-}
-.box h1 { color: #aa3bff; }   /* box 안 h1만 보라색 */

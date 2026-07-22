@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Vite로 부트스트랩된 React 프로젝트의 기본 안내 문서로, HMR을 지원하는 Vite 설정, 공식 플러그인(@vitejs/plugin-react 또는 plugin-react-swc) 선택 안내, React Compiler 도입 방법, ESLint 설정 확장 방법을 간략히 설명한다.",
+      "tags": ["문서", "가이드", "vite", "react", "entry-point"],
+      "complexity": "simple",
+      "languageNotes": "Vite `create-vite` 스캐폴딩이 생성하는 기본 템플릿 README로, 프로젝트 고유의 커스텀 설명은 포함하고 있지 않다."
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Vite React 애플리케이션의 HTML 진입점으로, `#root` 컨테이너 div와 `src/main.jsx`를 모듈 스크립트로 로드하는 태그를 포함하여 React 앱을 브라우저에 부트스트랩한다.",
+      "tags": ["entry-point", "html", "vite", "markup"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "my-app 프로젝트의 npm 매니페스트로, dev/build/lint/preview 스크립트를 정의하고 React 19, MUI(@mui/material), Emotion, Tailwind CSS 4 등 런타임 의존성과 ESLint 10 기반 개발 의존성을 관리한다.",
+      "tags": ["configuration", "build-system", "npm", "dependencies"],
+      "complexity": "simple",
+      "languageNotes": "`\"type\": \"module\"` 설정으로 ESM 모듈 시스템을 사용하며, Tailwind CSS 4와 `@tailwindcss/vite` 플러그인을 채택한 비교적 최신 구성이다."
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:README.md",
+      "target": "file:index.html",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:index.html",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/main.jsx",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

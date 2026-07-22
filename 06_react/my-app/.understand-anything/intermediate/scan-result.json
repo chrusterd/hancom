@@ -1,0 +1,248 @@
+{
+  "name": "my-app",
+  "description": "React와 Vite 기반의 한국어 부트캠프 학습용 실습 프로젝트로, src/components 아래 17~30번 레슨 폴더마다 Hello, Greeting, Profile, Card, Avatar, Badge, Alert, Tag, SubmitButton, NewTextField, Header, Menu, Content, Footer, Counter, Button, ButtonDemo 등 작은 데모 컴포넌트를 만들며 React 기초 문법과 컴포넌트 패턴을 연습합니다.",
+  "languages": ["css", "html", "javascript", "json", "markdown"],
+  "frameworks": ["React", "Vite", "Tailwind CSS"],
+  "files": [
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/domain-graph.json",
+      "language": "json",
+      "sizeLines": 548,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/ONBOARDING.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "eslint.config.js",
+      "language": "javascript",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "index.html",
+      "language": "html",
+      "sizeLines": 13,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "sizeLines": 32,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/App.css",
+      "language": "css",
+      "sizeLines": 184,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/App.jsx",
+      "language": "javascript",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/17/Hello.jsx",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/18/Hello.css",
+      "language": "css",
+      "sizeLines": 6,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/18/Hello.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/19/Greeting.jsx",
+      "language": "javascript",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/20/Profile.jsx",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/21/Card.css",
+      "language": "css",
+      "sizeLines": 10,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/components/21/Card.jsx",
+      "language": "javascript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/22/Avater.jsx",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/23/Badge.jsx",
+      "language": "javascript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/24/Alert.jsx",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/26/Tag.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/27/NewTextField.jsx",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/27/SubmitButton.jsx",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/28/Content.jsx",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/28/Footer.jsx",
+      "language": "javascript",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/28/Header.jsx",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/28/Menu.jsx",
+      "language": "javascript",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/29/Counter.jsx",
+      "language": "javascript",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/30/Button.jsx",
+      "language": "javascript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/components/30/ButtonDemo.jsx",
+      "language": "javascript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/index.css",
+      "language": "css",
+      "sizeLines": 113,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "src/main.jsx",
+      "language": "javascript",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "vite.config.js",
+      "language": "javascript",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 32,
+  "filteredByIgnore": 41,
+  "estimatedComplexity": "moderate",
+  "importMap": {
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/domain-graph.json": [],
+    "docs/ONBOARDING.md": [],
+    "eslint.config.js": [],
+    "index.html": [],
+    "package.json": [],
+    "README.md": [],
+    "src/App.css": [],
+    "src/App.jsx": [
+      "src/components/29/Counter.jsx"
+    ],
+    "src/components/17/Hello.jsx": [],
+    "src/components/18/Hello.css": [],
+    "src/components/18/Hello.jsx": [
+      "src/components/18/Hello.css"
+    ],
+    "src/components/19/Greeting.jsx": [],
+    "src/components/20/Profile.jsx": [],
+    "src/components/21/Card.css": [],
+    "src/components/21/Card.jsx": [
+      "src/components/21/Card.css"
+    ],
+    "src/components/22/Avater.jsx": [],
+    "src/components/23/Badge.jsx": [],
+    "src/components/24/Alert.jsx": [],
+    "src/components/26/Tag.jsx": [],
+    "src/components/27/NewTextField.jsx": [],
+    "src/components/27/SubmitButton.jsx": [],
+    "src/components/28/Content.jsx": [],
+    "src/components/28/Footer.jsx": [],
+    "src/components/28/Header.jsx": [],
+    "src/components/28/Menu.jsx": [],
+    "src/components/29/Counter.jsx": [],
+    "src/components/30/Button.jsx": [],
+    "src/components/30/ButtonDemo.jsx": [
+      "src/components/30/Button.jsx"
+    ],
+    "src/index.css": [],
+    "src/main.jsx": [
+      "src/App.jsx",
+      "src/index.css"
+    ],
+    "vite.config.js": []
+  }
+}

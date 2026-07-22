@@ -1,0 +1,5 @@
+/* 제목을 토마토색 + 아주 큰 글씨로 */
+#title { color: tomato; font-size: 40px; }
+
+/* 버튼에 안쪽 여백 주고 손가락 커서 */
+button { padding: 10px 20px; cursor: pointer; }

@@ -1,8 +1,0 @@
-# Netlify 배포 설정. 저장소 연결 배포 또는 `netlify deploy` 시 적용된다.
-# (dist 폴더만 드래그앤드롭으로 올리면 functions가 빠져 시세 프록시가 동작하지 않는다)
-[build]
-  command = "npm run build"
-  publish = "dist"
-
-[functions]
-  directory = "netlify/functions"

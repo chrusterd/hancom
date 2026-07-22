@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ET-Web 계산기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #b9b5ad;
+    --body: #26282a;
+    --body-edge: #1a1c1e;
+    --key: #3a3d40;
+    --key-hi: #45484c;
+    --key-green: #5f6e5a;
+    --key-yellow: #e8a33d;
+    --key-slate: #4c5560;   /* 공학 키 */
+    --display-bg: #1c211d;
+    --display-text: #d9e3d5;
+    --paper: #f6f2e8;
+    --ink: #4a4438;
+    --label: #9ca0a3;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    background: radial-gradient(circle at 30% 20%, #c6c2ba, var(--bg) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+  }
+
+  .set {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ── 페이퍼 테이프 ─────────────────────── */
+  .tape {
+    width: 250px;
+    background: var(--paper);
+    border-radius: 2px 2px 0 0;
+    padding: 18px 18px 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.25), 0 1px 0 rgba(255,255,255,.6) inset;
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--ink);
+    position: relative;
+    min-height: 140px;
+    max-height: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tape::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -8px;
+    height: 8px;
+    background:
+      linear-gradient(-45deg, transparent 66%, var(--paper) 67%) 0 0 / 10px 8px,
+      linear-gradient(45deg, transparent 66%, var(--paper) 67%) 5px 0 / 10px 8px;
+  }
+  .tape-head {
+    font-size: 11px;
+    letter-spacing: .18em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #c9c2b0;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    color: #8b8371;
+  }
+  .tape-tools { display: flex; gap: 6px; }
+  .tape-tools button {
+    border: 1px solid #d5cdb9;
+    background: none;
+    color: #8b8371;
+    font-family: inherit;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: .05em;
+  }
+  .tape-tools button:hover { background: #ece6d6; }
+  .tape-tools button:focus-visible { outline: 2px solid var(--key-yellow); }
+  .tape-list {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.9;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .tape-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    animation: feed .25s ease-out;
+    cursor: pointer;
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+  .tape-list li:hover { background: #ece6d6; }
+  .tape-list li b { font-weight: 500; white-space: nowrap; }
+  .tape-hint { font-size: 10px; color: #b3ab98; text-align: center; margin-top: 8px; }
+  .tape-empty { color: #b3ab98; font-size: 12px; text-align: center; padding: 12px 0; }
+  @keyframes feed {
+    from { transform: translateY(-6px); opacity: 0; }
+    to   { transform: none; opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tape-list li { animation: none; }
+    .key { transition: none !important; }
+  }
+
+  /* ── 계산기 바디 ─────────────────────── */
+  .calc {
+    width: 320px;
+    background: linear-gradient(160deg, #2b2d30, var(--body) 40%, var(--body-edge));
+    border-radius: 22px;
+    padding: 22px 22px 26px;
+    box-shadow: 0 24px 48px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.08);
+  }
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: var(--label);
+  }
+  .brand strong {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: .1em;
+    color: #d3d5d7;
+    font-weight: 500;
+  }
+  .toggles { display: flex; gap: 8px; }
+  .toggle {
+    border: 1px solid #4a4d50;
+    background: none;
+    color: var(--label);
+    font-size: 10px;
+    letter-spacing: .1em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .toggle.on { background: var(--key-yellow); color: #3a2c10; border-color: var(--key-yellow); }
+  .toggle:focus-visible { outline: 2px solid var(--key-yellow); outline-offset: 2px; }
+
+  .display {
+    background: var(--display-bg);
+    border-radius: 8px;
+    padding: 12px 16px 10px;
+    margin-bottom: 16px;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,.6);
+    text-align: right;
+    position: relative;
+  }
+  .display .mem {
+    position: absolute;
+    left: 12px; top: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    color: #7d8a78;
+    letter-spacing: .1em;
+  }
+  .display .expr {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: #7d8a78;
+    min-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .display .value {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--display-text);
+    letter-spacing: .02em;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .sci {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .sci.open { display: grid; }
+
+  .memrow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .key {
+    appearance: none;
+    border: 0;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--key-hi), var(--key) 70%);
+    color: #e6e7e8;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #17181a, 0 5px 8px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.12);
+    transition: transform .06s, box-shadow .06s;
+  }
+  .key:active, .key.pressed {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #17181a, 0 2px 4px rgba(0,0,0,.3);
+  }
+  .key:focus-visible { outline: 2px solid var(--key-yellow); outline-offset: 3px; }
+  .key.op { color: #f0c98a; }
+  .key.fn {
+    background: radial-gradient(circle at 35% 30%, #6f7e69, var(--key-green) 70%);
+    font-size: 15px;
+  }
+  .key.eq {
+    background: radial-gradient(circle at 35% 30%, #f2b95c, var(--key-yellow) 70%);
+    color: #3a2c10;
+    font-size: 22px;
+  }
+  .key.small {
+    aspect-ratio: auto;
+    height: 34px;
+    border-radius: 17px;
+    font-size: 13px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .key.sci-k {
+    background: radial-gradient(circle at 35% 30%, #5a636e, var(--key-slate) 70%);
+  }
+</style>
+</head>
+<body>
+<div class="set">
+
+  <div class="tape" aria-live="polite">
+    <div class="tape-head">
+      <span>계산 기록</span>
+      <span class="tape-tools">
+        <button id="tapeCopy" title="기록 복사">복사</button>
+        <button id="tapeClear" title="기록 지우기">지우기</button>
+      </span>
+    </div>
+    <ul class="tape-list" id="tape"></ul>
+    <div class="tape-empty" id="tapeEmpty">아직 계산 기록이 없습니다</div>
+    <div class="tape-hint">기록을 클릭하면 결과를 다시 불러옵니다</div>
+  </div>
+
+  <div class="calc">
+    <div class="brand">
+      <strong>ET-Web</strong>
+      <span class="toggles">
+        <button class="toggle" id="sciToggle" aria-pressed="false">공학</button>
+        <button class="toggle" id="sndToggle" aria-pressed="false">소리</button>
+      </span>
+    </div>
+
+    <div class="display">
+      <span class="mem" id="memBadge"></span>
+      <div class="expr" id="expr">&nbsp;</div>
+      <div class="value" id="value">0</div>
+    </div>
+
+    <div class="sci" id="sciPanel">
+      <button class="key small sci-k" data-un="sqrt">√x</button>
+      <button class="key small sci-k" data-un="sqr">x²</button>
+      <button class="key small sci-k" data-un="inv">1/x</button>
+      <button class="key small sci-k" data-un="pi">π</button>
+      <button class="key small sci-k" data-un="sin">sin</button>
+      <button class="key small sci-k" data-un="cos">cos</button>
+      <button class="key small sci-k" data-un="tan">tan</button>
+      <button class="key small sci-k" data-un="ln">ln</button>
+      <button class="key small sci-k" data-un="pow" style="grid-column: span 2">xʸ</button>
+      <button class="key small sci-k" data-un="fact" style="grid-column: span 2">n!</button>
+    </div>
+
+    <div class="memrow">
+      <button class="key small fn" data-mem="mc">MC</button>
+      <button class="key small fn" data-mem="mr">MR</button>
+      <button class="key small fn" data-mem="m+">M+</button>
+      <button class="key small fn" data-mem="m-">M−</button>
+    </div>
+
+    <div class="keys" id="keys">
+      <button class="key fn" data-act="clear">AC</button>
+      <button class="key fn" data-act="sign">±</button>
+      <button class="key fn" data-act="percent">%</button>
+      <button class="key op" data-op="/">÷</button>
+
+      <button class="key" data-num="7">7</button>
+      <button class="key" data-num="8">8</button>
+      <button class="key" data-num="9">9</button>
+      <button class="key op" data-op="*">×</button>
+
+      <button class="key" data-num="4">4</button>
+      <button class="key" data-num="5">5</button>
+      <button class="key" data-num="6">6</button>
+      <button class="key op" data-op="-">−</button>
+
+      <button class="key" data-num="1">1</button>
+      <button class="key" data-num="2">2</button>
+      <button class="key" data-num="3">3</button>
+      <button class="key op" data-op="+">+</button>
+
+      <button class="key" data-num="0">0</button>
+      <button class="key" data-num=".">.</button>
+      <button class="key fn" data-act="back">⌫</button>
+      <button class="key eq" data-act="equals">=</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const valueEl = document.getElementById('value');
+  const exprEl  = document.getElementById('expr');
+  const tapeEl  = document.getElementById('tape');
+  const tapeEmpty = document.getElementById('tapeEmpty');
+  const memBadge = document.getElementById('memBadge');
+
+  let current = '0';
+  let prev = null;
+  let op = null;
+  let justEvaluated = false;
+  let memory = 0, hasMemory = false;
+  let history = [];   // {expr, result}
+
+  const OP_LABEL = { '+':'+', '-':'−', '*':'×', '/':'÷', '^':'^' };
+
+  /* ── 표시 ─────────────────────── */
+  function fmt(n) {
+    if (!isFinite(n)) return '오류';
+    const s = parseFloat(n.toPrecision(12));
+    return s.toLocaleString('ko-KR', { maximumFractionDigits: 10 });
+  }
+  function render() {
+    valueEl.textContent = current === '오류' ? current
+      : Number(current).toLocaleString('ko-KR', { maximumFractionDigits: 10 })
+        + (current.endsWith('.') ? '.' : '');
+    exprEl.innerHTML = (prev !== null && op) ? `${fmt(prev)} ${OP_LABEL[op]}` : '&nbsp;';
+    memBadge.textContent = hasMemory ? 'M' : '';
+  }
+
+  /* ── 소리 (WebAudio 클릭음) ─────────────────────── */
+  let soundOn = false, audioCtx = null;
+  function click(freq = 620) {
+    if (!soundOn) return;
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+    o.type = 'square'; o.frequency.value = freq;
+    g.gain.setValueAtTime(.04, audioCtx.currentTime);
+    g.gain.exponentialRampToValueAtTime(.0001, audioCtx.currentTime + .06);
+    o.connect(g).connect(audioCtx.destination);
+    o.start(); o.stop(audioCtx.currentTime + .07);
+  }
+
+  /* ── 계산 로직 ─────────────────────── */
+  function inputNum(d) {
+    if (justEvaluated) { current = '0'; prev = null; op = null; justEvaluated = false; }
+    if (d === '.') {
+      if (current.includes('.')) return;
+      current += '.';
+    } else {
+      current = current === '0' ? d : current + d;
+    }
+    render();
+  }
+
+  function calc(a, b, o) {
+    switch (o) {
+      case '+': return a + b;
+      case '-': return a - b;
+      case '*': return a * b;
+      case '/': return b === 0 ? NaN : a / b;
+      case '^': return Math.pow(a, b);
+    }
+  }
+
+  function setOp(o) {
+    if (op !== null && !justEvaluated) {
+      prev = calc(prev, parseFloat(current), op);
+    } else if (prev === null || justEvaluated) {
+      prev = parseFloat(current);
+    }
+    op = o;
+    current = '0';
+    justEvaluated = false;
+    render();
+  }
+
+  function equals() {
+    if (op === null || prev === null) return;
+    const b = parseFloat(current);
+    const result = calc(prev, b, op);
+    addTape(`${fmt(prev)} ${OP_LABEL[op]} ${fmt(b)}`, result);
+    setResult(result);
+  }
+
+  function setResult(result) {
+    current = isFinite(result) ? String(result) : '오류';
+    prev = null; op = null; justEvaluated = true;
+    if (current === '오류') { valueEl.textContent = '오류'; exprEl.innerHTML = '&nbsp;'; memBadge.textContent = hasMemory ? 'M' : ''; return; }
+    render();
+  }
+
+  /* ── 공학 함수 ─────────────────────── */
+  function factorial(n) {
+    if (n < 0 || !Number.isInteger(n) || n > 170) return NaN;
+    let r = 1;
+    for (let i = 2; i <= n; i++) r *= i;
+    return r;
+  }
+  function unary(name) {
+    const x = parseFloat(current);
+    if (name === 'pi') { current = String(Math.PI); justEvaluated = false; render(); return; }
+    if (name === 'pow') { setOp('^'); return; }
+    const fns = {
+      sqrt: v => v < 0 ? NaN : Math.sqrt(v),
+      sqr:  v => v * v,
+      inv:  v => v === 0 ? NaN : 1 / v,
+      sin:  v => Math.sin(v * Math.PI / 180),
+      cos:  v => Math.cos(v * Math.PI / 180),
+      tan:  v => Math.tan(v * Math.PI / 180),
+      ln:   v => v <= 0 ? NaN : Math.log(v),
+      fact: factorial,
+    };
+    const labels = { sqrt:'√', sqr:'sqr', inv:'1/', sin:'sin', cos:'cos', tan:'tan', ln:'ln', fact:'!' };
+    const result = fns[name](x);
+    const expr = name === 'fact' ? `${fmt(x)}!`
+               : name === 'sqr' ? `${fmt(x)}²`
+               : `${labels[name]}(${fmt(x)})`;
+    addTape(expr, result);
+    setResult(result);
+  }
+
+  /* ── 메모리 ─────────────────────── */
+  function memOp(name) {
+    const x = parseFloat(current) || 0;
+    if (name === 'mc') { memory = 0; hasMemory = false; }
+    if (name === 'mr') { if (hasMemory) { current = String(memory); justEvaluated = false; } }
+    if (name === 'm+') { memory += x; hasMemory = true; }
+    if (name === 'm-') { memory -= x; hasMemory = true; }
+    render();
+  }
+
+  /* ── 테이프 ─────────────────────── */
+  function addTape(expr, result) {
+    history.unshift({ expr, result });
+    saveHistory();
+    renderTapeItem(expr, result);
+  }
+  function renderTapeItem(expr, result) {
+    tapeEmpty.style.display = 'none';
+    const li = document.createElement('li');
+    li.title = '클릭하면 결과를 불러옵니다';
+    li.dataset.result = result;
+    li.innerHTML = `<span>${expr}</span><b>= ${fmt(Number(result))}</b>`;
+    tapeEl.prepend(li);
+  }
+  function saveHistory() {
+    try { localStorage.setItem('etweb-history', JSON.stringify(history.slice(0, 50))); } catch (e) {}
+  }
+  function loadHistory() {
+    try {
+      history = JSON.parse(localStorage.getItem('etweb-history')) || [];
+      for (let i = history.length - 1; i >= 0; i--) renderTapeItem(history[i].expr, history[i].result);
+    } catch (e) { history = []; }
+  }
+
+  tapeEl.addEventListener('click', e => {
+    const li = e.target.closest('li');
+    if (!li) return;
+    const r = Number(li.dataset.result);
+    if (!isFinite(r)) return;
+    current = String(r);
+    justEvaluated = false;
+    render();
+    click(760);
+  });
+
+  document.getElementById('tapeClear').addEventListener('click', () => {
+    history = []; saveHistory();
+    tapeEl.innerHTML = '';
+    tapeEmpty.style.display = '';
+  });
+
+  document.getElementById('tapeCopy').addEventListener('click', async e => {
+    const text = history.map(h => `${h.expr} = ${fmt(Number(h.result))}`).reverse().join('\n');
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      e.target.textContent = '복사됨';
+      setTimeout(() => e.target.textContent = '복사', 1200);
+    } catch (err) {}
+  });
+
+  /* ── 토글 ─────────────────────── */
+  const sciToggle = document.getElementById('sciToggle');
+  sciToggle.addEventListener('click', () => {
+    const panel = document.getElementById('sciPanel');
+    const on = panel.classList.toggle('open');
+    sciToggle.classList.toggle('on', on);
+    sciToggle.setAttribute('aria-pressed', on);
+  });
+  const sndToggle = document.getElementById('sndToggle');
+  sndToggle.addEventListener('click', () => {
+    soundOn = !soundOn;
+    sndToggle.classList.toggle('on', soundOn);
+    sndToggle.setAttribute('aria-pressed', soundOn);
+    click();
+  });
+
+  /* ── 기타 동작 ─────────────────────── */
+  function act(name) {
+    if (name === 'clear') { current = '0'; prev = null; op = null; justEvaluated = false; }
+    if (name === 'sign')  { current = current.startsWith('-') ? current.slice(1) : (current !== '0' ? '-' + current : current); }
+    if (name === 'percent') { current = String(parseFloat(current) / 100); }
+    if (name === 'back') {
+      if (justEvaluated) return;
+      current = current.length > 1 ? current.slice(0, -1) : '0';
+      if (current === '-') current = '0';
+    }
+    if (name === 'equals') return equals();
+    render();
+  }
+
+  document.querySelector('.calc').addEventListener('click', e => {
+    const btn = e.target.closest('.key');
+    if (!btn) return;
+    click(btn.classList.contains('eq') ? 830 : 620);
+    if (btn.dataset.num !== undefined) inputNum(btn.dataset.num);
+    else if (btn.dataset.op) setOp(btn.dataset.op);
+    else if (btn.dataset.un) unary(btn.dataset.un);
+    else if (btn.dataset.mem) memOp(btn.dataset.mem);
+    else if (btn.dataset.act) act(btn.dataset.act);
+  });
+
+  /* ── 키보드 ─────────────────────── */
+  document.addEventListener('keydown', e => {
+    const k = e.key;
+    let btn = null;
+    if (/^[0-9.]$/.test(k)) { inputNum(k); btn = document.querySelector(`[data-num="${k}"]`); }
+    else if (['+','-','*','/'].includes(k)) { setOp(k); btn = document.querySelector(`[data-op="${k}"]`); }
+    else if (k === '^') { setOp('^'); }
+    else if (k === 'Enter' || k === '=') { e.preventDefault(); equals(); btn = document.querySelector('[data-act="equals"]'); }
+    else if (k === 'Backspace') { act('back'); btn = document.querySelector('[data-act="back"]'); }
+    else if (k === 'Escape') { act('clear'); btn = document.querySelector('[data-act="clear"]'); }
+    else if (k === '%') { act('percent'); }
+    else return;
+    click();
+    if (btn) { btn.classList.add('pressed'); setTimeout(() => btn.classList.remove('pressed'), 120); }
+  });
+
+  loadHistory();
+  render();
+</script>
+</body>
+</html>
